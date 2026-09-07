@@ -1,0 +1,17 @@
+{
+  "channel": "ahli",
+  "mandatory": false,
+  "minimum_version": "4.0.0",
+  "notes": "الإصدار الأساسي لنظام التحديث الآمن",
+  "package": {
+    "name": "Ufuq_ahli_4.0.0.exe",
+    "sha256": "fbd4d4d5cef36be4e65495b747e18c1f0de4d59765186234410a4db5a4ba80cc",
+    "signature": "lW0D53K8ZMBc3mBnC5phRhP88f/3kqfsuoWFJ22ivVT9JQ2KR3O/m5F/c7RV6OMEVPOGLP02ucZ0NmqPrOgvBQ==",
+    "size": 53703028,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.0/Ufuq_ahli_4.0.0.exe"
+  },
+  "product": "ufuq-smartschool",
+  "published_at": "2026-09-07T21:38:57.724551+00:00",
+  "schema": 1,
+  "version": "4.0.0"
+}

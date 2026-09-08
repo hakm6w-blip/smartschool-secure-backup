@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تم إضافة دعم حالات الطلاب داخل حقول الدرجات مثل: غياب، مؤجل، ومجاز، مع حفظها واستعادتها بصورة صحيحة. كما تم تحسين سهولة إدخال الدرجات وإصلاح القائمة الجانبية لتظهر فروع الأقسام من بدايتها بشكل مرتب.",
+  "notes": "",
   "package": {
-    "name": "Ufuq_gov_4.0.2.exe",
+    "name": "Ufuq_gov_4.0.4.exe",
     "sha256": "7ed4b71fcb7bf45342c6be8b6a2a6409c7472860f3d274522a05577cebcbdc08",
     "signature": "1O41srkyFW/zOUoHAwibTFxLTjVOpUxsOPir3Le3VeNJpwYFqTvDXDsYo4pwwOrDeQ2nWtqH9jyDNlA95fxECQ==",
     "size": 66712504,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.2/Ufuq_gov_4.0.2.exe"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.4/Ufuq_gov_4.0.4.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T13:15:01.341128+00:00",
+  "published_at": "2026-09-08T13:33:10.990691+00:00",
   "schema": 1,
-  "version": "4.0.2"
+  "version": "4.0.4"
 }

@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "اختبار شخصي: إصلاح الوضع الداكن وفتح القائمة الفرعية من أول فرع",
+  "notes": "إصلاح تثبيت التحديث للنسخة المحمولة ومجلدات التثبيت المختلفة مع تحقق أمني وتراجع آمن",
   "package": {
     "name": "Ufuq_direct_4.0.8.exe",
-    "sha256": "ba9ae7db5be5132804dfa153867ee45a6726eaeba2fb3f9deacfce5d7ecb2e5c",
-    "signature": "k/mEn0xB4dmokq3z16ztcO4b9ZGIp6jO19IywW9kZlMnh/tGrNjWJ9ET12NHCf+f4oScSpAqO+fOy534AhFEDw==",
-    "size": 66869631,
+    "sha256": "e1438d35f79aed4a829d02ec2fc7e9ed21b332ef481712e0e17dc1d551b9a554",
+    "signature": "mDXmkE8ny96qifVd+sdd2swJM/WxcmZfJ0gtZLDq8WhfFU1KVsnB4SkHNslXKj6A+11swoU8i9J3K2dQk5qVBA==",
+    "size": 66868806,
     "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.8/Ufuq_direct_4.0.8.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T16:56:40.937688+00:00",
+  "published_at": "2026-09-08T17:14:12.881020+00:00",
   "schema": 1,
   "version": "4.0.8"
 }

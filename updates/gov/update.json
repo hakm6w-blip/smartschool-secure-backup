@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إشعار تلقائي للتحديث عند الدخول مع تذكير لاحق ونسبة تنزيل حية، وإصلاح WinError 5 وصلاحيات تثبيت التحديث داخل Program Files",
+  "notes": "إشعار تلقائي للتحديث عند الدخول مع تذكير لاحق ونسبة تنزيل ونصوص حية، وإصلاح WinError 5 وصلاحيات الاستبدال داخل Program Files",
   "package": {
-    "name": "Ufuq_gov_4.0.3.exe",
-    "sha256": "e8444914aa0d4bc6c4053d441eeb11fcb8f816d3a439c81040e072fa71350fef",
-    "signature": "ljK1w8mD4PWyTKVDNJyS/Cdzf3NJ9a45DsBB4K3ZriBlFIv+mJtGueW5TwCVv0rEyl8AofPQtnyeQtmxR8AqAg==",
-    "size": 66858082,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.3/Ufuq_gov_4.0.3.exe"
+    "name": "Ufuq_gov_4.0.6.exe",
+    "sha256": "3771d9975e60070a3bcf0141382a084a26bab462e17a48e659c7b93c487ef300",
+    "signature": "/J8xE0SDqV4XA83uxfuaKHukJQdnfLFSdxcT2PjYpgQPj9HhIZJlr1kVRWLsQJkX0/93uzEuSl/9hA7Kz09tAQ==",
+    "size": 66858203,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.6/Ufuq_gov_4.0.6.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T15:42:09.342094+00:00",
+  "published_at": "2026-09-08T15:52:13.788969+00:00",
   "schema": 1,
-  "version": "4.0.3"
+  "version": "4.0.6"
 }

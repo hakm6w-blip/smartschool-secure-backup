@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح حفظ نتيجة الطالب بصيغة PDF وإعادة خط Tajawal بالحجم والسمك الأصليين من نسخة 25-08، مع تحسينات الاستقرار",
+  "notes": "دعم حالات الدرجات غياب ومؤجل ومجاز مع حفظ آمن، وإصلاح موضع فتح فروع القائمة الجانبية",
   "package": {
-    "name": "Ufuq_ahli_4.0.1.exe",
-    "sha256": "9064226482045bb9b71e84f2876418140e6307a728ee0e2ffd28137f7f043b1e",
-    "signature": "YpKbCuyKPXX0FNs3xN2Fil7T/aXCRXoz6f1Y0wNJScOMVwKeSMHBUJ3RroIFqMZPtG9S7vEO9/2VHGwB6+mwAw==",
-    "size": 66724116,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.1/Ufuq_ahli_4.0.1.exe"
+    "name": "Ufuq_ahli_4.0.2.exe",
+    "sha256": "7a68fec31781acab4e4ea2ee9b65f8bbd173decff919458e7a6fd2586745b1b0",
+    "signature": "BGA9SqdKXouYfTrDW2Xu67qRymmKbFy8Qw4LH153hH9Qd5qOxZ96v4e9yEMMerOk+5G75C626L6xAtVYWQ4+CA==",
+    "size": 66726226,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.2/Ufuq_ahli_4.0.2.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T11:00:55.400789+00:00",
+  "published_at": "2026-09-08T13:05:33.705883+00:00",
   "schema": 1,
-  "version": "4.0.1"
+  "version": "4.0.2"
 }

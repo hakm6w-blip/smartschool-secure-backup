@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار المستقر قبل إصلاح فحص نجاح التشغيل",
+  "notes": "إصلاح تثبيت التحديث وتبويبات الإعدادات وحصر حالات الدرجات",
   "package": {
-    "name": "Ufuq_direct_4.0.8.exe",
-    "sha256": "e1438d35f79aed4a829d02ec2fc7e9ed21b332ef481712e0e17dc1d551b9a554",
-    "signature": "mDXmkE8ny96qifVd+sdd2swJM/WxcmZfJ0gtZLDq8WhfFU1KVsnB4SkHNslXKj6A+11swoU8i9J3K2dQk5qVBA==",
-    "size": 66868806,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.8/Ufuq_direct_4.0.8.exe"
+    "name": "Ufuq_direct_4.0.9.exe",
+    "sha256": "dadb11888caaf0cf0eefc3545a0d23ba47251bdc3e359f854ee8ef66b0857f13",
+    "signature": "TMR2QphEz03dkeYUR9i8TfyJgl9V8sRLZRySy8q9qlBkFs10UqLH5tHfWF549QBCUS7zuY9zpHXoPF+vUIziCw==",
+    "size": 66871529,
+    "url": "https://hakm6w-blip.github.io/smartschool-secure-backup/updates/direct/Ufuq_direct_4.0.9.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T17:14:12.881020+00:00",
+  "published_at": "2026-09-08T22:11:47.378877+00:00",
   "schema": 1,
-  "version": "4.0.8"
+  "version": "4.0.9"
 }

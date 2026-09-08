@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح حفظ نتيجة الطالب بصيغة PDF وإعادة خط Tajawal بالحجم والسمك الأصليين من نسخة 25-08، مع تحسينات الاستقرار",
+  "notes": "دعم حالات الدرجات غياب ومؤجل ومجاز مع حفظ آمن، وإصلاح موضع فتح فروع القائمة الجانبية",
   "package": {
-    "name": "Ufuq_gov_4.0.1.exe",
-    "sha256": "e24f09fc38794f3d52dc9207340116122ac5cfb363e096a9743ab15408a07d7f",
-    "signature": "5oQKiNza59/Z0ZixVyBMu9oETJr4QsJAQyU5ZdyTc+9WN5keKZYCe6GsghLt6+LHZ7KagUTJ+Wg2QID3pYl9Ag==",
-    "size": 66709866,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.1/Ufuq_gov_4.0.1.exe"
+    "name": "Ufuq_gov_4.0.2.exe",
+    "sha256": "7ed4b71fcb7bf45342c6be8b6a2a6409c7472860f3d274522a05577cebcbdc08",
+    "signature": "1O41srkyFW/zOUoHAwibTFxLTjVOpUxsOPir3Le3VeNJpwYFqTvDXDsYo4pwwOrDeQ2nWtqH9jyDNlA95fxECQ==",
+    "size": 66712504,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.2/Ufuq_gov_4.0.2.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T11:06:09.117072+00:00",
+  "published_at": "2026-09-08T13:06:05.832157+00:00",
   "schema": 1,
-  "version": "4.0.1"
+  "version": "4.0.2"
 }

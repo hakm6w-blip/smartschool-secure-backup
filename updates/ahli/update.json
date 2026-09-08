@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إشعار تلقائي للتحديث عند الدخول مع تذكير لاحق ونسبة تنزيل ونصوص حية، وإصلاح WinError 5 وصلاحيات الاستبدال داخل Program Files",
+  "notes": "فصل نسخة التجربة المباشرة عن نسخ الزبائن، وفرض إنشاء الحساب في أول تشغيل، ورفض بيانات الدخول الخاطئة ومنع استبدال الحساب الموجود دون صلاحية",
   "package": {
-    "name": "Ufuq_ahli_4.0.6.exe",
-    "sha256": "b6fc22ab0cfa53c96743c14bf04e40660f2b5cbea4c797144d80815a10af8ac5",
-    "signature": "/Rj9mLXHVNF8y9B6QgHuA7iVGAv28q43FLYfiFHzZaq/ovu6OpEzDVcOvhGjU7IQ9UeQ/y3mRzCWMH6HlJnWCg==",
-    "size": 66872465,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.6/Ufuq_ahli_4.0.6.exe"
+    "name": "Ufuq_ahli_4.0.7.exe",
+    "sha256": "a0aab9a43315b16f77f504d95b0d7ec414c56023fe480e47ec8117c66027b061",
+    "signature": "s6NME9M1B7b7EW78GRyJKIHxrIZXY9V05G9jhundMthQ2L7PjSevXWKH79p76Z3mW8+EsnIRRvAJRQcPDmUrBg==",
+    "size": 66873012,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.7/Ufuq_ahli_4.0.7.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T15:51:52.493870+00:00",
+  "published_at": "2026-09-08T16:18:45.959168+00:00",
   "schema": 1,
-  "version": "4.0.6"
+  "version": "4.0.7"
 }

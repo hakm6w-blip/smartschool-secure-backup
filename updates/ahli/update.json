@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار الأساسي لنظام التحديث الآمن وتحسين وضوح الخط والتحكم بحجم النص",
+  "notes": "إصلاح حفظ نتيجة الطالب بصيغة PDF وإعادة خط Tajawal بالحجم والسمك الأصليين من نسخة 25-08، مع تحسينات الاستقرار",
   "package": {
-    "name": "Ufuq_ahli_4.0.0.exe",
-    "sha256": "9cd6c596a51fdee532b2d42542abb6f1730738eea1d1ee784a9a73cf6cf052af",
-    "signature": "LxUogBjCGcrRcXSYg/KDxWWLox0h1ILelBP544DY/ZiGw5lJ2+iaCOTQQKj6KAqoK/MSWTw1XmwoQJfZ1/RQCQ==",
-    "size": 66707112,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.0/Ufuq_ahli_4.0.0.exe"
+    "name": "Ufuq_ahli_4.0.1.exe",
+    "sha256": "9064226482045bb9b71e84f2876418140e6307a728ee0e2ffd28137f7f043b1e",
+    "signature": "YpKbCuyKPXX0FNs3xN2Fil7T/aXCRXoz6f1Y0wNJScOMVwKeSMHBUJ3RroIFqMZPtG9S7vEO9/2VHGwB6+mwAw==",
+    "size": 66724116,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.1/Ufuq_ahli_4.0.1.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T00:02:09.898591+00:00",
+  "published_at": "2026-09-08T11:00:55.400789+00:00",
   "schema": 1,
-  "version": "4.0.0"
+  "version": "4.0.1"
 }

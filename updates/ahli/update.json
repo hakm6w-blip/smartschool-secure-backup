@@ -1,17 +1,17 @@
 {
   "channel": "ahli",
-  "mandatory": true,
+  "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تم إضافة دعم حالات الطلاب داخل حقول الدرجات مثل: غياب، مؤجل، ومجاز، مع حفظها واستعادتها بصورة صحيحة. كما تم تحسين سهولة إدخال الدرجات وإصلاح القائمة الجانبية لتظهر فروع الأقسام من بدايتها بشكل مرتب.",
+  "notes": "إشعار تلقائي للتحديث عند الدخول مع تذكير لاحق ونسبة تنزيل حية، وإصلاح WinError 5 وصلاحيات تثبيت التحديث داخل Program Files",
   "package": {
-    "name": "Ufuq_ahli_4.0.2.exe",
-    "sha256": "b21c1bc600e0807d64e1a24879b00090802e27cf16482a840ae6d4ad1e0327bd",
-    "signature": "NgU9GLSfmvr4zsOjksQiwwNvQUldVK9jvjJM8z9R5qK+p8SBivwlKTqdluE5EgE1N+TWbubkgz5YNPWtyvrTBQ==",
-    "size": 66725903,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.2/Ufuq_ahli_4.0.2.exe"
+    "name": "Ufuq_ahli_4.0.3.exe",
+    "sha256": "7592bb28ff02e7284ccc6fbd2386529164ab5673ec3ab63107d19449467d88f0",
+    "signature": "EXMec/wKF09sxoqo7nJ5uyj9j4txR0hs8RuJSBBWywlAp0Tc6hcxyAj3rXeXpVGz87l/Z7Lq1mdUO1y4L7XuAA==",
+    "size": 66871264,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.3/Ufuq_ahli_4.0.3.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T13:15:48.934488+00:00",
+  "published_at": "2026-09-08T15:41:41.254276+00:00",
   "schema": 1,
-  "version": "4.0.2"
+  "version": "4.0.3"
 }

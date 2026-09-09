@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إظهار غياب أو مؤجل أو مجاز في الشهادات، ومنع احتساب النتيجة حتى إدخال درجة الدور الثاني.",
+  "notes": "",
   "package": {
-    "name": "Ufuq_direct_4.0.10.exe",
-    "sha256": "ec048b01941a0749bd577dba6c2de4948dea227975a87fc1f8f93c4fcdf4408f",
-    "signature": "s5q6erhr5yPpOtkob4NHB7uofZb74BN0T3CPjNVYjIB7kVGtOdaB6bfkPGpADJB3WChbDUbgKjhYjeCb8tXFCA==",
-    "size": 66874641,
-    "url": "https://hakm6w-blip.github.io/smartschool-secure-backup/updates/direct/Ufuq_direct_4.0.10.exe"
+    "name": "Ufuq_direct_4.0.11.exe",
+    "sha256": "ba9ae7db5be5132804dfa153867ee45a6726eaeba2fb3f9deacfce5d7ecb2e5c",
+    "signature": "k/mEn0xB4dmokq3z16ztcO4b9ZGIp6jO19IywW9kZlMnh/tGrNjWJ9ET12NHCf+f4oScSpAqO+fOy534AhFEDw==",
+    "size": 66869631,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.11/Ufuq_direct_4.0.11.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-09T11:40:11.543738+00:00",
+  "published_at": "2026-09-09T13:58:03.108845+00:00",
   "schema": 1,
-  "version": "4.0.10"
+  "version": "4.0.11"
 }

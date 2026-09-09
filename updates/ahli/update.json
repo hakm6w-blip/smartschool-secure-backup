@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح الوضع الداكن بالكامل، وفتح فروع القائمة الجانبية من أول فرع أعلى القائمة، مع تحسينات أمان حساب الدخول",
+  "notes": "إظهار غياب أو مؤجل أو مجاز في الشهادات، ومنع احتساب النتيجة حتى إدخال درجة الدور الثاني.",
   "package": {
-    "name": "Ufuq_ahli_4.0.8.exe",
-    "sha256": "a8c98a94cb4954629b35fc69a62c45edcc9c3b9a70fd1514e5d0e5174e441ee5",
-    "signature": "Wba5XXaVol8uwc23twj7TDfmy3NWOOOzmzCKs2pWDVi2JtTl05v4CQLxuEyxWSEmLJJxsvawejcJwbBxwZobDA==",
-    "size": 66873067,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.8/Ufuq_ahli_4.0.8.exe"
+    "name": "Ufuq_ahli_4.0.10.exe",
+    "sha256": "fd389a39a35ee662cac12de577918f3cc70333ba8c255c35e60c369a087c990a",
+    "signature": "JEX6RSfVmPML66e1A7qIsPnEFmuVfkTCqcQw4kyOJZzzQNFl0dF99qfTAz+TmRjuWy0z3u4eGSm3UoTOTnRMBQ==",
+    "size": 66876034,
+    "url": "https://hakm6w-blip.github.io/smartschool-secure-backup/updates/ahli/Ufuq_ahli_4.0.10.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T16:45:05.507497+00:00",
+  "published_at": "2026-09-09T11:40:10.234473+00:00",
   "schema": 1,
-  "version": "4.0.8"
+  "version": "4.0.10"
 }

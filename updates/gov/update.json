@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح الوضع الداكن بالكامل، وفتح فروع القائمة الجانبية من أول فرع أعلى القائمة، مع تحسينات أمان حساب الدخول",
+  "notes": "إظهار غياب أو مؤجل أو مجاز في الشهادات، ومنع احتساب النتيجة حتى إدخال درجة الدور الثاني.",
   "package": {
-    "name": "Ufuq_gov_4.0.8.exe",
-    "sha256": "72302508065a3a23eba5248f7dbde7fbdb404851e7c61c16c8101ad76ff981a0",
-    "signature": "Sr+ysy0CDyBOGqgg3DGF0O6F1fZ7RUsQLlN0JkXixYGvNVFTWPjZnNMmwkvsPGdzUQ99v5gSrPXloWGRaX8mCQ==",
-    "size": 66858653,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.8/Ufuq_gov_4.0.8.exe"
+    "name": "Ufuq_gov_4.0.10.exe",
+    "sha256": "db25db59bc39e8df5f3cbce5283dbfdb75c3ec0523e68e78882214aafbf976ad",
+    "signature": "QLI7tEfpsiHd8dTUjt8oVeCkMvICIDxzBxQVdiuLpDxNwIBml14H7x354aMhbZqYkga2jENKD2MfS2r/KfRHAQ==",
+    "size": 66862171,
+    "url": "https://hakm6w-blip.github.io/smartschool-secure-backup/updates/gov/Ufuq_gov_4.0.10.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-08T16:45:29.381384+00:00",
+  "published_at": "2026-09-09T11:40:10.917905+00:00",
   "schema": 1,
-  "version": "4.0.8"
+  "version": "4.0.10"
 }

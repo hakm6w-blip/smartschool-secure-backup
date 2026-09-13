@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.0.14\n\nإصلاحات\n• مركز الطباعة: اختيار شعبة كان يُرجع «لا يوجد طلاب» لشعب موجودة فعلاً.\n• عرض طلاب الشعبة من صفحة «إدارة الصفوف والشعب» كان يُرجع قائمة فارغة.\n\nجديد\n• زر «شرح القسم 💡» في كل قسم مع جولة درجات القرار.\n• تحديد الصف والشعبة المستهدفة في استيراد الطلاب.\n• نافذة إدارة شعب الصف لكل صف.",
+  "notes": "الإصدار 4.0.15\n\nتحسينات\n• تكبير أحجام الخطوط في الاستمارات والإيصالات.\n\nمن 4.0.14\n• إصلاح مركز الطباعة + عرض طلاب الشعبة.\n• شرح القسم 💡 + درجات القرار.\n• استيراد بتحديد الصف/الشعبة.\n• إدارة شعب الصف.",
   "package": {
-    "name": "Ufuq_gov_4.0.14.exe",
-    "sha256": "cac0e10c76fe86f2a4cc7653597c31269aead5e887a0ef56162706ce69d48076",
-    "signature": "XNMKvZhKBCCMbX1st/H1utK/U0FytBoKXtQjoZ4CXQB2ye3u7pGz6ye06NtG88rZmaXpTs4qVafXNXCRE8/FCg==",
-    "size": 68272824,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.14/Ufuq_gov_4.0.14.exe"
+    "name": "Ufuq_gov_4.0.15.exe",
+    "sha256": "174eef42d145f461c99db867e58fcd0ebbca206f6806010546cbdd37984c6e8b",
+    "signature": "MvUHCtt9C/HEIxCa90Jo8DTqTQmFGhJSq/KeJs8C6mVKJ5tbfCCrGJWlbjVzv2ZsBFevnWHzmC4sOVlnNDvdBQ==",
+    "size": 68272883,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.15/Ufuq_gov_4.0.15.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-13T14:26:11.902490+00:00",
+  "published_at": "2026-09-13T15:30:27.984248+00:00",
   "schema": 1,
-  "version": "4.0.14"
+  "version": "4.0.15"
 }

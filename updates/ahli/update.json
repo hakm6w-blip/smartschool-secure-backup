@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.0.14\n\nإصلاحات\n• مركز الطباعة: اختيار شعبة كان يُرجع «لا يوجد طلاب» لشعب موجودة فعلاً — السبب أن الطلاب يُخزَّنون بصيغتين مختلفتين (الشعبة في عمودها، أو ملحقة بنهاية اسم الصف). الآن تُقرأ الصيغتان معاً، فتعمل البيانات القديمة بلا أي ترحيل.\n• عرض طلاب الشعبة من صفحة «إدارة الصفوف والشعب» كان يُرجع قائمة فارغة للسبب نفسه — أُصلح معه.\n\nجديد\n• زر «شرح القسم 💡» في كل قسم: جولة تفاعلية تشرح مكوّنات الشاشة خطوة بخطوة، مع شرح كامل لدرجات القرار وما هي وطريقة إضافتها وتقسيمها.\n• استيراد الطلاب: تحديد الصف والشعبة المستهدفة صراحةً داخل نافذة الاستيراد، بدل الاعتماد على استنتاج اسم الملف وحده.\n• إدارة شعب الصف: نافذة مخصّصة لكل صف فيها تعديل اسم الشعبة، عدد طلابها، عرض الطلاب، الإضافة والحذف.",
+  "notes": "الإصدار 4.0.15\n\nتحسينات\n• تكبير أحجام الخطوط في الاستمارات والإيصالات: اسم الطالب 18px، عناوين الإيصال 18–20px، البيانات 16px، التسميات 12–13px.\n\nمن 4.0.14\n• إصلاح علّة مركز الطباعة (الشعبة الفعلية).\n• زر «شرح القسم 💡» مع جولة درجات القرار.\n• تحديد الصف/الشعبة في استيراد الطلاب.\n• نافذة إدارة شعب الصف.",
   "package": {
-    "name": "Ufuq_ahli_4.0.14.exe",
-    "sha256": "b44636a1af306782c64327f7fa2a2a033f6f433efab5ac0763186079edb92ba4",
-    "signature": "Y5UMgfvGbYF00DTvyJDOaLv11mTLBKTfIvmC2Zu7diT2fHArd1Wqux4I3bGuQ2CMgVkajf2uYBkzml9M2wKoAw==",
-    "size": 68284452,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.14/Ufuq_ahli_4.0.14.exe"
+    "name": "Ufuq_ahli_4.0.15.exe",
+    "sha256": "b5ed6c8327f229feabb34590d4a744007c706162fba7bddcf0c84cbe2bafca69",
+    "signature": "vbtnqpUCnLnkgvnfnY4cl+VyUAUemlVy2YBVeyTedAwvLXGEjURuJbq9+7MweD1Hjm4Iwv0EAXP0KDPeG4i4DQ==",
+    "size": 68283103,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.15/Ufuq_ahli_4.0.15.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-13T14:25:15.021137+00:00",
+  "published_at": "2026-09-13T15:29:12.575183+00:00",
   "schema": 1,
-  "version": "4.0.14"
+  "version": "4.0.15"
 }

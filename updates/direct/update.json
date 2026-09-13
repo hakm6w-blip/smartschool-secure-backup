@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "",
+  "notes": "إصلاحات وتحسينات: عرض الشعب وطلاب كل شعبة في إدارة الصفوف، ترابط قوائم الصف/الشعبة في مركز الطباعة وطباعة الشعبة المحددة فقط، حفظ شعبة الطالب مع تحديث فوري للجدول، أزرار الفلترة السريعة، ضبط حجم خط اسم الطالب على سطر واحد، تثبيت عناوين الأعمدة عند التصدير، إصلاح اتجاه ومقاس الورقة وخيار الملاءمة في معاينة الطباعة، تثبيت القائمة الجانبية عند التنقل بين أقسام شؤون الطلبة، وإخفاء الأقسام غير المستخدمة في النسخة الحكومية.",
   "package": {
-    "name": "Ufuq_direct_4.0.11.exe",
-    "sha256": "ba9ae7db5be5132804dfa153867ee45a6726eaeba2fb3f9deacfce5d7ecb2e5c",
-    "signature": "k/mEn0xB4dmokq3z16ztcO4b9ZGIp6jO19IywW9kZlMnh/tGrNjWJ9ET12NHCf+f4oScSpAqO+fOy534AhFEDw==",
-    "size": 66869631,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.11/Ufuq_direct_4.0.11.exe"
+    "name": "Ufuq_direct_4.0.13.exe",
+    "sha256": "516897c0a68572776ed7e11778fea6e8d3e20e468e58d1a1e6a6a39406ff7db2",
+    "signature": "scDeUDnOwd43Bo+cMFqrfvTxsaC1iza98OjL9/GftuoxMncK4E4H1vjwpiZYo5T4OSnQ6wjhdsxf6cD93YoGDQ==",
+    "size": 66908718,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.13/Ufuq_direct_4.0.13.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-09T13:58:03.108845+00:00",
+  "published_at": "2026-09-13T11:14:29.675853+00:00",
   "schema": 1,
-  "version": "4.0.11"
+  "version": "4.0.13"
 }

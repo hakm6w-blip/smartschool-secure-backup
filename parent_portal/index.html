@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e5e63">
+<meta name="robots" content="noindex, nofollow">
+<title>بوابة ولي الأمر</title>
+
+<!--
+  ═══════════════════════════════════════════════════════════════════════════
+   بوابة ولي الأمر — أُفق Smart School
+  ═══════════════════════════════════════════════════════════════════════════
+   ملف واحد. لا سيرفر. لا قاعدة بيانات. لا رسوم.
+
+   الرابط:  https://portal.example.com/?section=الصف#token=الرمز
+            • section في الـ query  → اسم الصف (يُشفَّر كـ SHA-256 للوصول للملف)
+            • token   في الـ #hash  → لا يُرسَل إلى أي سيرفر إطلاقاً
+
+   الخصوصية: الخادم/CDN يخزّن نصاً مشفَّراً فقط (AES-256-GCM).
+             فكّ التشفير يحدث داخل متصفح ولي الأمر بالمفتاح المشتق من الرمز.
+             حتى مشرف البوابة لا يستطيع قراءة درجات أي طالب.
+
+   ملاحظة: التصميم مكتوب بـ CSS خاص بالكامل، فالصفحة تعمل كاملة حتى لو
+           تعذّر تحميل Tailwind (شبكات غير مستقرة). Tailwind مُضمَّن أدناه
+           كما هو مطلوب، ويُستعمل كإضافة لا كأساس.
+  ═══════════════════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+/* ═══════════ 1) المتغيّرات والأساسيات ═══════════ */
+:root{
+  --bg:#f4f7f8; --card:#ffffff; --border:#dbe6e8;
+  --text:#0b2e3b; --text2:#41616d; --text3:#7b939c;
+  --brand:#0e5e63; --brand2:#14919b; --accent:#0f766e;
+  --green:#0f9d58; --red:#dc2626; --yellow:#d97706; --blue:#2563eb; --purple:#7c3aed;
+  --shadow:0 1px 3px rgba(11,46,59,.07), 0 8px 24px -12px rgba(11,46,59,.18);
+  --r:16px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Cairo','Segoe UI',Tahoma,sans-serif;
+  background:var(--bg); color:var(--text);
+  font-size:14px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand2)}
+.wrap{max-width:940px;margin:0 auto;padding:0 14px 46px}
+.hide{display:none !important}
+
+/* ═══════════ 2) الشريط العلوي ═══════════ */
+.top{
+  background:linear-gradient(135deg,#0b4a4f 0%,var(--brand) 45%,var(--brand2) 100%);
+  color:#fff;padding:20px 0 54px;position:relative;overflow:hidden;
+}
+.top::after{
+  content:'';position:absolute;inset:auto -60px -120px auto;width:340px;height:340px;
+  background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%);border-radius:50%;
+}
+.top .wrap{padding-bottom:0;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.logo{
+  width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.28);display:grid;place-items:center;flex:none;
+  font-weight:800;font-size:17px;backdrop-filter:blur(6px);
+}
+.brand h1{margin:0;font-size:15px;font-weight:800;letter-spacing:-.2px}
+.brand p{margin:1px 0 0;font-size:11px;opacity:.82}
+.top h2{margin:0;font-size:23px;font-weight:800;letter-spacing:-.4px}
+.top .sub{margin:5px 0 0;font-size:12px;opacity:.86}
+.pillrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.pill{
+  background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);
+  border-radius:999px;padding:4px 12px;font-size:11px;font-weight:700;
+  backdrop-filter:blur(6px);
+}
+
+/* ═══════════ 3) البطاقات ═══════════ */
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  box-shadow:var(--shadow);
+}
+.hero{margin-top:-40px;position:relative;z-index:3;padding:17px 18px;display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.ava{
+  width:62px;height:62px;border-radius:18px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;
+  font-size:25px;font-weight:800;box-shadow:0 8px 20px -8px rgba(14,94,99,.6);
+}
+.hero .who{flex:1;min-width:190px}
+.hero .who h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.3px}
+.hero .who .m{font-size:12px;color:var(--text2);margin-top:2px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+.chip{
+  background:#eef6f6;border:1px solid #d3e7e8;color:var(--accent);
+  border-radius:999px;padding:3px 10px;font-size:10.5px;font-weight:700;
+}
+.chip.g{background:#eefbf2;border-color:#c9eeda;color:#0b7a44}
+.chip.r{background:#fef2f2;border-color:#fbd5d5;color:#b91c1c}
+.chip.y{background:#fffbeb;border-color:#fde9b8;color:#a16207}
+
+/* ═══════════ 4) مؤشرات KPI ═══════════ */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.kpi{padding:13px 12px;text-align:center;border-radius:14px}
+.kpi .v{font-size:22px;font-weight:800;letter-spacing:-.6px;line-height:1.15}
+.kpi .l{font-size:10.5px;color:var(--text3);font-weight:700;margin-top:2px}
+.kpi .bar{height:4px;border-radius:99px;background:#e8eff0;margin-top:8px;overflow:hidden}
+.kpi .bar i{display:block;height:100%;border-radius:99px;background:var(--brand2);transition:width .7s cubic-bezier(.2,.8,.2,1)}
+
+/* ═══════════ 5) التبويبات ═══════════ */
+.tabs{
+  display:flex;gap:5px;margin:16px 0 12px;overflow-x:auto;padding-bottom:3px;
+  scrollbar-width:thin;-webkit-overflow-scrolling:touch;
+}
+.tab{
+  flex:none;border:1px solid var(--border);background:var(--card);color:var(--text2);
+  border-radius:11px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;
+  font-family:inherit;transition:.16s;white-space:nowrap;
+}
+.tab:hover{border-color:var(--brand2);color:var(--brand)}
+.tab.on{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 4px 12px -4px rgba(14,94,99,.55)}
+.pane{display:none;animation:fade .28s ease}
+.pane.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ═══════════ 6) الأقسام والجداول ═══════════ */
+.sec{padding:15px 16px;margin-bottom:12px}
+.sec h4{
+  margin:0 0 11px;font-size:13.5px;font-weight:800;color:var(--brand);
+  display:flex;align-items:center;gap:7px;
+}
+.sec h4 .n{margin-inline-start:auto;font-size:11px;color:var(--text3);font-weight:700}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.f{background:#f8fbfb;border:1px solid #e6eff0;border-radius:11px;padding:9px 12px}
+.f .k{font-size:10.5px;color:var(--text3);font-weight:700}
+.f .v{font-size:13px;font-weight:700;margin-top:1px;word-break:break-word}
+.tblwrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:520px}
+thead th{
+  background:#f2f8f8;color:var(--brand);font-weight:800;font-size:11.5px;
+  padding:9px 10px;text-align:center;border-bottom:1px solid var(--border);white-space:nowrap;
+}
+tbody td{padding:8px 10px;border-bottom:1px solid #eef4f4;text-align:center}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#fafcfc}
+td.name{text-align:start;font-weight:700}
+.mark{display:inline-block;min-width:38px;padding:2px 8px;border-radius:8px;font-weight:800;font-size:12px}
+.mark.ok{background:#eefbf2;color:#0b7a44}
+.mark.mid{background:#fffbeb;color:#a16207}
+.mark.bad{background:#fef2f2;color:#b91c1c}
+.mark.na{background:#f1f5f9;color:#94a3b8;font-weight:600}
+.badge{border-radius:999px;padding:2px 10px;font-size:10.5px;font-weight:800;display:inline-block}
+.badge.g{background:#eefbf2;color:#0b7a44}
+.badge.r{background:#fef2f2;color:#b91c1c}
+.badge.y{background:#fffbeb;color:#a16207}
+.badge.b{background:#eff6ff;color:#1d4ed8}
+.badge.n{background:#f1f5f9;color:#64748b}
+
+/* ═══════════ 7) شريط الحضور ═══════════ */
+.attbar{display:flex;height:13px;border-radius:99px;overflow:hidden;background:#e8eff0;margin:6px 0 11px}
+.attbar i{display:block;height:100%;transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px}
+.legend span{display:flex;align-items:center;gap:5px;color:var(--text2);font-weight:600}
+.legend b{width:9px;height:9px;border-radius:3px;display:inline-block}
+.days{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.day{
+  border-radius:8px;padding:3px 8px;font-size:10.5px;font-weight:700;
+  border:1px solid var(--border);background:#f8fbfb;color:var(--text2);
+  direction:ltr;
+}
+.day.p{background:#eefbf2;border-color:#c9eeda;color:#0b7a44}
+.day.a{background:#fef2f2;border-color:#fbd5d5;color:#b91c1c}
+.day.l{background:#fffbeb;border-color:#fde9b8;color:#a16207}
+.day.e{background:#eff6ff;border-color:#c7dcfb;color:#1d4ed8}
+
+/* ═══════════ 8) الخط الزمني ═══════════ */
+.tl{position:relative;padding-inline-start:18px}
+.tl::before{content:'';position:absolute;inset-inline-start:5px;top:5px;bottom:5px;width:2px;background:#e2edee}
+.tl .it{position:relative;padding-bottom:13px}
+.tl .it::before{
+  content:'';position:absolute;inset-inline-start:-17px;top:6px;width:9px;height:9px;
+  border-radius:50%;background:var(--brand2);border:2px solid #fff;box-shadow:0 0 0 2px #d8e8e9;
+}
+.tl .d{font-size:10.5px;color:var(--text3);font-weight:700}
+.tl .t{font-size:12.5px;font-weight:700}
+.tl .x{font-size:11.5px;color:var(--text2);margin-top:2px}
+
+/* ═══════════ 9) الحالات الفارغة/الأخطاء ═══════════ */
+.state{padding:44px 24px;text-align:center}
+.state .ic{
+  width:66px;height:66px;border-radius:20px;margin:0 auto 15px;display:grid;place-items:center;
+  background:#eef6f6;font-size:30px;
+}
+.state h3{margin:0 0 7px;font-size:18px;font-weight:800}
+.state p{margin:0 auto;max-width:430px;color:var(--text2);font-size:13px}
+.state .hint{
+  margin-top:17px;background:#f8fbfb;border:1px solid var(--border);border-radius:12px;
+  padding:12px 14px;font-size:11.5px;color:var(--text2);text-align:start;max-width:460px;margin-inline:auto;
+}
+.state .hint code{
+  background:#eef6f6;border-radius:5px;padding:1px 6px;font-size:11px;
+  direction:ltr;display:inline-block;font-family:Consolas,monospace;color:var(--brand);
+}
+.btn{
+  border:0;border-radius:11px;padding:9px 20px;font-size:13px;font-weight:800;cursor:pointer;
+  font-family:inherit;background:var(--brand);color:#fff;transition:.16s;margin:6px 4px 0;
+}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn.ghost{background:var(--card);color:var(--brand);border:1px solid var(--border)}
+.btn.green{background:var(--green)}
+
+/* ═══════════ 10) تحميل ═══════════ */
+.spin{
+  width:34px;height:34px;border:3px solid #dbe6e8;border-top-color:var(--brand2);
+  border-radius:50%;animation:sp .8s linear infinite;margin:0 auto 14px;
+}
+@keyframes sp{to{transform:rotate(360deg)}}
+.skel{background:linear-gradient(90deg,#eef4f4 25%,#f7fbfb 50%,#eef4f4 75%);background-size:200% 100%;animation:sk 1.3s infinite;border-radius:9px}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ═══════════ 11) قائمة الصفوف ═══════════ */
+.classlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:9px;margin-top:14px}
+.classlist button{
+  border:1px solid var(--border);background:var(--card);border-radius:12px;padding:11px 13px;
+  text-align:start;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:700;
+  color:var(--text);transition:.16s;
+}
+.classlist button:hover{border-color:var(--brand2);background:#f7fbfb;transform:translateY(-1px)}
+.classlist button span{display:block;font-size:10.5px;color:var(--text3);font-weight:600;margin-top:2px}
+
+/* ═══════════ 12) تذييل ═══════════ */
+.foot{text-align:center;color:var(--text3);font-size:11px;margin-top:22px;line-height:1.9}
+.foot b{color:var(--text2)}
+.privacy{
+  background:#eef6f6;border:1px solid #d3e7e8;border-radius:12px;padding:11px 14px;
+  font-size:11px;color:var(--accent);margin-top:14px;display:flex;gap:8px;align-items:flex-start;
+}
+
+/* ═══════════ 13) استجابة الشاشات ═══════════ */
+@media (max-width:720px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .top h2{font-size:20px}
+  .hero{margin-top:-32px;padding:15px}
+  .ava{width:54px;height:54px;font-size:22px;border-radius:15px}
+}
+@media (max-width:420px){
+  .kpi .v{font-size:19px}
+  .tab{padding:7px 11px;font-size:11.5px}
+}
+
+
+/* ═══════════ 15) الشهادة ═══════════ */
+.cert-hd{display:flex;gap:13px;align-items:center;border-bottom:2.5px solid var(--brand);padding-bottom:12px;margin-bottom:13px}
+.cert-logo{
+  width:52px;height:52px;flex:0 0 auto;border-radius:14px;
+  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;
+}
+.cert-hdt{flex:1;min-width:0}
+.cert-hdt .l1{font-size:15px;font-weight:900;color:var(--text)}
+.cert-hdt .l2{font-size:18px;font-weight:900;color:var(--brand);margin-top:2px}
+.cert-hdt .l3{font-size:11.5px;color:var(--text3);font-weight:700;margin-top:2px}
+.cert-id{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;
+  background:#f7fbfb;border:1px solid var(--border);border-radius:12px;
+  padding:11px 13px;margin-bottom:13px;
+}
+.cert-sum{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;
+  margin-top:13px;padding:11px 13px;border:1px solid var(--border);border-radius:12px;background:var(--card);
+}
+.cert-verdict{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;
+  padding:11px 14px;border-radius:12px;background:#f7fbfb;border:1px solid var(--border);
+}
+.cert-verdict .k{font-size:12px;font-weight:800;color:var(--text2)}
+.cert-sign{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:24px}
+.cert-sign .r{font-size:11.5px;font-weight:800;color:var(--text2);text-align:center}
+.cert-sign .ln{height:34px;border-bottom:1.5px dotted #b9cdd2;margin:5px 8px 4px}
+.cert-sign .c{font-size:10px;color:var(--text3);text-align:center;font-weight:600}
+.cert-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.cert-note{
+  margin-top:14px;padding:9px 12px;border-radius:10px;background:#eef6f6;
+  border:1px solid #d3e7e8;font-size:11px;color:var(--accent);text-align:center;
+}
+@media print{
+  /* عند طباعة الشهادة وحدها نخفي كل اللوحات عداها */
+  body.printing-cert .pane{display:none !important}
+  body.printing-cert #p-ct{display:block !important}
+  body.printing-cert .hero{display:none !important}
+  body.printing-cert .cert{page-break-inside:auto}
+  body.printing-cert .cert-sign{margin-top:34px}
+}
+
+/* ═══════════ 14) الطباعة ═══════════ */
+@media print{
+  body{background:#fff;font-size:11.5px}
+  .top{padding:12px 0 20px;background:#fff !important;color:#0b2e3b;border-bottom:2px solid var(--brand)}
+  .top::after{display:none}
+  .top .pillrow,.tabs,.noprint{display:none !important}
+  .hero{margin-top:12px;box-shadow:none;border:1px solid var(--border)}
+  .card{box-shadow:none}
+  .pane{display:block !important;page-break-inside:avoid}
+  .pane.hide{display:block !important}
+  .sec{page-break-inside:avoid;margin-bottom:9px}
+  a{text-decoration:none;color:inherit}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ الشريط العلوي ═══════════ -->
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">أُفق</div>
+      <div>
+        <h1 id="schName">بوابة ولي الأمر</h1>
+        <p id="schMeta">جارٍ التحميل…</p>
+      </div>
+    </div>
+    <h2 id="pgTitle">مرحباً بك</h2>
+    <p class="sub" id="pgSub">جارٍ التحقق من بيانات الدخول…</p>
+    <div class="pillrow hide" id="pills"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- حالة: تحميل -->
+  <div class="card state" id="st-load">
+    <div class="spin"></div>
+    <h3>جارٍ تحضير بيانات الطالب</h3>
+    <p>يتم فكّ التشفير داخل متصفحك — لا تُرسل بياناتك إلى أي خادم.</p>
+  </div>
+
+  <!-- حالة: خطأ / تعليمات -->
+  <div class="card state hide" id="st-err">
+    <div class="ic" id="errIc">🔒</div>
+    <h3 id="errT">تعذّر عرض البيانات</h3>
+    <p id="errP">—</p>
+    <div class="hint hide" id="errHint"></div>
+    <div id="errBtns"></div>
+  </div>
+
+  <!-- حالة: اختيار الصف -->
+  <div class="card state hide" id="st-pick">
+    <div class="ic">🏫</div>
+    <h3>اختر الصف الدراسي</h3>
+    <p>لا يوجد رمز دخول في الرابط. اختر الصف ثم أدخل رمز الطالب.</p>
+    <div class="classlist" id="pickList"></div>
+  </div>
+
+  <!-- المحتوى -->
+  <section id="app" class="hide">
+
+    <!-- بطاقة الطالب -->
+    <div class="card hero">
+      <div class="ava" id="ava">؟</div>
+      <div class="who">
+        <h3 id="sName">—</h3>
+        <div class="m" id="sMeta">—</div>
+        <div class="chips" id="sChips"></div>
+      </div>
+      <div class="noprint" style="display:flex;gap:7px">
+        <button class="btn ghost" onclick="window.print()">🖨️ طباعة</button>
+        <button class="btn ghost" onclick="reload(true)">↻ تحديث</button>
+      </div>
+    </div>
+
+    <!-- المؤشرات -->
+    <div class="kpis">
+      <div class="card kpi">
+        <div class="v" id="k-avg" style="color:var(--brand)">—</div>
+        <div class="l">المعدل العام</div>
+        <div class="bar"><i id="k-avg-b" style="width:0"></i></div>
+      </div>
+      <div class="card kpi">
+        <div class="v" id="k-att" style="color:var(--green)">—</div>
+        <div class="l">نسبة الحضور</div>
+        <div class="bar"><i id="k-att-b" style="width:0;background:var(--green)"></i></div>
+      </div>
+      <div class="card kpi">
+        <div class="v" id="k-sub" style="color:var(--blue)">—</div>
+        <div class="l">عدد المواد</div>
+        <div class="bar"><i id="k-sub-b" style="width:0;background:var(--blue)"></i></div>
+      </div>
+      <div class="card kpi">
+        <div class="v" id="k-beh" style="color:var(--purple)">—</div>
+        <div class="l">ملاحظات السلوك</div>
+        <div class="bar"><i id="k-beh-b" style="width:0;background:var(--purple)"></i></div>
+      </div>
+    </div>
+
+    <!-- التبويبات -->
+    <div class="tabs noprint" id="tabs"></div>
+
+    <div id="panes"></div>
+
+    <div class="privacy noprint">
+      <span>🔐</span>
+      <span>كل ما تراه هنا فُكّ تشفيره داخل متصفحك. الرمز في الرابط لا يُرسَل إلى أي خادم،
+        والملفات المخزّنة على الشبكة نصّ مشفَّر لا يمكن قراءته حتى من مشرف البوابة.</span>
+    </div>
+
+    <div class="foot">
+      <div id="ftSchool">—</div>
+      <div>آخر تحديث للبيانات: <b id="ftUpd">—</b> · <span id="ftGen">—</span></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+"use strict";
+/* ═══════════════════════════════════════════════════════════════════════════
+   1) الإعداد
+   ═══════════════════════════════════════════════════════════════════════════ */
+const BASE   = new URLSearchParams(location.search).get('base')
+            || window.PORTAL_BASE
+            || '';                            // رابط R2، أو '' لو نفس النطاق
+const CACHE  = 'ufuq-portal-cache-v1';        // تخزين محلي لآخر بيانات (يعمل بلا إنترنت)
+const SCN    = 'ufuq-portal-v1';              // يجب أن يطابق SCHEMA في r2_sync.py
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   2) أدوات مساعدة
+   ═══════════════════════════════════════════════════════════════════════════ */
+const $  = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+  .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const num = v => (v === null || v === undefined || v === '' || isNaN(v)) ? null : Number(v);
+
+function b64uToBytes(str){
+  str = String(str).trim().replace(/\s+/g,'').replace(/-/g,'+').replace(/_/g,'/');
+  const pad = '='.repeat((4 - str.length % 4) % 4);
+  const bin = atob(str + pad);
+  const out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out;
+}
+const hex = buf => Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+
+/* SHA-256 عبر WebCrypto — لتحديد اسم ملف الصف دون كشف الاسم */
+async function sha256Hex(text){
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return hex(d);
+}
+/* HMAC-SHA256 — مُعرّف البحث داخل ملف الصف (نفس search_index في بايثون) */
+async function hmacIndex(tokBytes){
+  const k = await crypto.subtle.importKey('raw', tokBytes, {name:'HMAC',hash:'SHA-256'}, false, ['sign']);
+  const sig = await crypto.subtle.sign('HMAC', k, new TextEncoder().encode(SCN));
+  return hex(sig).slice(0, 18);        // INDEX_BYTES(9) × 2
+}
+/* اشتقاق مفتاح AES-256 — HKDF-SHA256 (افتراضي) أو PBKDF2-SHA256 */
+async function deriveKey(tokBytes, kdf){
+  const saltB = kdf.salt ? hexToBytes(kdf.salt) : new Uint8Array(0);
+  const info  = new TextEncoder().encode(kdf.info || SCN);
+  const algo  = String(kdf.kdf || 'hkdf').toLowerCase();
+
+  if (algo === 'pbkdf2'){
+    const base = await crypto.subtle.importKey('raw', tokBytes, 'PBKDF2', false, ['deriveBits']);
+    return crypto.subtle.deriveBits(
+      {name:'PBKDF2', hash:'SHA-256', salt: saltB, iterations: kdf.iterations || 150000},
+      base, 256);
+  }
+  const base = await crypto.subtle.importKey('raw', tokBytes, 'HKDF', false, ['deriveBits']);
+  return crypto.subtle.deriveBits(
+    {name:'HKDF', hash:'SHA-256', salt: saltB, info}, base, 256);
+}
+const hexToBytes = h => {
+  const out = new Uint8Array(h.length / 2);
+  for (let i = 0; i < out.length; i++) out[i] = parseInt(h.substr(i*2, 2), 16);
+  return out;
+};
+/* AES-256-GCM — يفكّ ما أنتجه r2_sync.py (nonce(12) || ciphertext || tag(16)) */
+async function decryptPayload(keyBits, b64, aad){
+  const raw = b64uToBytes(b64);
+  const iv  = raw.slice(0, 12);
+  const ct  = raw.slice(12);
+  const key = await crypto.subtle.importKey('raw', keyBits, {name:'AES-GCM'}, false, ['decrypt']);
+  const pt  = await crypto.subtle.decrypt(
+    {name:'AES-GCM', iv, additionalData: new TextEncoder().encode(aad), tagLength: 128},
+    key, ct);
+  return JSON.parse(new TextDecoder('utf-8').decode(pt));
+}
+/* فكّ gzip تلقائياً لو أرجع السيرفر بايتات مضغوطة (R2 يضبط Content-Encoding فيفكّها بنفسه) */
+async function readJSON(resp){
+  const buf = await resp.arrayBuffer();
+  const u8  = new Uint8Array(buf);
+  if (u8.length > 2 && u8[0] === 0x1f && u8[1] === 0x8b && typeof DecompressionStream === 'function'){
+    const ds = new DecompressionStream('gzip');
+    const stream = new Blob([buf]).stream().pipeThrough(ds);
+    return JSON.parse(await new Response(stream).text());
+  }
+  return JSON.parse(new TextDecoder('utf-8').decode(buf));
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   3) قراءة الرابط
+      ?section=<اسم الصف>   و   #token=<الرمز>
+      الرمز في الـ hash لا يصل إلى السيرفر إطلاقاً (مبدأ أساسي في التصميم).
+   ═══════════════════════════════════════════════════════════════════════════ */
+function parseURL(){
+  const q = new URLSearchParams(location.search);
+  let tok = '';
+  const h = location.hash.replace(/^#/, '');
+  if (h){
+    const hp = new URLSearchParams(h);
+    tok = hp.get('token') || hp.get('t') || (/^[A-Za-z0-9_\-]{20,}$/.test(h) ? h : '') || '';
+  }
+  if (!tok) tok = q.get('token') || q.get('t') || '';
+  const sec = q.get('section') || q.get('s') || q.get('class') || q.get('cls') || '';
+  return {section: decodeURIComponent(sec.trim()), token: decodeURIComponent(tok.trim())};
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   4) الحالات
+   ═══════════════════════════════════════════════════════════════════════════ */
+function show(id){
+  ['st-load','st-err','st-pick','app'].forEach(x => $(x).classList.toggle('hide', x !== id));
+}
+function fail(icon, title, msg, hint, buttons){
+  $('errIc').textContent = icon;
+  $('errT').textContent  = title;
+  $('errP').textContent  = msg;
+  $('errHint').innerHTML = hint || '';
+  $('errHint').classList.toggle('hide', !hint);
+  $('errBtns').innerHTML = buttons || '';
+  show('st-err');
+}
+const retryBtn = '<button class="btn" onclick="reload(true)">↻ إعادة المحاولة</button>';
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   5) التحميل الرئيسي
+   ═══════════════════════════════════════════════════════════════════════════ */
+let MANIFEST = null, STATE = {section:'', token:'', data:null};
+
+async function reload(force){
+  const {section, token} = parseURL();
+  STATE.section = section; STATE.token = token;
+  show('st-load');
+
+  /* (أ) لا رمز ⇒ إمّا قائمة الصفوف، وإمّا عرض البيانات المحفوظة */
+  if (!token){
+    const cached = readCache();
+    if (cached && !force) return render(cached);
+    try{
+      const m = await fetchManifest(force);
+      renderPicker(m);
+    }catch(e){
+      fail('🔑','رمز الدخول مطلوب',
+        'هذه البوابة تعرض درجات الطالب فقط لمن يحمل رمز دخوله الخاص.',
+        'الرابط الذي يصلك من المدرسة يحتوي على الرمز بعد علامة <code>#</code>.<br>'
+        + 'الصيغة الصحيحة: <code>?section=الصف#token=الرمز</code><br>'
+        + 'إن لم يصلك الرمز، تواصل مع إدارة المدرسة.');
+    }
+    return;
+  }
+
+  /* (ب) تحقّق من صلاحية شكل الرمز */
+  let tokBytes;
+  try{
+    tokBytes = b64uToBytes(token);
+    if (tokBytes.length < 16) throw new Error('short');
+  }catch(e){
+    return fail('⚠️','الرمز غير صالح',
+      'الرمز في الرابط غير مكتمل أو يحتوي رموزاً غير مسموحة.',
+      'انسخ الرابط كاملاً من رسالة المدرسة دون قطع. الرمز يجب أن يكون 43 حرفاً.');
+  }
+
+  /* (ج) لا قسم ⇒ اختر الصف، ثم أعِد المحاولة بالرمز نفسه */
+  if (!section){
+    try{
+      const m = await fetchManifest(force);
+      renderPicker(m, token);
+    }catch(e){ return fail('📡','تعذّر الاتصال', netMsg(e), null, retryBtn); }
+    return;
+  }
+
+  try{
+    /* (د) البيان ⇒ ملف الصف ⇒ فك التشفير */
+    const m = await fetchManifest(force);
+    const sec = findSection(m, section);
+    if (!sec){
+      return fail('🏫','الصف غير موجود',
+        'لا يوجد صف بهذا الاسم في بيانات المدرسة الحالية.',
+        'الصفوف المتاحة حالياً: ' + m.sections.map(s => '<code>' + esc(s.name) + '</code>').join(' '),
+        '<button class="btn ghost" onclick="clearHash()">عرض قائمة الصفوف</button>' + retryBtn);
+    }
+
+    const idx  = await hmacIndex(tokBytes);
+    const doc  = await fetchSection(m, sec, force);
+    const item = (doc.items || []).find(x => x.i === idx);
+
+    if (!item){
+      return fail('🔒','الرمز لا يخص هذا الصف',
+        'وجدنا الصف «' + sec.name + '» لكن الرمز لا يطابق أي طالب فيه.',
+        'تأكد أن الرابط يخصّ ابنك/ابنتك وأن الصف في الرابط هو صفّه الفعلي.');
+    }
+
+    const keyBits = await deriveKey(tokBytes, m.kdf || {});
+    let payload;
+    try{
+      payload = await decryptPayload(keyBits, item.e, SCN + '|' + sec.name + '|' + idx);
+    }catch(e){
+      return fail('🔓','تعذّر فكّ التشفير',
+        'الرمز لا يطابق بيانات هذا الطالب.',
+        'قد يكون الرمز قديماً أو أُبطل. اطلب من المدرسة رمزاً جديداً.');
+    }
+
+    writeCache(payload);
+    render(payload);
+
+  }catch(e){
+    /* (هـ) فشل الشبكة ⇒ اعرض النسخة المحفوظة إن وُجدت */
+    const cached = readCache();
+    if (cached){ render(cached); toast('تعذّر التحديث — تُعرض آخر نسخة محفوظة'); return; }
+    fail('📡','تعذّر الاتصال بالخادم', netMsg(e),
+      'تحقّق من اتصال الإنترنت ثم أعد المحاولة. البوابة تعمل أيضاً بلا إنترنت '
+      + 'بعد أول فتح ناجح، لأن البيانات تُحفَظ في متصفحك.', retryBtn);
+  }
+}
+const netMsg = e => 'لم نستطع جلب البيانات. ' + (e && e.message ? '(' + e.message + ')' : '');
+
+function clearHash(){ history.replaceState(null,'',location.pathname + location.search); reload(true); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   6) الشبكة
+   ═══════════════════════════════════════════════════════════════════════════ */
+const url = p => (BASE ? BASE.replace(/\/$/,'') : '') + '/' + p;
+
+async function fetchManifest(force){
+  if (MANIFEST && !force) return MANIFEST;
+  const r = await fetch(url('manifest.json'), {cache: force ? 'reload' : 'no-cache'});
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const m = await readJSON(r);
+  if (!m || !m.sections) throw new Error('بيان غير صالح');
+  MANIFEST = m;
+  paintBrand(m);
+  return m;
+}
+async function fetchSection(m, sec, force){
+  const r = await fetch(url(sec.file) + '?v=' + encodeURIComponent(m.upd || ''), {
+    cache: force ? 'reload' : 'default'
+  });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return readJSON(r);
+}
+function findSection(m, want){
+  const n = s => String(s||'').replace(/\s+/g,' ').trim();
+  const w = n(want);
+  const list = m.sections || [];
+  return list.find(s => n(s.name) === w)
+      || list.find(s => s.slug === w)
+      || list.find(s => n(s.name).replace(/\s/g,'') === w.replace(/\s/g,''))
+      || null;
+}
+function paintBrand(m){
+  const sc = m.school || {};
+  $('schName').textContent = sc.name || 'بوابة ولي الأمر';
+  $('schMeta').textContent = [sc.year ? 'العام الدراسي ' + sc.year : '', sc.name_en]
+    .filter(Boolean).join(' · ') || 'أُفق — نظام إدارة المدارس';
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   7) التخزين المحلي (عمل بلا إنترنت)
+   ═══════════════════════════════════════════════════════════════════════════ */
+function writeCache(d){
+  try{ localStorage.setItem(CACHE, JSON.stringify({t: Date.now(), d})); }catch(e){}
+}
+function readCache(){
+  try{
+    const raw = localStorage.getItem(CACHE);
+    if (!raw) return null;
+    const o = JSON.parse(raw);
+    if (!o || !o.d || !o.d.name) return null;
+    return o.d;
+  }catch(e){ return null; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   8) قائمة الصفوف (عند غياب section)
+   ═══════════════════════════════════════════════════════════════════════════ */
+function renderPicker(m, token){
+  const t = token || STATE.token || '';
+  $('pgTitle').textContent = m.school && m.school.name ? m.school.name : 'اختر الصف';
+  $('pgSub').textContent = 'اختر الصف الدراسي لعرض بيانات الطالب';
+  $('pickList').innerHTML = (m.sections || []).map(s =>
+    '<button onclick="pick(' + JSON.stringify(s.name).replace(/"/g,'&quot;') + ')">'
+    + esc(s.name) + '<span>' + s.n + ' طالب</span></button>').join('');
+  show('st-pick');
+  window.pick = name => {
+    const q = '?section=' + encodeURIComponent(name);
+    const h = t ? '#token=' + encodeURIComponent(t) : '';
+    history.replaceState(null, '', location.pathname + q + h);
+    reload(true);
+  };
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   9) العرض
+   ═══════════════════════════════════════════════════════════════════════════ */
+const TABS = [
+  ['ov','نظرة عامة'], ['gr','الدرجات'], ['at','الحضور'],
+  ['bh','السلوك'], ['nt','الملاحظات'], ['an','الإعلانات'], ['ct','الشهادة']
+];
+let CUR = null;
+
+function render(d){
+  CUR = d;
+  show('app');
+
+  /* العنوان */
+  $('pgTitle').textContent = 'تقرير الطالب';
+  $('pgSub').textContent   = 'بيانات محدّثة من سجل المدرسة — مفكوكة التشفير في متصفحك';
+
+  /* الهوية */
+  $('ava').textContent  = (d.name || '؟').trim().charAt(0);
+  $('sName').textContent = d.name || '—';
+  $('sMeta').textContent = [d.cls, d.reg ? 'رقم القيد: ' + d.reg : '']
+    .filter(Boolean).join(' · ');
+
+  const st = String(d.status || '').toLowerCase();
+  const stChip = st === 'active' ? '<span class="chip g">طالب فعلي</span>'
+    : st ? '<span class="chip y">' + esc(st) + '</span>' : '';
+  $('sChips').innerHTML =
+      '<span class="chip">' + esc(d.cls || '—') + '</span>'
+    + (d.gender ? '<span class="chip">' + esc(d.gender) + '</span>' : '')
+    + (d.gov ? '<span class="chip">' + esc(d.gov) + '</span>' : '')
+    + stChip
+    + (d.final_status ? '<span class="chip ' + (d.final_status.includes('غير') ? 'r' : 'g') + '">'
+        + esc(d.final_status) + '</span>' : '');
+
+  /* المؤشرات */
+  const s = d.sum || {}, a = d.att || {};
+  kpi('k-avg', num(s.avg), '%', v => v.toFixed(1), '—');
+  kpi('k-att', num(a.rate), '%', v => v.toFixed(0), '—');
+  $('k-sub').textContent = (s.subjects || (d.subjects || []).length || 0);
+  $('k-sub-b').style.width = Math.min(100, (s.subjects || 0) / 14 * 100) + '%';
+  $('k-beh').textContent = (d.beh || []).length;
+  $('k-beh-b').style.width = Math.min(100, (d.beh || []).length * 12) + '%';
+
+  /* التبويبات */
+  $('tabs').innerHTML = TABS.map(([k, l], i) =>
+    '<button class="tab' + (i === 0 ? ' on' : '') + '" data-k="' + k + '" onclick="tab(\'' + k + '\')">'
+    + l + '</button>').join('');
+
+  /* اللوحات */
+  $('panes').innerHTML =
+      '<div class="pane on" id="p-ov">' + paneOverview(d)   + '</div>'
+    + '<div class="pane" id="p-gr">'    + paneGrades(d)     + '</div>'
+    + '<div class="pane" id="p-at">'    + paneAttendance(d) + '</div>'
+    + '<div class="pane" id="p-bh">'    + paneBehavior(d)   + '</div>'
+    + '<div class="pane" id="p-nt">'    + paneNotes(d)      + '</div>'
+    + '<div class="pane" id="p-an">'    + paneAnn(d)        + '</div>'
+    + '<div class="pane" id="p-ct">'    + paneCertificate(d) + '</div>';
+
+  /* التذييل */
+  const sc = d.school || {};
+  $('ftSchool').textContent = [sc.name, sc.year ? 'العام ' + sc.year : '', sc.director ? 'المدير: ' + sc.director : '']
+    .filter(Boolean).join(' · ');
+  $('ftUpd').textContent = d.upd ? new Date(d.upd).toLocaleString('ar-IQ') : '—';
+  $('ftGen').textContent = 'بوابة أُفق';
+
+  /* الشرائح العلوية */
+  const p = $('pills'); p.classList.remove('hide');
+  p.innerHTML = '<span class="pill">🔐 مشفَّر من الطرف إلى الطرف</span>'
+    + '<span class="pill">📱 يعمل بلا إنترنت</span>'
+    + '<span class="pill">⚡ يفتح في أقل من ثانية</span>';
+
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function kpi(id, val, suffix, fmt, dash){
+  const el = $(id);
+  if (val === null || val === undefined){ el.textContent = dash; $(id + '-b').style.width = '0'; return; }
+  el.textContent = fmt(val) + suffix;
+  $(id + '-b').style.width = Math.max(2, Math.min(100, val)) + '%';
+}
+
+function tab(k){
+  TABS.forEach(([x]) => {
+    $('p-' + x).classList.toggle('on', x === k);
+    const b = document.querySelector('.tab[data-k="' + x + '"]');
+    if (b) b.classList.toggle('on', x === k);
+  });
+}
+
+/* ── لوحة: نظرة عامة ── */
+function paneOverview(d){
+  const s = d.sum || {}, a = d.att || {};
+  const rows = [
+    ['اسم الطالب', d.name], ['الصف والشعبة', d.cls],
+    ['الجنس', d.gender], ['تاريخ الميلاد', d.dob],
+    ['اسم الأم', d.mother], ['المحافظة', d.gov],
+    ['رقم القيد', d.reg], ['رقم الامتحان', d.exam_no],
+    ['هاتف الطالب', d.phone], ['هاتف ولي الأمر', d.parent_phone],
+    ['العنوان', d.address], ['حالة الطالب', d.final_status || d.status],
+  ].filter(r => r[1]);
+
+  return '<div class="card sec"><h4>🧑‍🎓 بيانات الطالب</h4><div class="grid2">'
+    + rows.map(([k, v]) => '<div class="f"><div class="k">' + esc(k) + '</div><div class="v">'
+        + esc(v) + '</div></div>').join('')
+    + '</div></div>'
+
+    + '<div class="card sec"><h4>📊 خلاصة النتائج</h4><div class="grid2">'
+    + fld('المعدل العام', s.avg != null ? s.avg + '%' : '—')
+    + fld('التقدير', s.label || '—')
+    + fld('مجموع الدرجات', s.total != null ? s.total + ' / ' + s.max : '—')
+    + fld('المواد', (s.graded || 0) + ' مادة مُقيَّمة من ' + (s.subjects || 0))
+    + '</div></div>'
+
+    + '<div class="card sec"><h4>🗓️ الحضور والغياب</h4>'
+    + attBar(a) + '</div>';
+}
+const fld = (k, v) => '<div class="f"><div class="k">' + esc(k) + '</div><div class="v">' + esc(v) + '</div></div>';
+
+/* ── لوحة: الدرجات ── */
+function paneGrades(d){
+  const subs = d.subjects || [];
+  if (!subs.length)
+    return '<div class="card sec"><div class="state"><div class="ic">📭</div>'
+      + '<h3>لا توجد درجات مسجّلة بعد</h3><p>لم تُرصد أي درجة لهذا الطالب حتى الآن. '
+      + 'ستظهر الدرجات هنا فور رصدها من المدرسة.</p></div></div>';
+
+  return '<div class="card sec"><h4>📚 الدرجات التفصيلية<span class="n">' + subs.length + ' مادة</span></h4>'
+    + '<div class="tblwrap"><table><thead><tr>'
+    + '<th style="text-align:start">المادة</th>'
+    + '<th>الفصل الأول</th><th>نصف السنة</th><th>الفصل الثاني</th>'
+    + '<th>السعي السنوي</th><th>الامتحان النهائي</th><th>النتيجة</th>'
+    + '</tr></thead><tbody>'
+    + subs.map(x =>
+        '<tr><td class="name">' + esc(x.n) + '</td>'
+      + '<td>' + mk(x.h1) + '</td>'
+      + '<td>' + mk(x.mid) + '</td>'
+      + '<td>' + mk(x.h2) + '</td>'
+      + '<td>' + mk(x.sn) + '</td>'
+      + '<td>' + mk(x.f) + '</td>'
+      + '<td>' + stBadge(x.s) + '</td></tr>').join('')
+    + '</tbody></table></div>'
+    + '<div style="font-size:11px;color:var(--text3);margin-top:9px">'
+    + '🟢 ٥٠ وأكثر = ناجح · 🟡 أقل من ٥٠ = مكمّل · ⚪ لا توجد درجة</div></div>';
+}
+function mk(v){
+  const n = num(v);
+  if (n === null) return '<span class="mark na">—</span>';
+  const c = n >= 50 ? 'ok' : (n >= 40 ? 'mid' : 'bad');
+  return '<span class="mark ' + c + '">' + n + '</span>';
+}
+function stBadge(s){
+  s = String(s || '');
+  if (!s) return '<span class="badge n">—</span>';
+  const c = /ناجح|معفى|قرار/.test(s) ? 'g' : (/راسب/.test(s) ? 'r' : 'y');
+  return '<span class="badge ' + c + '">' + esc(s) + '</span>';
+}
+
+/* ── لوحة: الشهادة ── */
+function paneCertificate(d){
+  const s = d.sum || {}, subs = d.subjects || [], sc = d.school || {};
+  if (!subs.length)
+    return '<div class="card sec"><div class="state"><div class="ic">📜</div>'
+      + '<h3>الشهادة غير جاهزة بعد</h3><p>لا توجد درجات مرصودة لهذا الطالب حتى الآن. '
+      + 'تُصدَر الشهادة تلقائياً فور رصد الدرجات واعتماد النتيجة النهائية من المدرسة.</p></div></div>';
+
+  const graded = subs.filter(x => num(x.f) !== null);
+  const total  = graded.reduce((t, x) => t + num(x.f), 0);
+  const maxT   = graded.length * 100;
+  const avg    = s.avg != null ? s.avg : (maxT ? Math.round(total / maxT * 10000) / 100 : null);
+  const label  = s.label && s.label !== '—' ? s.label : gradeLabel(avg);
+  const failed = graded.filter(x => /راسب/.test(String(x.s || '')));
+  const comp   = graded.filter(x => /مكمل|مكمّل/.test(String(x.s || '')));
+  const verdict = failed.length ? 'راسب'
+                : (comp.length ? 'مكمّل بـ ' + comp.length + ' مادة' : 'ناجح');
+  const vClass  = failed.length ? 'r' : (comp.length ? 'y' : 'g');
+
+  return '<div class="card sec cert" id="certSheet">'
+    + '<div class="cert-hd">'
+      + '<div class="cert-logo">أُفق</div>'
+      + '<div class="cert-hdt">'
+        + '<div class="l1">' + esc(sc.name || 'المدرسة') + '</div>'
+        + '<div class="l2">شهادة درجات ونتيجة نهائية</div>'
+        + '<div class="l3">' + (sc.year ? 'العام الدراسي ' + esc(sc.year) : '') + '</div>'
+      + '</div>'
+    + '</div>'
+
+    + '<div class="cert-id">'
+      + fld('اسم الطالب', d.name || '—')
+      + fld('الصف والشعبة', d.cls || '—')
+      + fld('رقم القيد', d.reg || '—')
+      + fld('رقم الامتحان', d.exam_no || '—')
+    + '</div>'
+
+    + '<div class="tblwrap"><table><thead><tr>'
+      + '<th style="text-align:start">المادة</th>'
+      + '<th>السعي السنوي</th><th>الامتحان النهائي</th><th>النتيجة</th>'
+      + '</tr></thead><tbody>'
+      + subs.map(x =>
+          '<tr><td class="name">' + esc(x.n) + '</td>'
+        + '<td>' + mk(x.sn) + '</td>'
+        + '<td>' + mk(x.f) + '</td>'
+        + '<td>' + stBadge(x.s) + '</td></tr>').join('')
+    + '</tbody></table></div>'
+
+    + '<div class="cert-sum">'
+      + fld('مجموع الدرجات', maxT ? total + ' / ' + maxT : '—')
+      + fld('المعدل العام', avg != null ? avg + '%' : '—')
+      + fld('التقدير', label || '—')
+      + fld('المواد المُقيَّمة', graded.length + ' من ' + subs.length)
+    + '</div>'
+
+    + '<div class="cert-verdict">'
+      + '<span class="k">النتيجة النهائية</span>'
+      + '<span class="badge ' + vClass + '">' + esc(verdict) + '</span>'
+      + (d.final_status ? '<span class="badge b">' + esc(d.final_status) + '</span>' : '')
+    + '</div>'
+
+    + '<div class="cert-sign">'
+      + ['مدرّس المادة', 'المعاون الإداري', 'مدير المدرسة']
+          .map(r => '<div><div class="r">' + r + '</div><div class="ln"></div>'
+                  + '<div class="c">الاسم والتوقيع</div></div>').join('')
+    + '</div>'
+
+    + '<div class="cert-actions noprint">'
+      + '<button class="btn green" onclick="printCert()">🖨️ طباعة الشهادة / حفظ PDF</button>'
+      + '<button class="btn ghost" onclick="tab(\'gr\')">📚 الدرجات التفصيلية</button>'
+    + '</div>'
+
+    + '<div class="cert-note">هذه الشهادة صادرة إلكترونياً من نظام أُفق — '
+      + 'تُعتمد بعد ختم المدرسة وتوقيع مديرها.</div>'
+  + '</div>';
+}
+
+function gradeLabel(avg){
+  const n = num(avg);
+  if (n === null) return '—';
+  if (n >= 90) return 'ممتاز';
+  if (n >= 80) return 'جيد جداً';
+  if (n >= 70) return 'جيد';
+  if (n >= 60) return 'متوسط';
+  if (n >= 50) return 'مقبول';
+  return 'ضعيف';
+}
+
+/* طباعة الشهادة وحدها (بلا بقية اللوحات) */
+function printCert(){
+  const b = document.body;
+  b.classList.add('printing-cert');
+  const done = () => b.classList.remove('printing-cert');
+  window.addEventListener('afterprint', done, {once:true});
+  setTimeout(() => { try { window.print(); } finally { setTimeout(done, 800); } }, 60);
+}
+
+/* ── لوحة: الحضور ── */
+function paneAttendance(d){
+  const a = d.att || {}, det = a.detail || [];
+  return '<div class="card sec"><h4>🗓️ ملخّص الحضور<span class="n">'
+      + (a.total || 0) + ' يوم مسجّل</span></h4>'
+    + attBar(a)
+    + '<div class="grid2" style="margin-top:12px">'
+    + fld('أيام الحضور', a.present || 0)
+    + fld('أيام الغياب', a.absent || 0)
+    + fld('التأخير', a.late || 0)
+    + fld('الغياب المجاز', a.excused || 0)
+    + '</div></div>'
+
+    + (det.length ? '<div class="card sec"><h4>📅 تفصيل الأيام<span class="n">آخر '
+        + det.length + ' يوم</span></h4><div class="days">'
+        + det.slice().reverse().map(x => {
+            const c = {'حاضر':'p','غائب':'a','متأخر':'l','مجاز':'e'}[x.s] || '';
+            return '<span class="day ' + c + '" title="' + esc(x.s) + '">' + esc(x.d) + '</span>';
+          }).join('')
+        + '</div></div>'
+      : '');
+}
+function attBar(a){
+  const t = (a.present||0) + (a.absent||0) + (a.late||0) + (a.excused||0);
+  const pc = v => t ? (v / t * 100) : 0;
+  return '<div class="attbar">'
+    + '<i style="width:' + pc(a.present||0) + '%;background:var(--green)" title="حاضر"></i>'
+    + '<i style="width:' + pc(a.absent||0)  + '%;background:var(--red)" title="غائب"></i>'
+    + '<i style="width:' + pc(a.late||0)    + '%;background:var(--yellow)" title="متأخر"></i>'
+    + '<i style="width:' + pc(a.excused||0) + '%;background:var(--blue)" title="مجاز"></i>'
+    + '</div>'
+    + '<div class="legend">'
+    + '<span><b style="background:var(--green)"></b>حاضر ' + (a.present||0) + '</span>'
+    + '<span><b style="background:var(--red)"></b>غائب ' + (a.absent||0) + '</span>'
+    + '<span><b style="background:var(--yellow)"></b>متأخر ' + (a.late||0) + '</span>'
+    + '<span><b style="background:var(--blue)"></b>مجاز ' + (a.excused||0) + '</span>'
+    + (t ? '<span style="margin-inline-start:auto;font-weight:800;color:var(--brand)">نسبة الحضور '
+        + (a.rate||0) + '%</span>' : '')
+    + '</div>';
+}
+
+/* ── لوحة: السلوك ── */
+function paneBehavior(d){
+  const b = d.beh || [];
+  if (!b.length)
+    return '<div class="card sec"><div class="state"><div class="ic">✅</div>'
+      + '<h3>سجل سلوكي نظيف</h3><p>لا توجد أي ملاحظة سلوكية مسجّلة على الطالب. أحسنت!</p></div></div>';
+  return '<div class="card sec"><h4>🧭 سجل السلوك<span class="n">' + b.length + ' ملاحظة</span></h4>'
+    + '<div class="tl">' + b.map(x =>
+        '<div class="it"><div class="d">' + esc(x.d) + (x.by ? ' · ' + esc(x.by) : '') + '</div>'
+      + '<div class="t">' + esc(x.t || 'ملاحظة') + '</div>'
+      + (x.x ? '<div class="x">' + esc(x.x) + '</div>' : '') + '</div>').join('')
+    + '</div></div>';
+}
+
+/* ── لوحة: الملاحظات ── */
+function paneNotes(d){
+  const n = d.notes || [], al = d.alerts || [];
+  let h = '<div class="card sec"><h4>📝 ملاحظات المدرسة ومتابعتها<span class="n">' + n.length + '</span></h4>';
+  h += n.length
+    ? '<div class="tl">' + n.map(x =>
+        '<div class="it"><div class="d">' + esc(x.d) + (x.p ? ' · أولوية: ' + esc(x.p) : '') + '</div>'
+      + '<div class="t">' + esc(x.r || 'متابعة') + '</div>'
+      + (x.x ? '<div class="x">' + esc(x.x) + '</div>' : '')
+      + (x.s ? '<div style="margin-top:4px"><span class="badge b">' + esc(x.s) + '</span></div>' : '')
+      + '</div>').join('') + '</div>'
+    : '<div class="state" style="padding:24px"><p>لا توجد ملاحظات أو متابعات مسجّلة.</p></div>';
+  h += '</div>';
+
+  if (al.length){
+    h += '<div class="card sec"><h4>⚠️ تنبيهات الغياب</h4><div class="tl">'
+      + al.map(x => '<div class="it"><div class="d">' + esc(x.d) + '</div>'
+          + '<div class="t">تنبيه ' + esc(x.lvl || '') + ' — ' + esc(x.n || 0) + ' يوم غياب</div></div>').join('')
+      + '</div></div>';
+  }
+  return h;
+}
+
+/* ── لوحة: الإعلانات ── */
+function paneAnn(d){
+  const an = d.ann || [], as = d.asg || [];
+  let h = '<div class="card sec"><h4>📢 إعلانات المدرسة</h4>';
+  h += an.length
+    ? an.map(x =>
+        '<div class="f" style="margin-bottom:8px"><div class="k">'
+        + esc((x.created_at || '').slice(0,10))
+        + (x.priority ? ' · ' + esc(x.priority) : '') + '</div>'
+        + '<div class="v" style="margin-bottom:3px">' + esc(x.title || '') + '</div>'
+        + (x.body ? '<div style="font-size:11.5px;color:var(--text2);font-weight:500">'
+            + esc(x.body) + '</div>' : '') + '</div>').join('')
+    : '<div class="state" style="padding:24px"><p>لا توجد إعلانات حالياً.</p></div>';
+  h += '</div>';
+
+  if (as.length){
+    h += '<div class="card sec"><h4>📖 الواجبات والتكليفات<span class="n">'
+      + as.length + ' مادة</span></h4><div class="grid2">'
+      + as.map(x => fld(x.subject || '—', (x.count || 0) + ' تكليف'
+          + (x.teacher ? ' · ' + x.teacher : ''))).join('')
+      + '</div></div>';
+  }
+  return h;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   10) تنبيه خفيف
+   ═══════════════════════════════════════════════════════════════════════════ */
+let TT = null;
+function toast(msg){
+  let el = $('toast');
+  if (!el){
+    el = document.createElement('div');
+    el.id = 'toast';
+    el.style.cssText = 'position:fixed;bottom:18px;inset-inline-start:50%;transform:translateX(50%);'
+      + 'background:#0b2e3b;color:#fff;padding:10px 18px;border-radius:11px;font-size:12.5px;'
+      + 'font-weight:700;z-index:9999;box-shadow:0 10px 30px -8px rgba(0,0,0,.45);'
+      + 'max-width:90vw;text-align:center';
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  clearTimeout(TT);
+  TT = setTimeout(() => { el.remove(); }, 3200);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   11) الإقلاع
+   ═══════════════════════════════════════════════════════════════════════════ */
+if (!window.crypto || !crypto.subtle){
+  fail('🔐','المتصفح غير مدعوم',
+    'هذه البوابة تحتاج متصفحاً حديثاً لأن فكّ التشفير يجري داخل متصفحك.',
+    'استعمل Chrome أو Edge أو Safari أو Firefox بإصدار حديث.');
+} else {
+  reload(false);
+}
+window.addEventListener('hashchange', () => reload(false));
+</script>
+</body>
+</html>

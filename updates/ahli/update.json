@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسين حماية الترخيص السحابي ومنع التلاعب البسيط بتاريخ الجهاز، تحسين دقة درجات القرار، إصلاح ظهور حالات الغياب والتأجيل والإجازة في الشهادات، وتحسين طباعة الأسماء الطويلة لتظهر بسطر واحد.",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.29:\n• نظام الترحيل السنوي والأرشيف: بدء سنة دراسية جديدة مع الاحتفاظ بالسنة السابقة كاملةً (عرض وطباعة فقط)، ونسخة احتياطية مشفّرة تُرفع إلى Google Drive.\n• اعتماد درجات المدرسين المقدّمة من تطبيق الموبايل: تُكتب الدرجة الآن مباشرةً في سجل الدرجات المحلي عند الاعتماد.\n• إصلاح ربط معرّف الدرجة بين برنامج الكمبيوتر والسحابة لضمان اعتماد السجل الصحيح.\n• حفظ قرارات الاعتماد/الرفض أثناء انقطاع الإنترنت (قائمة مزامنة) وإرسالها تلقائياً عند عودة الاتصال، مع إظهار عدد القرارات المعلّقة.\n• عرض ملاحظة الرفض للمعلّم في تطبيق الموبايل.\n• حماية البيانات: لا تُحذف أي درجات أو بيانات طلاب في كل عمليات الترحيل والاعتماد.",
   "package": {
-    "name": "Ufuq_ahli_4.0.28.exe",
-    "sha256": "5cdf15b566c7fb0791057ea75211d49e12d9d1f0dcc236b741b83fea45990d4a",
-    "signature": "eohdf5I1Q3p+U3nB/h8bHOk8tP+IAF6uNWf8nJYnh+kqegWNx0WPKPqTkZD6pzcOOM8ug3QaQCidBmcbzOPuAg==",
-    "size": 68534576,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.28/Ufuq_ahli_4.0.28.exe"
+    "name": "Ufuq_ahli_4.0.29.exe",
+    "sha256": "5d22a372a9fd45d4928c9f9e14681ac2a42ae82c5159e952398597ed7785ae97",
+    "signature": "6o56tkC/T+bYxyfPNFVDLzr1CJIrc/Srpjgef0BqJUKlfPRGHtXrRywCyzTynwWo58DF8ZSnZm6DLDRepKcYCw==",
+    "size": 68578052,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.29/Ufuq_ahli_4.0.29.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-16T21:50:41.903397+00:00",
+  "published_at": "2026-09-18T13:16:34.290572+00:00",
   "schema": 1,
-  "version": "4.0.28"
+  "version": "4.0.29"
 }

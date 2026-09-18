@@ -633,7 +633,12 @@ function clearHash(){ history.replaceState(null,'',location.pathname + location.
 /* ═══════════════════════════════════════════════════════════════════════════
    6) الشبكة
    ═══════════════════════════════════════════════════════════════════════════ */
-const url = p => (BASE ? BASE.replace(/\/$/,'') : '') + '/' + p;
+const url = p => {
+  const rel = String(p == null ? '' : p).replace(/^\//,'');
+  if (BASE) return BASE.replace(/\/$/,'') + '/' + rel;
+  // بلا base: مسار نسبي لمجلد البوابة نفسه (كان '/' فيسقط إلى جذر النطاق ويُعيد 404).
+  return new URL(rel, document.baseURI).href;
+};
 
 async function fetchManifest(force){
   if (MANIFEST && !force) return MANIFEST;

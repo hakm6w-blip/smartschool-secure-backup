@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.33:\n• إضافة «حضور المدرسين المقدّم»: يسجّل المعلّم الحضور/الغياب من التطبيق، وتعتمده الإدارة فيُثبَّت في سجل الحضور الرسمي، أو ترفضه مع ملاحظة.\n• منح المعلّم صلاحية تسجيل الحضور والغياب.\n• تحسين مزامنة تطبيق المعلّم: تمييز أخطاء الشبكة عن أخطاء الخادم وإظهار الرسالة الحقيقية، مع مزامنة تلقائية.\n• تحسين تصميم التطبيق وتوضيح الحقول إلى «معدل النصف الأول» و«معدل النصف الثاني».",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.35:\n• ظهور «حسابات المعلّمين» و«درجات المدرسين المقدّمة» و«حضور المدرسين المقدّم» مباشرةً في القائمة الجانبية (كانت مخفية في النسخة الحكومية).\n• اعتماد درجات المعلّمين بثلاثة خيارات: تأكيد (يُسجّل الدرجة في السجل الرسمي) / تدقيق (يرجعها للمعلّم مع رسالة) / رفض مع ملاحظة تصل للمعلّم.\n• إشعار تلقائي على الكمبيوتر عند وصول درجات جديدة من المعلّمين + عدّاد بجانب القائمة.\n• صلاحية تسجيل الحضور والغياب للمعلّم من تطبيق الموبايل.",
   "package": {
-    "name": "Ufuq_ahli_4.0.33.exe",
-    "sha256": "362502d1232c50f632d17d31ebd680772e6bfa6e86279513c0237524567af9f6",
-    "signature": "4M5Sw2buER8DCSNQaB7rWeEIcXOWNzZXNaH0sd4oWf1FDEIgv2mUleMEFhV7179ZmZMvqF/3kvlFKmZ3GP1FDQ==",
-    "size": 68600381,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.33/Ufuq_ahli_4.0.33.exe"
+    "name": "Ufuq_ahli_4.0.35.exe",
+    "sha256": "2f7c682e079c9f52af363c65029d62a02e66e9d656bc1f13a6801f53638819b4",
+    "signature": "TdRH+nttNB4ikeC01qxZ7F5t09qo9tNk1Pus2e1oQQ4uN9NMN90XLirXDdBvDDpdlCPvUOGHfNqWfBMtHuxbDQ==",
+    "size": 54179075,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.35/Ufuq_ahli_4.0.35.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-19T17:41:19.902933+00:00",
+  "published_at": "2026-09-19T23:26:16.859979+00:00",
   "schema": 1,
-  "version": "4.0.33"
+  "version": "4.0.35"
 }

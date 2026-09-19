@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.33:\n• إضافة «حضور المدرسين المقدّم»: يسجّل المعلّم الحضور/الغياب من التطبيق، وتعتمده الإدارة فيُثبَّت في سجل الحضور الرسمي، أو ترفضه مع ملاحظة.\n• منح المعلّم صلاحية تسجيل الحضور والغياب.\n• تحسين مزامنة تطبيق المعلّم: تمييز أخطاء الشبكة عن أخطاء الخادم وإظهار الرسالة الحقيقية، مع مزامنة تلقائية.\n• تحسين تصميم التطبيق وتوضيح الحقول إلى «معدل النصف الأول» و«معدل النصف الثاني».",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.34 (النسخة الحكومية):\n• إصلاح مهم: ظهور «حسابات المعلّمين» و«درجات المدرسين المقدّمة» و«حضور المدرسين المقدّم» مباشرةً في القائمة الجانبية (كانت مخفية في النسخة الحكومية).\n• اعتماد درجات المعلّمين بثلاثة خيارات: تأكيد (يُسجّل الدرجة في السجل الرسمي) / تدقيق (يرجعها للمعلّم مع رسالة «دقّق الدرجات أكثر») / رفض مع ملاحظة تصل للمعلّم.\n• إشعار تلقائي على الكمبيوتر عند وصول درجات جديدة من المعلّمين + عدّاد بجانب القائمة.",
   "package": {
-    "name": "Ufuq_gov_4.0.33.exe",
-    "sha256": "24e05c5e9bf5dbd410949d044154192dd3f8dd7b152384acb5f868e943a01f92",
-    "signature": "xQTv/BlTuX61il3xhLs0CkBuv2Np82W8WkQ+EL/9Bn/9/cRuIeTJlE6Wdcl8kSCfMV2srSt3ajkiRwWGYS72DQ==",
-    "size": 68587210,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.33/Ufuq_gov_4.0.33.exe"
+    "name": "Ufuq_gov_4.0.34.exe",
+    "sha256": "d9c1f4aff5e6aea5a84d632a49c3554fa766c83d04cc5433b7ffb5dcdde5597f",
+    "signature": "Ocsp36v6Y2VBljET67xC3fFl5D27/6zeXVy9xHwqDRx8sV3gw92bq31YIaC41H1NqPdOmO0bd2nhn7belGx+AQ==",
+    "size": 68591329,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.34/Ufuq_gov_4.0.34.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-19T17:43:01.820463+00:00",
+  "published_at": "2026-09-19T21:14:06.860894+00:00",
   "schema": 1,
-  "version": "4.0.33"
+  "version": "4.0.34"
 }

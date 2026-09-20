@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.37:\n• إصلاح إعداد Google Drive: البحث عن ملف إعداد Google بجانب البرنامج وعند مجلد التشغيل أيضاً، لضمان اكتمال الإعداد على كل الأجهزة.\n• تذكير: لتفعيل وصول درجات المعلّمين، أعِد تشغيل ملف supabase/teacher_app_mobile_patch.sql في Supabase.",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.38:\n• إصلاح جذري لمشكلة Google Drive: كان ملف إعداد Google يتلف أثناء البناء السحابي (علامات التنصيص تُفقد). الآن يُنسخ سليماً — فيكتمل الإعداد ويعمل الربط.\n• تخفيف سمك/تعتيم خط الدرجات في خلية القرار ليطابق بقية المواد.\n• تذكير: لتفعيل درجات المعلّمين، أعِد تشغيل supabase/teacher_app_mobile_patch.sql في Supabase.",
   "package": {
-    "name": "Ufuq_gov_4.0.37.exe",
-    "sha256": "16308836219924c7aa8c370102e741011000c8e8f2fdff3c9553b377cec534c9",
-    "signature": "Mrs1JTJca7078UcqDKbSeyc93E5otgKqLnzYdemAQXh7Eu0maIrzYLVfkewDQtTKw31NQg3jj5BpE3dxl0/ZBw==",
-    "size": 54178543,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.37/Ufuq_gov_4.0.37.exe"
+    "name": "Ufuq_gov_4.0.38.exe",
+    "sha256": "4fee354f30694d4e4ba059f192b844d28abe9fd8fc77e2720b136750316f912b",
+    "signature": "/505T9pgr2sZ7A5wIEcii0LHDU6N5c5614/3mPqbTx+7e/5oMUUnIOlshkuWkJ1De2T53a8w+0mQNujrReIBCA==",
+    "size": 54178618,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.38/Ufuq_gov_4.0.38.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T01:23:59.583317+00:00",
+  "published_at": "2026-09-20T11:57:21.731657+00:00",
   "schema": 1,
-  "version": "4.0.37"
+  "version": "4.0.38"
 }

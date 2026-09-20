@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح الإصدار 4.0.52:\n• إرجاع منطق القرار كما كان تماماً في الصفوف المنتهية وغير المنتهية (إزالة أي تعديل سابق على احتساب/إبطال القرار).\n• لا يوجد أي تغيير على القرار نهائياً.",
+  "notes": "تحسينات الإصدار 4.0.53 (التقارير):\n• قائمة الامتحان الشفهي: حذف عمود الملاحظات نهائياً + توسيع اسم الطالب (34%) وحقول التقييم (80px) والمجموع.\n• سجل درجات المدرس: توسيع أعمدة الدرجات (عرض الاسم 52%→40%).\n• الاستمارة الشاملة: عمود الاسم الرباعي واسم الأم أوسع مع منع التفاف النص.",
   "package": {
-    "name": "Ufuq_gov_4.0.52.exe",
-    "sha256": "522a7baf73bd75d834172670ded311f47fb33294bbe93c0e1a9c40b835385b16",
-    "signature": "6ywiufx5vBKEPvAE3QSFF2LFZklD6IQVAwqOHAeKU8ZCik19WIeiBPY+Yg1BtjZIZHnI3ZLZoDKDEx5d09ThDg==",
-    "size": 54187806,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.52/Ufuq_gov_4.0.52.exe"
+    "name": "Ufuq_gov_4.0.53.exe",
+    "sha256": "0483fb75530ca7fa3abcd8fff24d42ce103e06db962c5e83275f5e5cff943a69",
+    "signature": "JTKQb1P8Om7vWfv3yUlN+gZK/dfEBwEvZD2lbLk78gSdfL6uirCTMSu1cLduG5YmrpCdXDIJNf92ESFplCuhBg==",
+    "size": 54188517,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.53/Ufuq_gov_4.0.53.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T17:54:25.501123+00:00",
+  "published_at": "2026-09-20T17:56:55.349189+00:00",
   "schema": 1,
-  "version": "4.0.52"
+  "version": "4.0.53"
 }

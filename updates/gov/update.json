@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.38:\n• إصلاح جذري لمشكلة Google Drive: كان ملف إعداد Google يتلف أثناء البناء السحابي (علامات التنصيص تُفقد). الآن يُنسخ سليماً — فيكتمل الإعداد ويعمل الربط.\n• تخفيف سمك/تعتيم خط الدرجات في خلية القرار ليطابق بقية المواد.\n• تذكير: لتفعيل درجات المعلّمين، أعِد تشغيل supabase/teacher_app_mobile_patch.sql في Supabase.",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.39 (المرحلة 1 — منطق القرار):\n• إصلاح جذري: أي تعديل على درجة مادة يُبطل تلقائياً نقاط القرار القديمة لذلك الطالب، فلا يبقى قرار مبنيّ على درجة قديمة (مثل 45) بعد تغيّر الدرجة الفعلية (مثل 22).\n• يطبّق على مسارَي إدخال الدرجات وشاشة النتائج معاً.\n• (تم اختباره آلياً: صف قرار قديم -> حفظ درجة جديدة -> يُمسح القرار القديم.)",
   "package": {
-    "name": "Ufuq_gov_4.0.38.exe",
-    "sha256": "4fee354f30694d4e4ba059f192b844d28abe9fd8fc77e2720b136750316f912b",
-    "signature": "/505T9pgr2sZ7A5wIEcii0LHDU6N5c5614/3mPqbTx+7e/5oMUUnIOlshkuWkJ1De2T53a8w+0mQNujrReIBCA==",
-    "size": 54178618,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.38/Ufuq_gov_4.0.38.exe"
+    "name": "Ufuq_gov_4.0.39.exe",
+    "sha256": "844dee5fde9837823c3cc596659a0611be7bb6a17d54f2d1f507d25a7a59a661",
+    "signature": "MF1m4A8XRJB3roLxgiUydXcatOvnMRUjZ+9YpS4nE38RltDGZnjbXadkhbhooq/cIw/b6YAXYwgvPAXi3YruCw==",
+    "size": 54179278,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.39/Ufuq_gov_4.0.39.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T11:57:21.731657+00:00",
+  "published_at": "2026-09-20T13:16:32.792029+00:00",
   "schema": 1,
-  "version": "4.0.38"
+  "version": "4.0.39"
 }

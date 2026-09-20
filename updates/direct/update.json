@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تعديلات حسب ملاحظات الأستاذ (الفيديو) — نشر لكل النسخ:\n• تكبير الخط في الطباعة: العام 15→17، الاسم 18→20، العنوان 16→18.\n• تكبير «الحقل المائل» (رؤوس الأعمدة الرأسية) وزيادة ارتفاعها 82→96.\n• تكبير خلايا وخط القائمة الشفهية وسجل الدرجات (بحد أدنى 18).\n• القنوات: الأهلي + الحكومي + المباشر (direct).",
+  "notes": "إصلاح مهم (الأهلي + الحكومي):\n• سبب عدم ظهور التحديث سابقاً: رقم إصدار البرنامج لم يكن يُحدَّث مع النشر.\n• الآن يُختم رقم الإصدار تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• شمل الإصلاح النسختين معاً + تحسينات الطباعة (خط أكبر، الحقل المائل، خلايا الشفهي).",
   "package": {
-    "name": "Ufuq_direct_4.0.55.exe",
-    "sha256": "aadd5c6e3463d39ecfef02d77524173340ec9b8382ab3c672c0b0261fc02f3e9",
-    "signature": "Bp7uhHeBG4sabwB0d0NAQS3rbWfTLzLM2WiYejTFMbSI3u/Kor/OXSMOEa4KzyILoO5pjSpCCKUpJK5WZzOhCQ==",
-    "size": 54187654,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.55/Ufuq_direct_4.0.55.exe"
+    "name": "Ufuq_direct_4.0.56.exe",
+    "sha256": "2ce6192ab8fa1e3f095a850d08de7c5f5d63f28d1fe6b93f3d06ed23add9ea6b",
+    "signature": "DS/355MZI/84LSuO4BcVTPI+PM0Bo5fZ359rD6vbz+r81+qiV++yiEnDnso3pbpffaqc7XyeiwX0sHGVhmRlBw==",
+    "size": 54187351,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.56/Ufuq_direct_4.0.56.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T22:07:22.329870+00:00",
+  "published_at": "2026-09-20T23:03:06.812102+00:00",
   "schema": 1,
-  "version": "4.0.55"
+  "version": "4.0.56"
 }

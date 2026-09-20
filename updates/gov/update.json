@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.50:\n• إعدادات Google Drive: زر «اختبار الاتصال» يعرض حالة الإنترنت/الإعداد/الربط وعدد النسخ.\n• حسابات المعلّمين: زر تعطيل/تفعيل الحساب (محلي + سحابة).\nملاحظة: فعّل تعطيل/تفعيل السحابة عبر تشغيل supabase/admin_teacher_manage_patch.sql.",
+  "notes": "تحسينات الإصدار 4.0.51:\n• إشعارات نظام ويندوز: تنبيه تلقائي عند وصول درجات جديدة من المعلّمين.\n• تطبيق المعلّم: تحسين المظهر (بطاقات متدرّجة أنيقة، أسماء الحقول كاملة).\n• تذكير: شغّل ملفات SQL (mobile_patch + grades_fields_patch + audit_patch + admin_teacher_manage_patch).",
   "package": {
-    "name": "Ufuq_gov_4.0.50.exe",
-    "sha256": "6b28d42ac885745c330b8e11b94e298d7d17765b5f5d85c049432ad0a7739969",
-    "signature": "sG/cTY9tZ7dRCR/XlaIwNXMouN93kzGvNELuiFGgnf906N2tnM+zwq5jzXW/AGuiSIDQzHVqJix86ZHWPHNWBw==",
-    "size": 54186890,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.50/Ufuq_gov_4.0.50.exe"
+    "name": "Ufuq_gov_4.0.51.exe",
+    "sha256": "07dbced3c5b140ffbea9bb2fb41e0f99fc8b697648843cfb084ea0894deb90f0",
+    "signature": "nTdaMQJcq5/hDQPPOhdWkFl1oazpEfuIc3IJuBGrPtdAGu4At5DMujaxFqTSxJFLEpJaYfnL+La3Wn2mPhGwCg==",
+    "size": 54188366,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.51/Ufuq_gov_4.0.51.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T17:21:53.520800+00:00",
+  "published_at": "2026-09-20T17:24:49.736004+00:00",
   "schema": 1,
-  "version": "4.0.50"
+  "version": "4.0.51"
 }

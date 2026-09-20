@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.41 (المرحلة 3 — بداية):\n• تطبيق المعلّم: إضافة 5 حقول لكل طالب: معدل النصف الأول، نصف السنة، معدل النصف الثاني، معدل السعي السنوي، الامتحان النهائي — مع الحفظ والإرسال.\n• الكمبيوتر: عند الاعتماد تُسجَّل كل الحقول الجديدة في سجل الدرجات.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql في Supabase (أعمدة جديدة ودالة إرسال موسّعة).",
+  "notes": "تحسينات الإصدار 4.0.42:\n• تبويب «الأرشيف» في تطبيق المعلّم: عدّادات (معتمدة/قيد المراجعة/تدقيق/مرفوضة) + عرض كل الحقول الخمسة لكل إدخال.",
   "package": {
-    "name": "Ufuq_ahli_4.0.41.exe",
-    "sha256": "2648f277b6feedb5fdea021b6dd44dd74e187575db88c9fd25ef7d826727d082",
-    "signature": "25Yyqh97ZXnzqS7bZ6N//pmAdbzK5hkIWH1v2c7gjON55kTODRbOhij7nx4ctN6NPHmhUF/uXsdZ5ybkeU6NBQ==",
-    "size": 54179352,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.41/Ufuq_ahli_4.0.41.exe"
+    "name": "Ufuq_ahli_4.0.42.exe",
+    "sha256": "12caa0925f9b1302965535b1b344733fb1ddf8bdbd48f182c542b668539fe067",
+    "signature": "0zW/6Zj3hTZdqJW50FzFlWrcKlnW7cRgC1JG4QXP2ObhXe+u9MJvul7PHsDoJheXL/EwXSMQWNcE5rACf7UCAQ==",
+    "size": 54181177,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.42/Ufuq_ahli_4.0.42.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T13:36:52.620751+00:00",
+  "published_at": "2026-09-20T14:18:20.532971+00:00",
   "schema": 1,
-  "version": "4.0.41"
+  "version": "4.0.42"
 }

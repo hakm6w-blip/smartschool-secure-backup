@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.44:\n• تطبيق المعلّم: اعتماد خط «Tajawal» على كل الواجهة لمظهر أنيق وموحّد.\n• شريط معلومات في تبويب الدرجات (المادة وعدد الطلاب) + لمسات تصميم.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql للحقول الجديدة.",
+  "notes": "تحسينات الإصدار 4.0.45:\n• تطبيق المعلّم: تحسين شامل للمظهر (حقول وأزرار وبطاقات بحواف دائرية، ثيم موحّد).\n• ملاحظة: لتفعيل الحقول الخمسة شغّل supabase/teacher_app_grades_fields_patch.sql.",
   "package": {
-    "name": "Ufuq_ahli_4.0.44.exe",
-    "sha256": "9d4d7bf1343b578db2f922323f62df36dd50ba8406594a0cad532cd30b37eda6",
-    "signature": "v4BzLKjiQjohwW31YNOCKCUwJGAo7Xvr77YwaNYBmmm+5dCD64rYSADfAwVN2SMKm6Bkox3a2ps2Dn3/WB8JCg==",
-    "size": 54181150,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.44/Ufuq_ahli_4.0.44.exe"
+    "name": "Ufuq_ahli_4.0.45.exe",
+    "sha256": "a3f431deef44b3cc261f191120cfcaf986fdb4c783ababff5fb38055f59a1fb5",
+    "signature": "cZmVEzt2JhknSZQUbm2x6NsItC4GbJnYWRrDOlIWlhRQXoJWdBl8lx5TjfYDmZWKISKXx0kal0LmRnUtJuQeDQ==",
+    "size": 54180271,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.45/Ufuq_ahli_4.0.45.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T14:51:28.254515+00:00",
+  "published_at": "2026-09-20T15:04:20.278473+00:00",
   "schema": 1,
-  "version": "4.0.44"
+  "version": "4.0.45"
 }

@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.46:\n• تطبيق المعلّم يُبنى الآن مفصولاً حسب المعالج (arm64) ليكون أخف وأسرع تنزيلاً.\n• بقية المزايا كما في 4.0.45 (التصميم الجديد + الحقول الخمسة + الأرشيف + PDF).",
+  "notes": "تحسينات الإصدار 4.0.47 (تطبيق المعلّم):\n• أسماء الحقول صارت كاملة وواضحة فوق كل حقل (النصف الأول/نصف السنة/النصف الثاني/السعي السنوي/النهائي).\n• تصميم أنظف: بطاقات الطلاب بحواف أنعم وظل، وحقول أوضح.",
   "package": {
-    "name": "Ufuq_gov_4.0.46.exe",
-    "sha256": "20f0ce3ea27b0573367a154a0a0de7f845d17a0b81ecd9b2fe54e615c4506f2f",
-    "signature": "c47hReMynDVPN7+YqQAWKMZXch/F0wbYFGrRVZT4ZJiWn5Vdl/8+jq6a0J3u5D988VyqDh/Wgn0L4gfjf3bCDg==",
-    "size": 54181036,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.46/Ufuq_gov_4.0.46.exe"
+    "name": "Ufuq_gov_4.0.47.exe",
+    "sha256": "97736ee16741bfd9781be470db58863703ce6fe5807c5dae16f5936ff1615f46",
+    "signature": "VQ7fbzEaAF5OJ1t3vPjEbu8YJbVxA9Kxce7AsB4VQF9uTcsPfXmWjNlHQix/94a0VrIjcAIx6FKStBxqUNTFDQ==",
+    "size": 54179583,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.47/Ufuq_gov_4.0.47.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T15:29:32.679913+00:00",
+  "published_at": "2026-09-20T16:58:10.702548+00:00",
   "schema": 1,
-  "version": "4.0.46"
+  "version": "4.0.47"
 }

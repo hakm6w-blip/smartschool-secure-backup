@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.35:\n• ظهور «حسابات المعلّمين» و«درجات المدرسين المقدّمة» و«حضور المدرسين المقدّم» مباشرةً في القائمة الجانبية (كانت مخفية في النسخة الحكومية).\n• اعتماد درجات المعلّمين بثلاثة خيارات: تأكيد (يُسجّل الدرجة في السجل الرسمي) / تدقيق (يرجعها للمعلّم مع رسالة) / رفض مع ملاحظة تصل للمعلّم.\n• إشعار تلقائي على الكمبيوتر عند وصول درجات جديدة من المعلّمين + عدّاد بجانب القائمة.\n• صلاحية تسجيل الحضور والغياب للمعلّم من تطبيق الموبايل.",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.36:\n• إصلاح جوهري للمزامنة: «إرسال الدرجات» من تطبيق المعلّم كان يفشل بسبب خطأ في دالة السحابة — أُصلح (يتطلب إعادة تشغيل ملف teacher_app_mobile_patch.sql في Supabase).\n• بطاقة الدرجات: الدرجة المعدّلة بالقرار تظهر بالأخضر، ومحاذاة الدرجة الأصلية المشطوبة مضبوطة.\n• ملاحظات القرار: إظهار تفصيل «تم استخدام X درجة من أصل Y» لكل المواد (بما فيها اللغة الإنكليزية).\n• الاستمارة الشاملة: توسيع عمود الاسم الرباعي ومنع التفاف النص، مع تنسيق الملاحظات.\n• الامتحان الشفهي: توسيع اسم الطالب وحقول التقييم وتوحيد حجم الخط.",
   "package": {
-    "name": "Ufuq_ahli_4.0.35.exe",
-    "sha256": "2f7c682e079c9f52af363c65029d62a02e66e9d656bc1f13a6801f53638819b4",
-    "signature": "TdRH+nttNB4ikeC01qxZ7F5t09qo9tNk1Pus2e1oQQ4uN9NMN90XLirXDdBvDDpdlCPvUOGHfNqWfBMtHuxbDQ==",
-    "size": 54179075,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.35/Ufuq_ahli_4.0.35.exe"
+    "name": "Ufuq_ahli_4.0.36.exe",
+    "sha256": "a65dbdd990ae260aebcf9e8d0b2c60f4f94e6e40a4f4a287ecf4efa08f07254d",
+    "signature": "P3TbXNfTK6UhVr2PlliIoJh1wzZv3vh8UuVZ29Zzqn5Ki0hrb8oo5Gg/EJJE4s/mSBcS9WsWxUGTnEQfoUGEAw==",
+    "size": 54178819,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.36/Ufuq_ahli_4.0.36.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-19T23:26:16.859979+00:00",
+  "published_at": "2026-09-20T00:52:13.512626+00:00",
   "schema": 1,
-  "version": "4.0.35"
+  "version": "4.0.36"
 }

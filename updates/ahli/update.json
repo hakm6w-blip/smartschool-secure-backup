@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.49:\n• إدارة حسابات المعلّمين: زر «إعادة تعيين الرمز (PIN)» لكل حساب — يحدّثه محلياً ويزامنه للسحابة فوراً.\n• (يشمل أيضاً شريط تنبيه المزامنة في لوحة التحكم من 4.0.48).",
+  "notes": "تحسينات الإصدار 4.0.50:\n• إعدادات Google Drive: زر «اختبار الاتصال» يعرض حالة الإنترنت/الإعداد/الربط وعدد النسخ.\n• حسابات المعلّمين: زر تعطيل/تفعيل الحساب (محلي + سحابة).\nملاحظة: فعّل تعطيل/تفعيل السحابة عبر تشغيل supabase/admin_teacher_manage_patch.sql.",
   "package": {
-    "name": "Ufuq_ahli_4.0.49.exe",
-    "sha256": "e56f59132968413256d94469e51e91cab6f606366e1a333b89057070da4b0111",
-    "signature": "NtG+HQPnGxjjgAn2rNB39Nr80CiycEUoOAJCMO6bRmfjjczL3lyG1MycAGvtuYKFS7O5WFrhi/gz4djGosBADQ==",
-    "size": 54182155,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.49/Ufuq_ahli_4.0.49.exe"
+    "name": "Ufuq_ahli_4.0.50.exe",
+    "sha256": "7fb477c889b74c65789be22714eb361ad7ceb66a092f48c3aaf6cf54832b8a20",
+    "signature": "U3KWLNfoTA0o412Hg3aCRT/hf/uHkKZrHhDFxSlT/9ai6z/EHkhIC9El1itFIW8y3UBCLP3ZDflzWMoKhjAvBg==",
+    "size": 54185559,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.50/Ufuq_ahli_4.0.50.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T17:19:18.524844+00:00",
+  "published_at": "2026-09-20T17:21:48.883452+00:00",
   "schema": 1,
-  "version": "4.0.49"
+  "version": "4.0.50"
 }

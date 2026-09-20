@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.40 (المرحلة 2 — التقارير):\n• تقليل الفراغ الجانبي في كل الاستمارات المطبوعة (A4 عمودي/أفقي) لاستغلال المساحة وتوسيع الأعمدة.\n• الاستمارة الشاملة: عمود الاسم الرباعي واسم الأم أوسع، ومنع التفاف النص.\n• الامتحان الشفهي: اسم الطالب وحقول التقييم أوسع، وحقل الملاحظات ظاهر كاملاً.\n• سجل درجات المدرس: أعمدة الدرجات أوسع واتساق عرض الأسماء بين الصفحات.",
+  "notes": "تحسينات الإصدار 4.0.41 (المرحلة 3 — بداية):\n• تطبيق المعلّم: إضافة 5 حقول لكل طالب: معدل النصف الأول، نصف السنة، معدل النصف الثاني، معدل السعي السنوي، الامتحان النهائي — مع الحفظ والإرسال.\n• الكمبيوتر: عند الاعتماد تُسجَّل كل الحقول الجديدة في سجل الدرجات.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql في Supabase (أعمدة جديدة ودالة إرسال موسّعة).",
   "package": {
-    "name": "Ufuq_gov_4.0.40.exe",
-    "sha256": "55441d7493cef98506bc96be77ecd45df60bedfc705390b66f9137ee0cdfd1f0",
-    "signature": "POrOv0GHSIq2VcJln9LwEYH4WU9d3L18qErPbJ3WxDaIj2h/2+dpp6qfclbeLwvcN9b5+RnLN2MKW0PVVit0Ag==",
-    "size": 54177892,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.40/Ufuq_gov_4.0.40.exe"
+    "name": "Ufuq_gov_4.0.41.exe",
+    "sha256": "ea4b4975becf9ed503d2b3239a6baff2424ea2253d2dc0406e8053484dbf4c97",
+    "signature": "5PgZM7Z8eWznN3Yh+8ipU0pmBiQNQMilfSSphWngf7cOHWqSSV37yrj1UqqObpADAZ4wkISzpki8bnuS4Er3CQ==",
+    "size": 54179982,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.41/Ufuq_gov_4.0.41.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T13:25:48.223346+00:00",
+  "published_at": "2026-09-20T13:36:57.954986+00:00",
   "schema": 1,
-  "version": "4.0.40"
+  "version": "4.0.41"
 }

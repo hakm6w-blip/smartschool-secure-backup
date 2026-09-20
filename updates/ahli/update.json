@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.46:\n• تطبيق المعلّم يُبنى الآن مفصولاً حسب المعالج (arm64) ليكون أخف وأسرع تنزيلاً.\n• بقية المزايا كما في 4.0.45 (التصميم الجديد + الحقول الخمسة + الأرشيف + PDF).",
+  "notes": "تحسينات الإصدار 4.0.47 (تطبيق المعلّم):\n• أسماء الحقول صارت كاملة وواضحة فوق كل حقل (النصف الأول/نصف السنة/النصف الثاني/السعي السنوي/النهائي).\n• تصميم أنظف: بطاقات الطلاب بحواف أنعم وظل، وحقول أوضح.",
   "package": {
-    "name": "Ufuq_ahli_4.0.46.exe",
-    "sha256": "fb3e3359ce7f8ebc234603141c54f16f7618295b9ab970a6cf5dca074e8d2203",
-    "signature": "nYHDIQRBEyXEopAFMyAE+ks2ElaQ2sxA9oL2YfHceBbCFniNYLtq5DrSbeKDirPk+VylBBvugr+uqFcnCDdQBQ==",
-    "size": 54179990,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.46/Ufuq_ahli_4.0.46.exe"
+    "name": "Ufuq_ahli_4.0.47.exe",
+    "sha256": "d0d5c696289bccff938bb78637b897f01742d8ddd1a62397949e06ec6b5abadc",
+    "signature": "BJNautNXcoGzQL8LB5mC02eumUbfr1hCI5a+aCDsmEwEiYAOQfwxSqFvtqFalFkxJJ3j95Uqkcp7nTNZ1RD6Cw==",
+    "size": 54180666,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.47/Ufuq_ahli_4.0.47.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T15:29:27.199841+00:00",
+  "published_at": "2026-09-20T16:58:04.863074+00:00",
   "schema": 1,
-  "version": "4.0.46"
+  "version": "4.0.47"
 }

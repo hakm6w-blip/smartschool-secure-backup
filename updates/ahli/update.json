@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات وإصلاحات الإصدار 4.0.39 (المرحلة 1 — منطق القرار):\n• إصلاح جذري: أي تعديل على درجة مادة يُبطل تلقائياً نقاط القرار القديمة لذلك الطالب، فلا يبقى قرار مبنيّ على درجة قديمة (مثل 45) بعد تغيّر الدرجة الفعلية (مثل 22).\n• يطبّق على مسارَي إدخال الدرجات وشاشة النتائج معاً.\n• (تم اختباره آلياً: صف قرار قديم -> حفظ درجة جديدة -> يُمسح القرار القديم.)",
+  "notes": "تحسينات وإصلاحات الإصدار 4.0.40 (المرحلة 2 — التقارير):\n• تقليل الفراغ الجانبي في كل الاستمارات المطبوعة (A4 عمودي/أفقي) لاستغلال المساحة وتوسيع الأعمدة.\n• الاستمارة الشاملة: عمود الاسم الرباعي واسم الأم أوسع، ومنع التفاف النص.\n• الامتحان الشفهي: اسم الطالب وحقول التقييم أوسع، وحقل الملاحظات ظاهر كاملاً.\n• سجل درجات المدرس: أعمدة الدرجات أوسع واتساق عرض الأسماء بين الصفحات.",
   "package": {
-    "name": "Ufuq_ahli_4.0.39.exe",
-    "sha256": "acc91ec35a249ae4c5af778f65573b8ae55421a3e6220fe7dc5ab2d5cf22316b",
-    "signature": "qVQgZl9qz69oDk3w0VgnIWDSns0UysInymqwH2KplYyPO5KVP/4JTWQvYfuHCrb3VSsM2Sj0/hx4VZaHPgGpCQ==",
-    "size": 54179708,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.39/Ufuq_ahli_4.0.39.exe"
+    "name": "Ufuq_ahli_4.0.40.exe",
+    "sha256": "5d4e5a6938be87ac4a955848c4ac8eef3bc56691fd4e4e370230d18bf20955f9",
+    "signature": "z5H6lGtxISG0UU/nmvfx82jaIy7UBdfvXlcSJRurbgu1FRBj5dGrzIX0pSpWxPx5mgkP5yXiGCCn2ASuykauBQ==",
+    "size": 54179417,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.40/Ufuq_ahli_4.0.40.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T13:16:28.624655+00:00",
+  "published_at": "2026-09-20T13:25:43.870799+00:00",
   "schema": 1,
-  "version": "4.0.39"
+  "version": "4.0.40"
 }

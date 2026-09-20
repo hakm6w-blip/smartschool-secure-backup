@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.53 (التقارير):\n• قائمة الامتحان الشفهي: حذف عمود الملاحظات نهائياً + توسيع اسم الطالب (34%) وحقول التقييم (80px) والمجموع.\n• سجل درجات المدرس: توسيع أعمدة الدرجات (عرض الاسم 52%→40%).\n• الاستمارة الشاملة: عمود الاسم الرباعي واسم الأم أوسع مع منع التفاف النص.",
+  "notes": "تحسينات الإصدار 4.0.54:\n• تغيير المصطلح من «معلم» إلى «مدرس» في كل البرنامج وتطبيق الهاتف (حسابات المدرسين، درجات المدرسين...).\n• تطبيق الهاتف باسم «أُفق — المدرّس».\n• تقارير: حذف عمود الملاحظات من قائمة الامتحان الشفهي + توسيع الأعمدة.",
   "package": {
-    "name": "Ufuq_gov_4.0.53.exe",
-    "sha256": "0483fb75530ca7fa3abcd8fff24d42ce103e06db962c5e83275f5e5cff943a69",
-    "signature": "JTKQb1P8Om7vWfv3yUlN+gZK/dfEBwEvZD2lbLk78gSdfL6uirCTMSu1cLduG5YmrpCdXDIJNf92ESFplCuhBg==",
-    "size": 54188517,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.53/Ufuq_gov_4.0.53.exe"
+    "name": "Ufuq_gov_4.0.54.exe",
+    "sha256": "efaee8e628c7b986d174f013db69a0e84a6897d49638754b8f1a3d9c8ac21ce7",
+    "signature": "uuG4kL20RfsYlXdKRE26vgVly6Mbr+4NzFuBKr5kcLvpPsBlGT5X8ehhKwwoBNf2cn2D3AOM0aoCbk04MbIlAQ==",
+    "size": 54188536,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.54/Ufuq_gov_4.0.54.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T17:56:55.349189+00:00",
+  "published_at": "2026-09-20T17:59:40.381434+00:00",
   "schema": 1,
-  "version": "4.0.53"
+  "version": "4.0.54"
 }

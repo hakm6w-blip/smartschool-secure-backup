@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.47 (تطبيق المعلّم):\n• أسماء الحقول صارت كاملة وواضحة فوق كل حقل (النصف الأول/نصف السنة/النصف الثاني/السعي السنوي/النهائي).\n• تصميم أنظف: بطاقات الطلاب بحواف أنعم وظل، وحقول أوضح.",
+  "notes": "تحسينات الإصدار 4.0.48:\n• لوحة التحكم: شريط تنبيه ذكي يبيّن إن كانت «مزامنة الجوال» أو «Google Drive» غير مربوطة، مع رابط مباشر للإعدادات — حتى لا يفوّت المدير الإعداد الحرج.\n• تطبيق المعلّم: أسماء الحقول الخمسة ظاهرة كاملة فوق كل حقل + تصميم أنظف.",
   "package": {
-    "name": "Ufuq_gov_4.0.47.exe",
-    "sha256": "97736ee16741bfd9781be470db58863703ce6fe5807c5dae16f5936ff1615f46",
-    "signature": "VQ7fbzEaAF5OJ1t3vPjEbu8YJbVxA9Kxce7AsB4VQF9uTcsPfXmWjNlHQix/94a0VrIjcAIx6FKStBxqUNTFDQ==",
-    "size": 54179583,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.47/Ufuq_gov_4.0.47.exe"
+    "name": "Ufuq_gov_4.0.48.exe",
+    "sha256": "ab8d11232e06950e5662494c030dc03573e178e7c5bc32da58d64995e978bc1d",
+    "signature": "sWXMLVDTHz/vUzDQMFOFC3yxbvgBGHE/DgWWPBD85Opk8xHm5pFVtolTcbh7ouTn/30X0obuALH5la6iD5Q9Dg==",
+    "size": 54180984,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.48/Ufuq_gov_4.0.48.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T16:58:10.702548+00:00",
+  "published_at": "2026-09-20T17:15:53.780572+00:00",
   "schema": 1,
-  "version": "4.0.47"
+  "version": "4.0.48"
 }

@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.43:\n• تطبيق المعلّم: زر «معاينة/طباعة/حفظ PDF» في تبويب الأرشيف — يصدر سجل الدرجات بالحقول الخمسة كملف PDF بخط عربي، مع إمكانية الحفظ والمشاركة.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql لإظهار الحقول الجديدة.",
+  "notes": "تحسينات الإصدار 4.0.44:\n• تطبيق المعلّم: اعتماد خط «Tajawal» على كل الواجهة لمظهر أنيق وموحّد.\n• شريط معلومات في تبويب الدرجات (المادة وعدد الطلاب) + لمسات تصميم.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql للحقول الجديدة.",
   "package": {
-    "name": "Ufuq_ahli_4.0.43.exe",
-    "sha256": "f1a398b2ef9beee19c4c35e45c11399bd2c625cf7d748cba5f5d95972104dde3",
-    "signature": "JjfnLBkSNxC4N1XByTE3KI8GL9yc3UqzqNH/rUzSkfP6KDhxaV15Psm/iozP+tk0MP2PZhlER7h08iHO27E/AQ==",
-    "size": 54181040,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.43/Ufuq_ahli_4.0.43.exe"
+    "name": "Ufuq_ahli_4.0.44.exe",
+    "sha256": "9d4d7bf1343b578db2f922323f62df36dd50ba8406594a0cad532cd30b37eda6",
+    "signature": "v4BzLKjiQjohwW31YNOCKCUwJGAo7Xvr77YwaNYBmmm+5dCD64rYSADfAwVN2SMKm6Bkox3a2ps2Dn3/WB8JCg==",
+    "size": 54181150,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.44/Ufuq_ahli_4.0.44.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T14:32:47.504545+00:00",
+  "published_at": "2026-09-20T14:51:28.254515+00:00",
   "schema": 1,
-  "version": "4.0.43"
+  "version": "4.0.44"
 }

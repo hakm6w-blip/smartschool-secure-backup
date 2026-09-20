@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.48:\n• لوحة التحكم: شريط تنبيه ذكي يبيّن إن كانت «مزامنة الجوال» أو «Google Drive» غير مربوطة، مع رابط مباشر للإعدادات — حتى لا يفوّت المدير الإعداد الحرج.\n• تطبيق المعلّم: أسماء الحقول الخمسة ظاهرة كاملة فوق كل حقل + تصميم أنظف.",
+  "notes": "تحسينات الإصدار 4.0.49:\n• إدارة حسابات المعلّمين: زر «إعادة تعيين الرمز (PIN)» لكل حساب — يحدّثه محلياً ويزامنه للسحابة فوراً.\n• (يشمل أيضاً شريط تنبيه المزامنة في لوحة التحكم من 4.0.48).",
   "package": {
-    "name": "Ufuq_gov_4.0.48.exe",
-    "sha256": "ab8d11232e06950e5662494c030dc03573e178e7c5bc32da58d64995e978bc1d",
-    "signature": "sWXMLVDTHz/vUzDQMFOFC3yxbvgBGHE/DgWWPBD85Opk8xHm5pFVtolTcbh7ouTn/30X0obuALH5la6iD5Q9Dg==",
-    "size": 54180984,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.48/Ufuq_gov_4.0.48.exe"
+    "name": "Ufuq_gov_4.0.49.exe",
+    "sha256": "1dca58696d4549dc260ea2141c02fbf86122d56669839b20c165bd2976836d5c",
+    "signature": "YPtjNFg6+uG3yVT839kK/Ac8hrFqo9O7Ck9OkbIP2JZssD8dq2l3TVA3oNPDJxQlh1NGiK9+fsVan82TsE4pBw==",
+    "size": 54183561,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.49/Ufuq_gov_4.0.49.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T17:15:53.780572+00:00",
+  "published_at": "2026-09-20T17:19:23.352035+00:00",
   "schema": 1,
-  "version": "4.0.48"
+  "version": "4.0.49"
 }

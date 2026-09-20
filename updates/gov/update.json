@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": false,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات الإصدار 4.0.44:\n• تطبيق المعلّم: اعتماد خط «Tajawal» على كل الواجهة لمظهر أنيق وموحّد.\n• شريط معلومات في تبويب الدرجات (المادة وعدد الطلاب) + لمسات تصميم.\n• يتطلب تشغيل supabase/teacher_app_grades_fields_patch.sql للحقول الجديدة.",
+  "notes": "تحسينات الإصدار 4.0.45:\n• تطبيق المعلّم: تحسين شامل للمظهر (حقول وأزرار وبطاقات بحواف دائرية، ثيم موحّد).\n• ملاحظة: لتفعيل الحقول الخمسة شغّل supabase/teacher_app_grades_fields_patch.sql.",
   "package": {
-    "name": "Ufuq_gov_4.0.44.exe",
-    "sha256": "dfd4d6fa78813856436a872e3a1c33715b36ced45d3058ae36581aed7fbe57d0",
-    "signature": "11PxuPJclEmbaDug3QID5wyS7wG07oS1gqqb8yvS8JmSXXMGEBOwoSAjqm85ElPjZHmZ3ZvkdjlvpQI0WQEbBQ==",
-    "size": 54180305,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.44/Ufuq_gov_4.0.44.exe"
+    "name": "Ufuq_gov_4.0.45.exe",
+    "sha256": "771bb1068e0111e3ccd4722c844c5c601d8cea8982b8ba6b58762300b76d840c",
+    "signature": "djLBw5IamXDQViXXvk01IoWlUfb1/6x48ZqatNFsSssLo0aR307TUHGBNm0ZKGDIim03nQRJSnpWyAnjQB1dAQ==",
+    "size": 54180881,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.45/Ufuq_gov_4.0.45.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-20T14:51:32.639185+00:00",
+  "published_at": "2026-09-20T15:04:24.441013+00:00",
   "schema": 1,
-  "version": "4.0.44"
+  "version": "4.0.45"
 }

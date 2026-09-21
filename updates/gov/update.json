@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.0.63 (الأهلي + الحكومي):\n• إصلاح «فشل الحفظ» عند إنشاء حساب مدرّس (ترحيل أعمدة قاعدة البيانات).\n• إصلاح عدم ظهور التحديث: رقم الإصدار يُختم تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• يشمل ميزة «ربط تطبيق الموبايل والمزامنة» و«حسابات المدرسين» في الإعدادات.\nمهم: بعد التنزيل اضغط «تثبيت التحديث وإعادة التشغيل».",
+  "notes": "الإصدار 4.0.64 (الأهلي + الحكومي):\n• إصلاح «فشل الحفظ» عند إنشاء حساب مدرّس (ترحيل أعمدة قاعدة البيانات).\n• إصلاح عدم ظهور التحديث: رقم الإصدار يُختم تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• يشمل ميزة «ربط تطبيق الموبايل والمزامنة» و«حسابات المدرسين» في الإعدادات.\nمهم: بعد التنزيل اضغط «تثبيت التحديث وإعادة التشغيل».",
   "package": {
-    "name": "Ufuq_gov_4.0.63.exe",
-    "sha256": "3983d5ccb95c4a2052779e42cee35b621b0eee18bdeea4d3eabbe0308b30fdb0",
-    "signature": "QHb4mHr9yXV7meR14nFZnBc5iHd1It7sbcxdKQ5UpVCNsT7b3IIgWYCPtw7UuH4xQ7qhC+J9PcvgduXyK/WICg==",
-    "size": 55125367,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.63/Ufuq_gov_4.0.63.exe"
+    "name": "Ufuq_gov_4.0.64.exe",
+    "sha256": "6b49151ade7d04d64bc21df5c7fe7d2bc2d3d8963ce296b785df9cebf6684828",
+    "signature": "6bUcx4bAKvzgnNOBTPZHiyI58TT/hh+UdLsjIjCT9QYzvnPCw8dkH8tKvkpBV4Fl9CMu3ivNcBNBl9vust4sBw==",
+    "size": 55127591,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.64/Ufuq_gov_4.0.64.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-21T11:25:55.624830+00:00",
+  "published_at": "2026-09-21T12:48:32.128340+00:00",
   "schema": 1,
-  "version": "4.0.63"
+  "version": "4.0.64"
 }

@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.0.64 (الأهلي + الحكومي):\n• إصلاح «فشل الحفظ» عند إنشاء حساب مدرّس (ترحيل أعمدة قاعدة البيانات).\n• إصلاح عدم ظهور التحديث: رقم الإصدار يُختم تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• يشمل ميزة «ربط تطبيق الموبايل والمزامنة» و«حسابات المدرسين» في الإعدادات.\nمهم: بعد التنزيل اضغط «تثبيت التحديث وإعادة التشغيل».",
+  "notes": "الإصدار 4.0.65 (الأهلي + الحكومي):\n• إصلاح «فشل الحفظ» عند إنشاء حساب مدرّس (ترحيل أعمدة قاعدة البيانات).\n• إصلاح عدم ظهور التحديث: رقم الإصدار يُختم تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• يشمل ميزة «ربط تطبيق الموبايل والمزامنة» و«حسابات المدرسين» في الإعدادات.\nمهم: بعد التنزيل اضغط «تثبيت التحديث وإعادة التشغيل».",
   "package": {
-    "name": "Ufuq_ahli_4.0.64.exe",
-    "sha256": "74d23b47fdb70bf04a376ecefa442dc6170d07a9797bfcf79a0364c3fdbcd271",
-    "signature": "D1ksFyvY8t85tO+jYSyhH8XHlHFcj4dxWRjSU3F5nqBd5tn9t1I9a8gzOKgJaPOJ38v5Hlo/0hQST1HwlImBDg==",
-    "size": 55129831,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.64/Ufuq_ahli_4.0.64.exe"
+    "name": "Ufuq_ahli_4.0.65.exe",
+    "sha256": "cb7c61846ae72c4094071c2bb79e19587485de11d7391b0954383fefbcf6c447",
+    "signature": "dZuHst2WjP+QfjSGaf6k80Nu/0ynTgQXluKkTHF01WvHzsDbAqcOKVw15QTglpu+DYprhB8vmAytOj56yPLyDQ==",
+    "size": 55132396,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.65/Ufuq_ahli_4.0.65.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-21T12:48:27.284223+00:00",
+  "published_at": "2026-09-21T13:36:07.333630+00:00",
   "schema": 1,
-  "version": "4.0.64"
+  "version": "4.0.65"
 }

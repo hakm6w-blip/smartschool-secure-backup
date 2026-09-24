@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ??? ??????? target_name_forbidden + ???? ???? ???????",
+  "notes": "????? ???????: ??? ???? ??? ?????? ????? ????? ??????? + ??? ???? + ??? ????? ?????",
   "package": {
-    "name": "Ufuq_direct_4.0.74.exe",
-    "sha256": "5b074b02a78dc4fe70bb06d64954bf06a3deb1e5c56e4439c9ef6307758098e1",
-    "signature": "y5dbvZ0WTyplBtADRluULlYMcGo7eGKcEuMY46ZbgioZgQU4MDP2RSNW/2uTLI1u1d0GtF4DTiHRZV7KHftjDg==",
-    "size": 55162407,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.74/Ufuq_direct_4.0.74.exe"
+    "name": "Ufuq_direct_4.0.78.exe",
+    "sha256": "515b328de6b39661bc0fdd46e6c969bd970a88a21a6efcf61b21632ac993dee3",
+    "signature": "lOgNXdX+F0OhWhYm7n+xFucWtvi0alO5fDIF2r7c44b0e77UJYKzvn78VFpEEBn76Pq3wC+g3jQCkPvg2lxFDA==",
+    "size": 55163820,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.78/Ufuq_direct_4.0.78.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-24T13:45:09.827528+00:00",
+  "published_at": "2026-09-24T16:17:47.912787+00:00",
   "schema": 1,
-  "version": "4.0.74"
+  "version": "4.0.78"
 }

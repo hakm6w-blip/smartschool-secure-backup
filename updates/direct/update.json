@@ -2,16 +2,16 @@
   "channel": "direct",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.0.65 (الأهلي + الحكومي):\n• إصلاح «فشل الحفظ» عند إنشاء حساب مدرّس (ترحيل أعمدة قاعدة البيانات).\n• إصلاح عدم ظهور التحديث: رقم الإصدار يُختم تلقائياً عند كل بناء، فيظهر «البرنامج محدّث» بعد التثبيت.\n• يشمل ميزة «ربط تطبيق الموبايل والمزامنة» و«حسابات المدرسين» في الإعدادات.\nمهم: بعد التنزيل اضغط «تثبيت التحديث وإعادة التشغيل».",
+  "notes": "????? ????: ????? ??????? (??? ?????? ??? ???????? + ???? ?????? ???????) + ??????? ???????? ????????? + ???/?????? ??????? + ????? ?????? ?? ???????",
   "package": {
-    "name": "Ufuq_direct_4.0.65.exe",
-    "sha256": "cb7c61846ae72c4094071c2bb79e19587485de11d7391b0954383fefbcf6c447",
-    "signature": "dZuHst2WjP+QfjSGaf6k80Nu/0ynTgQXluKkTHF01WvHzsDbAqcOKVw15QTglpu+DYprhB8vmAytOj56yPLyDQ==",
-    "size": 55132396,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.65/Ufuq_direct_4.0.65.exe"
+    "name": "Ufuq_direct_4.0.72.exe",
+    "sha256": "c20e1608d627f2120b619969153627212b707a7916993bfc963c7e04a33cc111",
+    "signature": "YQByZIhM9q7Wu7h42E/bfOWvgYNlPe0sod0alZbczuhte/uUE95TFxE7kYPQBWQCe6fFcJ/5Zf5GdtSmeAn0BA==",
+    "size": 55163243,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.72/Ufuq_direct_4.0.72.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-21T13:36:15.540920+00:00",
+  "published_at": "2026-09-24T00:47:31.533144+00:00",
   "schema": 1,
-  "version": "4.0.65"
+  "version": "4.0.72"
 }

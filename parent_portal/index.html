@@ -772,6 +772,17 @@ function render(d){
     .filter(Boolean).join(' · ');
   $('ftUpd').textContent = d.upd ? new Date(d.upd).toLocaleString('ar-IQ') : '—';
   $('ftGen').textContent = 'بوابة أُفق';
+  /* 🔔 تنبيه «تحديث جديد» لولي الأمر عند تغيّر البيانات/الاعتماد */
+  try{
+    var KEY='ufuq_portal_lastupd', prev=localStorage.getItem(KEY);
+    var b=document.getElementById('ufuq-upd-banner');
+    if(!b){b=document.createElement('div');b.id='ufuq-upd-banner';
+      b.style.cssText='display:none;margin:10px 0;padding:10px 14px;border-radius:12px;background:#fff7e6;border:1px solid #f0c36d;color:#7a5200;font-size:13px;font-weight:700';
+      var host=document.getElementById('pills'); if(host&&host.parentNode)host.parentNode.insertBefore(b,host); else document.body.insertBefore(b,document.body.firstChild);}
+    if(prev&&d.upd&&prev!==d.upd){b.style.display='block';
+      b.innerHTML='🔔 <b>يوجد تحديث جديد</b> على بيانات الطالب (قد يشمل الدرجات المعتمدة) — آخر تحديث: '+new Date(d.upd).toLocaleString('ar-IQ');}
+    if(d.upd) localStorage.setItem(KEY,d.upd);
+  }catch(e){}
 
   /* الشرائح العلوية */
   const p = $('pills'); p.classList.remove('hide');

@@ -4,14 +4,14 @@
   "minimum_version": "4.0.0",
   "notes": "",
   "package": {
-    "name": "Ufuq_ahli_4.0.93.exe",
-    "sha256": "47552d7c9b9c25aa1125824342f4f06d07c3b181a5d80297dbb69077dac49eda",
-    "signature": "UjN/ZQiu3dFQSuXtmAh5l4RHoiuSNZ50U53Hk0YCjMbTMTNbyWy6vJM7PP2b5oggVgpn/UoKWb8vrlpoLtQRDw==",
-    "size": 55197066,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.93/Ufuq_ahli_4.0.93.exe"
+    "name": "Ufuq_ahli_4.0.94.exe",
+    "sha256": "8a78547a2c387884eaa57ff43eb94a3f9927dcee94812088169838c9c8fd40e6",
+    "signature": "QwtMhklT5+5o+hMLl0VyYB6qSC0/sCohpQzP4dhVpT9ieE0MIjUZ7VRTRTDnMkhTNrtcpNIbL78j4jo3U7PcCw==",
+    "size": 55199173,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.94/Ufuq_ahli_4.0.94.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-26T01:51:38.374658+00:00",
+  "published_at": "2026-09-26T09:32:17.000900+00:00",
   "schema": 1,
-  "version": "4.0.93"
+  "version": "4.0.94"
 }

@@ -4,14 +4,14 @@
   "minimum_version": "4.0.0",
   "notes": "",
   "package": {
-    "name": "Ufuq_direct_4.0.90.exe",
-    "sha256": "fe75e4e81d80e118589d531513dc0f7bd007e484bf6afcaae7960fc85fb55a62",
-    "signature": "zsOEZ8jHZeg8amoqmjjOnQbsd1Kch4nNhTwEvWSZMXEUcyXZTt4txPknvV5Gi0UHfxemsY/KOejRoohzFRNNBQ==",
-    "size": 55179698,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.90/Ufuq_direct_4.0.90.exe"
+    "name": "Ufuq_direct_4.0.91.exe",
+    "sha256": "c46383ec0e3ddee0b82072f92d06a036d8114145bc94594e676e13049c372e4b",
+    "signature": "n5fBNwUqx+zX8G8U2YP7fEnJezNv/c4xRulSymkt7SApoXNM3pkAA6g7Ua85KCKaNVYRju7E/ZlJWzwjiV5xCQ==",
+    "size": 55185517,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.0.91/Ufuq_direct_4.0.91.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-25T22:15:06.628375+00:00",
+  "published_at": "2026-09-26T00:38:56.733616+00:00",
   "schema": 1,
-  "version": "4.0.90"
+  "version": "4.0.91"
 }

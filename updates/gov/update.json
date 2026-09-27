@@ -4,14 +4,14 @@
   "minimum_version": "4.0.0",
   "notes": "",
   "package": {
-    "name": "Ufuq_gov_4.1.9.exe",
-    "sha256": "e2550c737916c62a3351b87631ce008d00473e6a7d7d70bf9c6aefa7c0933401",
-    "signature": "aEU/lZ5TsdqxTLJJLqm5cWL7Zz20IK87sRKZPu3Y+Xb6zuHBWdzDDWFgxbNdHs/MysfZmeAKaamNgUBZTtvdDQ==",
-    "size": 55203659,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.1.9/Ufuq_gov_4.1.9.exe"
+    "name": "Ufuq_gov_4.2.0.exe",
+    "sha256": "67028240845aefb6db90f566f5d8835c90f4a4d8ef79fba68267dab09f46f660",
+    "signature": "kv0Elih4Hzdfo9c4vZ0Cyi0W/kxeg5ZFv93E93C1h5xDZQSYcyFzntFzYxPwfCwRyJZma5ysjMTiC3GFheSjCw==",
+    "size": 55204749,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.2.0/Ufuq_gov_4.2.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-27T17:40:22.196255+00:00",
+  "published_at": "2026-09-27T21:10:13.994552+00:00",
   "schema": 1,
-  "version": "4.1.9"
+  "version": "4.2.0"
 }

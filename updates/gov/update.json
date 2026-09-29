@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تقرير الطالب (A4) من ملف الطالب: درجات كل المواد + الحضور + السلوك + المعدل، بتصميم ملوّن ومنظّم. إصلاح تداخل شعار السايدبار، طبقة تحسينات بصرية، وإصلاح خطأ backup_table عند حفظ الدرجات.",
+  "notes": "",
   "package": {
-    "name": "Ufuq_gov_4.2.2.exe",
-    "sha256": "750e71f75d4f824b86eb2b68557c6192a2ded1120aaa94932b3cbab993f4ae78",
-    "signature": "h/yUxxeqaLOfWmDZF1BSltPil+rYiVts8jd//PTcZ+RFBe5ABQmH5W8wSe2/Xj3u1IPquQqD8NKnc6vXN3/2AQ==",
-    "size": 55221062,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.2.2/Ufuq_gov_4.2.2.exe"
+    "name": "Ufuq_gov_4.2.3.exe",
+    "sha256": "f6027ecbee99f62323c24195dad0a355aa7cb46f7c465143907f70c3c0e1d282",
+    "signature": "3peUhiq72s6sUbcwd545NvK23ZO8MFyi+JxFrwHgXhcdE3D0NNBFrX0rSCIT3rjMjcLLmyp/2lEPSdGuBr62Cw==",
+    "size": 53809632,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.2.3/Ufuq_gov_4.2.3.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-09-28T22:26:35.809685+00:00",
+  "published_at": "2026-09-29T17:47:56.875824+00:00",
   "schema": 1,
-  "version": "4.2.2"
+  "version": "4.2.3"
 }

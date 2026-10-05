@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاحات الطباعة في 4.5.2:\n• اختيار خط لوحة «تنسيق» صار يُطبَّق فعلياً على كل استمارات الطباعة (كان 4 من 5 استمارات تتجاهله).\n• المقاس 20 صار يُطبع 20 بكسل بدل الكبت الصامت إلى 18، والمعاينة صارت مطابقة تماماً لما يخرج على الورق.\n• إضافة زر «تلقائي» ليعرض الوضع الافتراضي بصدق (كان يعرض 16 بينما يُطبع 14).\n• إصلاح سباق الطلبات الذي كان يمسح اختيارك فور اختياره عند تبديل الاستمارات بسرعة.\n• توزيع الطلاب بالتساوي على الصفحات: 31 طالباً = صفحتان 16+15 بدل 30+1.\n• تكبير بعض خطوط الواجهة الصغيرة (labels, stat labels, الأزرار الصغيرة، الشارات).",
+  "notes": "-improvement to the sidebar in 4.5.3:\n• تكبير أسماء أقسام السايد بار وإبرازها بالبولد (15px بدلاً من 13px).\n• تكبير العناصر الرئيسية داخل الأقسام قليلاً (14px) للحفاظ على تدرّج واضح.\n• تكبير الأيقونة المرافقة لأسماء الأقسام لتناسب الحجم الجديد.\n• الإبقاء على العناصر الفرعية بحجمها لتجنّب التفاف الأسماء الطويلة.",
   "package": {
-    "name": "Ufuq_ahli_4.5.2.exe",
-    "sha256": "99faf211efc6a3807cb27fc78c9c329d56f4bd3db1beb4286616f1d62881a2b7",
-    "signature": "K4heW55wITfAN0ePji9SQwqTq2J5lxug8xSwwds//9rveownWp6HjNhCrQHDr18P+5b4PjKjVCDc3wvOgj+aAQ==",
-    "size": 53915853,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.2/Ufuq_ahli_4.5.2.exe"
+    "name": "Ufuq_ahli_4.5.3.exe",
+    "sha256": "cfc31b13fa6ecacee3a5ae5353e794bf1b017a0d8b5fa6eeded501b1ac226193",
+    "signature": "QfXqLpHAR51eiUWyeOd2J8IUDu+GepfLbpI+DH+FL+8owgGvWFs9HW0u7lJW0xSliHiD6FNPuyqB3KcKk1uIAA==",
+    "size": 53913460,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.3/Ufuq_ahli_4.5.3.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-05T22:32:51.169076+00:00",
+  "published_at": "2026-10-05T22:54:17.174787+00:00",
   "schema": 1,
-  "version": "4.5.2"
+  "version": "4.5.3"
 }

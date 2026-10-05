@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "الإصدار 4.5.1\n• إصلاح تكرار أسماء الطلاب في استمارات الطباعة (كانت تنقسم حرفاً بحرف) — الآن تلتف على حدود الكلمات بشكل صحيح.\n• محاذاة كل الأعمدة: الترقيم والتواريخ والأرقام في الوسط، والأسماء واسم الأم والملاحظات إلى اليمين.\n• إصلاح قص رؤوس الأعمدة في سجل الدرجات واستمارة الحضور.\n• الاستمارات ملتزمة بمقاس A4 وبسعة 30 طالباً في الصفحة.",
+  "notes": "إصلاحات الطباعة في 4.5.2:\n• اختيار خط لوحة «تنسيق» صار يُطبَّق فعلياً على كل استمارات الطباعة (كان 4 من 5 استمارات تتجاهله).\n• المقاس 20 صار يُطبع 20 بكسل بدل الكبت الصامت إلى 18، والمعاينة صارت مطابقة تماماً لما يخرج على الورق.\n• إضافة زر «تلقائي» ليعرض الوضع الافتراضي بصدق (كان يعرض 16 بينما يُطبع 14).\n• إصلاح سباق الطلبات الذي كان يمسح اختيارك فور اختياره عند تبديل الاستمارات بسرعة.\n• توزيع الطلاب بالتساوي على الصفحات: 31 طالباً = صفحتان 16+15 بدل 30+1.\n• تكبير بعض خطوط الواجهة الصغيرة (labels, stat labels, الأزرار الصغيرة، الشارات).",
   "package": {
-    "name": "Ufuq_gov_4.5.1.exe",
-    "sha256": "11965728da3e222d9ff4460d840c23cde4c2db25d1a68de37a9c7595040f3b3b",
-    "signature": "v2tzy716fVrv8dE/ogLCvCS7JVKHWee/3Nmlt+0YtTb+IYoKt2P/bsXI3OeOPoRG6SeQy5o5lTx+nZcET41zAg==",
-    "size": 53915158,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.1/Ufuq_gov_4.5.1.exe"
+    "name": "Ufuq_gov_4.5.2.exe",
+    "sha256": "af07e5764928ee74b6bbdea89aaf03a57ee45a1f0daf37a61bb90a4473ccbdb6",
+    "signature": "kZ8VyoAoLv2V9fKyNSNfAPLkgHQHP5eglKemWW0sM3sRHKv0LSfQiwyapW78FyUUJ5OjbFN+cyQWoEmJiWcfAA==",
+    "size": 53916068,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.2/Ufuq_gov_4.5.2.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-05T15:19:43.594080+00:00",
+  "published_at": "2026-10-05T22:32:58.467419+00:00",
   "schema": 1,
-  "version": "4.5.1"
+  "version": "4.5.2"
 }

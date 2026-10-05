@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "",
+  "notes": "الإصدار 4.5.1\n• إصلاح تكرار أسماء الطلاب في استمارات الطباعة (كانت تنقسم حرفاً بحرف) — الآن تلتف على حدود الكلمات بشكل صحيح.\n• محاذاة كل الأعمدة: الترقيم والتواريخ والأرقام في الوسط، والأسماء واسم الأم والملاحظات إلى اليمين.\n• إصلاح قص رؤوس الأعمدة في سجل الدرجات واستمارة الحضور.\n• الاستمارات ملتزمة بمقاس A4 وبسعة 30 طالباً في الصفحة.",
   "package": {
-    "name": "Ufuq_ahli_4.5.0.exe",
-    "sha256": "c9fe0d1b7fda30e253179605c5c271e5a3021dc97be2648318a5d602a8e791cf",
-    "signature": "nWdxnfpkbdnIMr/jTBgaa9hIOoTQlJofk4gnh1B9ywpv5Co/Dr/lTC6Xuk/zo34fs241ki3wO0IbesFdaXVsCg==",
-    "size": 53911302,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.0/Ufuq_ahli_4.5.0.exe"
+    "name": "Ufuq_ahli_4.5.1.exe",
+    "sha256": "5ab101586e3f2b440a580d2114ecf9ee978bd9e03c4c6d29cebf9343e1cd8882",
+    "signature": "owLC0vjfqA1Pjj0zH3UHT7xebB70uhmLpDnWbz2MUJpPVPovC1kQGNwrcprUWyhJ9z4fAK1LgaissDxs+VknBA==",
+    "size": 53915107,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.1/Ufuq_ahli_4.5.1.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-03T00:02:51.741653+00:00",
+  "published_at": "2026-10-05T15:19:36.145063+00:00",
   "schema": 1,
-  "version": "4.5.0"
+  "version": "4.5.1"
 }

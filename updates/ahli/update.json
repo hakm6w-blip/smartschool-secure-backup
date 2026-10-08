@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "-improvement to the sidebar in 4.5.3:\n• تكبير أسماء أقسام السايد بار وإبرازها بالبولد (15px بدلاً من 13px).\n• تكبير العناصر الرئيسية داخل الأقسام قليلاً (14px) للحفاظ على تدرّج واضح.\n• تكبير الأيقونة المرافقة لأسماء الأقسام لتناسب الحجم الجديد.\n• الإبقاء على العناصر الفرعية بحجمها لتجنّب التفاف الأسماء الطويلة.",
+  "notes": "تحديث 4.5.4:\n\n• مركز الطباعة: يعرض الآن استمارة «سجل درجات الفصلين والامتحان النهائي» فقط، وحُذفت باقي الاستمارات وقسم التقارير الإحصائية.\n• استمارة الدرجات الجديدة: 30 طالباً في الصفحة، عناوين أقسام رأسية (الفصل الأول / الفصل الثاني / الامتحان النهائي) توفّر المساحة، مع ترقيم صفحات وخانة التوقيعات.\n• القائمة الجانبية: عرض 285px بدل 270px، وأسماء الأقسام بحجم 13px عريضة.\n• كشف الامتحان الشفهي: ثبات عرض الأعمدة وارتفاع موحّد للصفوف (26px) وتوجيه الحقول.\n• إصلاح ترميز النص العربي في ملفات الواجهة (web و web_gov).",
   "package": {
-    "name": "Ufuq_ahli_4.5.3.exe",
-    "sha256": "cfc31b13fa6ecacee3a5ae5353e794bf1b017a0d8b5fa6eeded501b1ac226193",
-    "signature": "QfXqLpHAR51eiUWyeOd2J8IUDu+GepfLbpI+DH+FL+8owgGvWFs9HW0u7lJW0xSliHiD6FNPuyqB3KcKk1uIAA==",
-    "size": 53913460,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.3/Ufuq_ahli_4.5.3.exe"
+    "name": "Ufuq_ahli_4.5.4.exe",
+    "sha256": "42ef9314f6f745b8a4a8133d77bc9b415bf4ba2271e10c450b619150cc4ad8c3",
+    "signature": "e7RJsRTppXskOhzKNafjljLh2LrewUl7EFNTlkGtvn3p38/0hprQGfHi9EFYJXWzznXHG2AU0XCYCwPbAi5qCw==",
+    "size": 53914398,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.4/Ufuq_ahli_4.5.4.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-05T22:54:17.174787+00:00",
+  "published_at": "2026-10-08T07:48:54.832452+00:00",
   "schema": 1,
-  "version": "4.5.3"
+  "version": "4.5.4"
 }

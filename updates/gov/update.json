@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تحديث 4.5.4:\n\n• مركز الطباعة: يعرض الآن استمارة «سجل درجات الفصلين والامتحان النهائي» فقط، وحُذفت باقي الاستمارات وقسم التقارير الإحصائية.\n• استمارة الدرجات الجديدة: 30 طالباً في الصفحة، عناوين أقسام رأسية (الفصل الأول / الفصل الثاني / الامتحان النهائي) توفّر المساحة، مع ترقيم صفحات وخانة التوقيعات.\n• القائمة الجانبية: عرض 285px بدل 270px، وأسماء الأقسام بحجم 13px عريضة.\n• كشف الامتحان الشفهي: ثبات عرض الأعمدة وارتفاع موحّد للصفوف (26px) وتوجيه الحقول.\n• إصلاح ترميز النص العربي في ملفات الواجهة (web و web_gov).",
+  "notes": "???? 4.5.5 - ???? ??????? ??????: ??????? ????? ?????? ??????? ????? ????? ??????? ??? ?????? ?????? ?????? ?????? ?? ?????? ????? + ?????? ????? ??????? ???????? ???? ????? A4 ?????? ?????? ?????? ???????.",
   "package": {
-    "name": "Ufuq_gov_4.5.4.exe",
-    "sha256": "bc0dbff32b092c35e632e05b8fa0f4447d76a137959b8e26b399375a8ff4ee59",
-    "signature": "ZLfg4Rkh9SjRI8/PiAXb0+HFwZL8+iKojWXLWeiWmziIPZlMSpJxl/cQBoy/ybvQuGD96eJ2gCDlJNL6gNZaAA==",
-    "size": 53915988,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.4/Ufuq_gov_4.5.4.exe"
+    "name": "Ufuq_gov_4.5.5.exe",
+    "sha256": "113daadc078587af5afebef052189574dcd7c7d9910c07fe2b8ee4528e9d9f73",
+    "signature": "BhgWdtD/SGbIGbWY9YygOIoQWwT18o/yJi/CwrKd2c4fuMvEBV+IHuLCnwD2tfsBX+VPw2TbKDtL+i2mbUBdCw==",
+    "size": 53927263,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5/Ufuq_gov_4.5.5.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-08T07:49:00.637249+00:00",
+  "published_at": "2026-10-09T18:47:25.474840+00:00",
   "schema": 1,
-  "version": "4.5.4"
+  "version": "4.5.5"
 }

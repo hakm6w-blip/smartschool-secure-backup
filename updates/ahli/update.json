@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تحديث 4.5.4:\n\n• مركز الطباعة: يعرض الآن استمارة «سجل درجات الفصلين والامتحان النهائي» فقط، وحُذفت باقي الاستمارات وقسم التقارير الإحصائية.\n• استمارة الدرجات الجديدة: 30 طالباً في الصفحة، عناوين أقسام رأسية (الفصل الأول / الفصل الثاني / الامتحان النهائي) توفّر المساحة، مع ترقيم صفحات وخانة التوقيعات.\n• القائمة الجانبية: عرض 285px بدل 270px، وأسماء الأقسام بحجم 13px عريضة.\n• كشف الامتحان الشفهي: ثبات عرض الأعمدة وارتفاع موحّد للصفوف (26px) وتوجيه الحقول.\n• إصلاح ترميز النص العربي في ملفات الواجهة (web و web_gov).",
+  "notes": "???? 4.5.5 - ???? ??????? ??????: ??????? ????? ?????? ??????? ????? ????? ??????? ??? ?????? ?????? ?????? ?????? ?? ?????? ????? + ?????? ????? ??????? ???????? ???? ????? A4 ?????? ?????? ?????? ???????.",
   "package": {
-    "name": "Ufuq_ahli_4.5.4.exe",
-    "sha256": "42ef9314f6f745b8a4a8133d77bc9b415bf4ba2271e10c450b619150cc4ad8c3",
-    "signature": "e7RJsRTppXskOhzKNafjljLh2LrewUl7EFNTlkGtvn3p38/0hprQGfHi9EFYJXWzznXHG2AU0XCYCwPbAi5qCw==",
-    "size": 53914398,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.4/Ufuq_ahli_4.5.4.exe"
+    "name": "Ufuq_ahli_4.5.5.exe",
+    "sha256": "4fab23c7778dbe2cfb63ddb5fc52bd761d1a56b0553386cf4592f2856f2f66f6",
+    "signature": "zGnuctXDjWYIORPAGE1kp3G4bPofpc1M4IDavpzDQ7+VUhMFg/G93x2rTAnWZviIrcAw7PdZ0ijXKS53HdBmCA==",
+    "size": 53926723,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5/Ufuq_ahli_4.5.5.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-08T07:48:54.832452+00:00",
+  "published_at": "2026-10-09T18:47:18.913098+00:00",
   "schema": 1,
-  "version": "4.5.4"
+  "version": "4.5.5"
 }

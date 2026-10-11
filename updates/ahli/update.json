@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "شريط تحكم أفقي لتكبير وتصغير أسماء الطلاب، منع التفاف واقتصاص أسماء الطلاب نهائياً على كافة الاستمارات، وضوح عالي وعريض لعناوين المواد في قائمة استلام الكتب، وتنسيق هيدر لوحة التحكم.",
+  "notes": "تحسينات استمارات الطباعة:\n- توحيد حجم الخط في الاستمارة الشاملة (اسم الطالب وتاريخ الميلاد واسم الأم بنفس الحجم الكبير).\n- توسيع عمود اسم الطالب.\n- التفاف الأسماء الطويلة على أسطر داخل الخلية دون قصّ أو تقطيع للحروف في جميع الاستمارات.",
   "package": {
-    "name": "Ufuq_ahli_4.5.5.4.exe",
-    "sha256": "bc55daae06ce5e3946469cf8acac9bd53154e41f1412f1cce9e7081249f8ae1b",
-    "signature": "PnftttZx8Cv0YUsYdHe3OoW136BAo3QHpZ52sQSiQZZpk5+WTYOepROp4CQzMc+jtxNPlzTRmJP+P73E5oidDQ==",
-    "size": 53925853,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.4/Ufuq_ahli_4.5.5.4.exe"
+    "name": "Ufuq_ahli_4.5.5.5.exe",
+    "sha256": "5dacd8da4f146c4a079f72526db32241908362eef84115d102924a66ce6beff0",
+    "signature": "rolWZC9LOkvERemW/mjBPIi7v3jVXnPLfA6eGwmg2CS7RVB5g6Q10XlgH74LHT0c2Dl/9yy4L9HOcQe7tYK0Aw==",
+    "size": 53926934,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.5/Ufuq_ahli_4.5.5.5.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-10T17:29:00.887116+00:00",
+  "published_at": "2026-10-11T14:01:55.282082+00:00",
   "schema": 1,
-  "version": "4.5.5.4"
+  "version": "4.5.5.5"
 }

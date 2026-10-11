@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات استمارات الطباعة:\n- توحيد حجم الخط في الاستمارة الشاملة (اسم الطالب وتاريخ الميلاد واسم الأم بنفس الحجم الكبير).\n- توسيع عمود اسم الطالب.\n- التفاف الأسماء الطويلة على أسطر داخل الخلية دون قصّ أو تقطيع للحروف في جميع الاستمارات.",
+  "notes": "إصلاحات استيراد وتوزيع الطلاب على الشعب:\n- إصلاح تكرار الطلاب عند الاستيراد (unique constraint + EXISTS check)\n- إضافة التحقق من academic_year_id لمنع التداخل بين السنوات\n- تحسين منطق العد لعد الطلاب لكل شعبة (WHERE section_id صحيح)\n- التأكد من تحديث واجهة الأسماء بعد التصفير/الاستيراد (render_students + refreshClassCounts)\n- دعم التعديل اليدوي للشعبة من نافذة تعديل الطالب\n- توزيع الطلاب بالتساوي على الشعب من واجهة التوزيع",
   "package": {
-    "name": "Ufuq_ahli_4.5.5.5.exe",
-    "sha256": "5dacd8da4f146c4a079f72526db32241908362eef84115d102924a66ce6beff0",
-    "signature": "rolWZC9LOkvERemW/mjBPIi7v3jVXnPLfA6eGwmg2CS7RVB5g6Q10XlgH74LHT0c2Dl/9yy4L9HOcQe7tYK0Aw==",
-    "size": 53926934,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.5/Ufuq_ahli_4.5.5.5.exe"
+    "name": "Ufuq_ahli_4.5.5.6.exe",
+    "sha256": "fadb14ba1baf0497e16f3f91104f1d16047cd45bf157b91b201ab810a784eb49",
+    "signature": "QMEDw+3HutGuCNnV9hdiWbIigg1fM9aB5rcMEWDwFwUBlylOUeBT3KoJilcRFHH1Hqiz88TprRTEuNhxDF6TAA==",
+    "size": 53926336,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.6/Ufuq_ahli_4.5.5.6.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-11T14:01:55.282082+00:00",
+  "published_at": "2026-10-11T23:56:36.114832+00:00",
   "schema": 1,
-  "version": "4.5.5.5"
+  "version": "4.5.5.6"
 }

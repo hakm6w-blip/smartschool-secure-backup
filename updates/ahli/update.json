@@ -2,16 +2,16 @@
   "channel": "ahli",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاحات استيراد وتوزيع الطلاب على الشعب:\n- إصلاح تكرار الطلاب عند الاستيراد (unique constraint + EXISTS check)\n- إضافة التحقق من academic_year_id لمنع التداخل بين السنوات\n- تحسين منطق العد لعد الطلاب لكل شعبة (WHERE section_id صحيح)\n- التأكد من تحديث واجهة الأسماء بعد التصفير/الاستيراد (render_students + refreshClassCounts)\n- دعم التعديل اليدوي للشعبة من نافذة تعديل الطالب\n- توزيع الطلاب بالتساوي على الشعب من واجهة التوزيع",
+  "notes": "تحديث 4.5.5.7",
   "package": {
-    "name": "Ufuq_ahli_4.5.5.6.exe",
-    "sha256": "fadb14ba1baf0497e16f3f91104f1d16047cd45bf157b91b201ab810a784eb49",
-    "signature": "QMEDw+3HutGuCNnV9hdiWbIigg1fM9aB5rcMEWDwFwUBlylOUeBT3KoJilcRFHH1Hqiz88TprRTEuNhxDF6TAA==",
-    "size": 53926336,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.6/Ufuq_ahli_4.5.5.6.exe"
+    "name": "Ufuq_ahli_4.5.5.7.exe",
+    "sha256": "a8527ccc900189de525b61c102f2ccfde1e9ab785399f1a03384641700fe8643",
+    "signature": "2r0j7Cfs3YQlUlY2lEAQIwzkwd4NsmxbunorXGYAVLfp+S9T76sMB0eas1zqYMv6LSLoKoE5f8L9/FlzywiOBQ==",
+    "size": 53929668,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.7/Ufuq_ahli_4.5.5.7.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-11T23:56:36.114832+00:00",
+  "published_at": "2026-10-12T17:59:45.341830+00:00",
   "schema": 1,
-  "version": "4.5.5.6"
+  "version": "4.5.5.7"
 }

@@ -2,16 +2,16 @@
   "channel": "gov",
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاحات استيراد وتوزيع الطلاب على الشعب:\n- إصلاح تكرار الطلاب عند الاستيراد (unique constraint + EXISTS check)\n- إضافة التحقق من academic_year_id لمنع التداخل بين السنوات\n- تحسين منطق العد لعد الطلاب لكل شعبة (WHERE section_id صحيح)\n- التأكد من تحديث واجهة الأسماء بعد التصفير/الاستيراد (render_students + refreshClassCounts)\n- دعم التعديل اليدوي للشعبة من نافذة تعديل الطالب\n- توزيع الطلاب بالتساوي على الشعب من واجهة التوزيع",
+  "notes": "تحديث 4.5.5.7",
   "package": {
-    "name": "Ufuq_gov_4.5.5.6.exe",
-    "sha256": "67dae1536f1c1cae20b88b3eb0c03ba29ecfb305c537153af7a4b1d3f1f128c9",
-    "signature": "eQy3WtoUCiO1uZ/ENwfu5ixY/iuqm3xqUjMq6hUaGnxNTbZsT42iRoHBWhfzhyUSymDEU7/1a81xyBLQohhXBg==",
-    "size": 53925837,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.6/Ufuq_gov_4.5.5.6.exe"
+    "name": "Ufuq_gov_4.5.5.7.exe",
+    "sha256": "d126acada7eead5c8fa0d90a280dce900423b109245dddee72fdbd3c4df11c7a",
+    "signature": "lsEP+uB98ONpiwF+qcOEbPCN3ICjl3emS/u0xj5DTfghx/oMNk1EPI+dz/sTvdboHu0GTIgEvMn/VQW0xtsUAw==",
+    "size": 53931629,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.5.7/Ufuq_gov_4.5.5.7.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-11T23:56:42.577928+00:00",
+  "published_at": "2026-10-12T17:59:50.814388+00:00",
   "schema": 1,
-  "version": "4.5.5.6"
+  "version": "4.5.5.7"
 }

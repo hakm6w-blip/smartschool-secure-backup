@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.7",
-    "name": "Ufuq_gov_content_4.5.7.7.zip",
-    "sha256": "840dfb47e7397159505e324f905bf10b90e064563c7ff8ec698b10e5ab89c490",
-    "signature": "HNnt6UAXkeootRLT4pmPK14DPoA11XwSLD8IsptKriL6xPpagUNz9SdK4hYJ78X5rOJ43DhEVcaXMa1NxkhRAg==",
+    "app": "4.5.7.8",
+    "name": "Ufuq_gov_content_4.5.7.8.zip",
+    "sha256": "07b72c4d36109e0fbb80e9a7b243674bae0714a8e415a0c27720733fbd3e7630",
+    "signature": "8eJoh5vnhdpe5AJXAc089UgwcaiY5rL38SEODT2x9sfqv11Asy2iJKzrC9YePeMkQE7dLQx/hLtDh6qYXoXnBA==",
     "size": 442332,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_gov_content_4.5.7.7.zip",
-    "version": "4.5.7.7"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_gov_content_4.5.7.8.zip",
+    "version": "4.5.7.8"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "Remote trial kill switch + trial device console",
+  "notes": "شاشة دخول عند أول تشغيل: كود تفعيل أو تجربة مجانية 3 أيام. زر التجربة يختفي نهائياً بعد انتهاء المدة، والبرنامج لا يفتح بدون كود.",
   "package": {
-    "name": "Ufuq_gov_4.5.7.7.exe",
-    "sha256": "e95c335338a9b8351262454a5f72ae14a864862c1f7916b6fd9b2559ad275e07",
-    "signature": "zd1bwuwBeq2+QH6hp6wxxXqXFcZmmltGpW7k7qa/umxnzrUuDK+A439rBfiAgrLinE2PW5UU2bwo4iKNeYouDA==",
-    "size": 53947131,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_gov_4.5.7.7.exe"
+    "name": "Ufuq_gov_4.5.7.8.exe",
+    "sha256": "d5a6191a09b3d832a44753a42bf1fde63f2d5c4c4079a66b04013a78a56b2d70",
+    "signature": "0FG7zuxhhS35lBo6fu2z29dVcR2bXcbxsN06298DVt6yqn9wye+h7QVtYxuVU52kZh006WAVmjBd1YQwYBz0Dw==",
+    "size": 53956007,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_gov_4.5.7.8.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T16:40:20.231321+00:00",
+  "published_at": "2026-10-15T18:09:35.742392+00:00",
   "schema": 1,
-  "version": "4.5.7.7"
+  "version": "4.5.7.8"
 }

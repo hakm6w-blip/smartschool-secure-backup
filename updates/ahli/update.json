@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.7.6",
-    "name": "Ufuq_ahli_content_4.5.7.6.zip",
-    "sha256": "494047442e8cdb399db2766bf8685b1571ed6b08a9d93c598710f1e03ae3bc31",
-    "signature": "S/F0ZtqcQyXOpdxCydkmEDmgzWwth0qWUsUjuWXgJDqQFSHhWBPABPzOKKLX/DnpNMNpq0fo8f5HS1/0QVImDg==",
+    "app": "4.5.7.7",
+    "name": "Ufuq_ahli_content_4.5.7.7.zip",
+    "sha256": "d5b91f4505bbaa33ceeea7216b655e47537f60496ef73dafd7b2438c66f344bc",
+    "signature": "xpaMOCoWfP698G0PdhS3RzR128arrdEa92QZcyeb0uklHC2XoZVsM0EN4hyMAJ9MYwSPxyjdYEHHQSGsfZOkDQ==",
     "size": 442336,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_ahli_content_4.5.7.6.zip",
-    "version": "4.5.7.6"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_ahli_content_4.5.7.7.zip",
+    "version": "4.5.7.7"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ???? ?????? (Inno Setup) ?? ???????? ?????? ?????? ?????? ??? EXE ??????",
+  "notes": "Remote trial kill switch + trial device console",
   "package": {
-    "name": "Ufuq_ahli_4.5.7.6.exe",
-    "sha256": "6454e658dcef60caac3206f14ae43c4243e1066282d7665fb25f46defecd723b",
-    "signature": "FwFWzcZeVuC6syazY3FlMn+CRpxYAZnsT9A9iWYDHVI2oyXahr0alfLtAz60x4TzXBMxPbzmYMPBUiuN44g6BA==",
-    "size": 53943404,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_ahli_4.5.7.6.exe"
+    "name": "Ufuq_ahli_4.5.7.7.exe",
+    "sha256": "470d77ac64189d4ee369fab6fcffddd3ab81daadeb42c3cfb8f9a214ff1e8e82",
+    "signature": "dJO9qokMTHFXKLuFVxnnR2PcHvBS8JiuKioEGjYvw/tW/2qVbQzLGSgeEw75G3x3fVgKiKkIkl6/MsYkKQPKDg==",
+    "size": 53947249,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_ahli_4.5.7.7.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T15:31:21.030173+00:00",
+  "published_at": "2026-10-15T16:40:09.665970+00:00",
   "schema": 1,
-  "version": "4.5.7.6"
+  "version": "4.5.7.7"
 }

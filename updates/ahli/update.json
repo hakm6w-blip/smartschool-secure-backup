@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.7.8",
-    "name": "Ufuq_ahli_content_4.5.7.8.zip",
-    "sha256": "156a6340c7ac3842b1cb0f42f2859131d2e7f1f6e6baaeb774cb8343e1cee9ad",
-    "signature": "BhjSkeNJn2OH0WWojpbIs+gRqZKVx6ZhMj+9U0yUZd1IkIPA2pDb5oO9yW39am0gStWJ85J5Gnw9fJV398ZeBg==",
-    "size": 442336,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_ahli_content_4.5.7.8.zip",
-    "version": "4.5.7.8"
+    "app": "4.5.7.9",
+    "name": "Ufuq_ahli_content_4.5.7.9.zip",
+    "sha256": "5fd02764fc53fad854873df3cbac9cef7a00c01da19f39a9dd395fdbc7cc509e",
+    "signature": "Uwg+2ei46Oa7p0XdVEWDajsCxCXprkPX6ckSNPBobQu6X2Z7y+ZvQesbuDTX3OQgESA9wAWP8sLojDs+9K39CA==",
+    "size": 443032,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_ahli_content_4.5.7.9.zip",
+    "version": "4.5.7.9"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "شاشة دخول عند أول تشغيل: كود تفعيل أو تجربة مجانية 3 أيام. زر التجربة يختفي نهائياً بعد انتهاء المدة، والبرنامج لا يفتح بدون كود.",
+  "notes": "إصلاح ربط الحساب السحابي: زر واحد للإنشاء/الربط مع رسائل خطأ عربية واضحة وزر لإعادة إرسال تأكيد البريد، وإصلاح الإشعار الوهمي عند وجود درجات معلّقة.",
   "package": {
-    "name": "Ufuq_ahli_4.5.7.8.exe",
-    "sha256": "3f215a752e9e5fffb29fd80aa5dfc77963332d65f7fe6d7e2546f64879047f5f",
-    "signature": "3+KGSXZF81p18fC9dQGog1M7wvd0rbahYzhkXWLfevRyhbH/74IsYOniiiK4M6Gb7MwvDIH2PewYVKdu/JtgAQ==",
-    "size": 53955795,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_ahli_4.5.7.8.exe"
+    "name": "Ufuq_ahli_4.5.7.9.exe",
+    "sha256": "63e6714785c6b83b7181b42d38ddb432325d587cad5ef46f142de4b904fc0f3c",
+    "signature": "1npVEoZZ3qpry6ltUmwmNHiuO5uEDliZN5S2vvjmiRIaRnMe7b14PbgFb6qweC5iHhq49KALPHEIE+I1/jAECQ==",
+    "size": 53962136,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_ahli_4.5.7.9.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T18:09:27.788151+00:00",
+  "published_at": "2026-10-15T21:05:22.043014+00:00",
   "schema": 1,
-  "version": "4.5.7.8"
+  "version": "4.5.7.9"
 }

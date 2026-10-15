@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.0",
-    "name": "Ufuq_gov_content_4.5.7.0.zip",
-    "sha256": "dc953a693fb853c4b3f96b0cf3a3df25c92532615b37bf21357353007384e2ca",
-    "signature": "G/oi4qyzGl6VihIG0PByoDieMMz861tuyvlyeNYxi+wFYOViNVj0NnIfU96B9wZsnLxNf2nlF7AVdVJILSHJCg==",
-    "size": 442332,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.0/Ufuq_gov_content_4.5.7.0.zip",
-    "version": "4.5.7.0"
+    "app": "4.5.7.4",
+    "name": "Ufuq_gov_content_4.5.7.4.zip",
+    "sha256": "376c981b67800cc5b80956077e24c113c9fd9132c505fa591a98a3883822c7f2",
+    "signature": "BBptCo2mP6Plo/KfJhS+AuindjCrQqsRyKCgvagqdUhcZTShuMG0QA89T/IbA9tf4h64AfA0rMzoznJw3K1hCQ==",
+    "size": 442294,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_gov_content_4.5.7.4.zip",
+    "version": "4.5.7.4"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "",
+  "notes": "تفعيل التجربة المجانية 3 أيام تلقائياً + عرض رقم الواتساب على شاشتي التفعيل وانتهاء الترخيص",
   "package": {
-    "name": "Ufuq_gov_4.5.7.0.exe",
-    "sha256": "12f79e0f787069f9f28243fc0aaf8bdb83954037aa0a10946511f5e12cfc26c4",
-    "signature": "ganHBi0biwrwf5oEDbsKk1GSqus9+xwFwxytoKOyE4ROY+mKX4JDW2wnI043G9qFkLpcGiuw4Tt87S5HPpk1Dg==",
-    "size": 53939140,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.0/Ufuq_gov_4.5.7.0.exe"
+    "name": "Ufuq_gov_4.5.7.4.exe",
+    "sha256": "d1edfdf098046367f7e684f60cc285e5f44f937b8e0cd74e097b54178ed86c7c",
+    "signature": "3wcoYL383GreSuBP4lcoZpMtNlNBISJvA10VNl2Gn1gm0ZhrtM7Ntk59tQu3PtQXkSeZ/4wyqjXCk5X+mjZrBA==",
+    "size": 46236483,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_gov_4.5.7.4.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T13:47:31.102592+00:00",
+  "published_at": "2026-10-15T14:50:16.501713+00:00",
   "schema": 1,
-  "version": "4.5.7.0"
+  "version": "4.5.7.4"
 }

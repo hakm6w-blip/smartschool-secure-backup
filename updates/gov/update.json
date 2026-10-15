@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.5",
-    "name": "Ufuq_gov_content_4.5.7.5.zip",
-    "sha256": "5f148c75b6a846d9590399dd3efb66aff8f2a5d88de0964336de5c06de3817af",
-    "signature": "fcFAgxqlrsXq5uzWhp92BDxR4N5eLdjhay5O1Fmb3+BPW+FSlqEygutKsVA8MR8nLvZZBXfHrTLl+anT172SBg==",
+    "app": "4.5.7.6",
+    "name": "Ufuq_gov_content_4.5.7.6.zip",
+    "sha256": "72de7599c05593010db6784ff67c71539b8e4239a442ba6cc7f7ce04a4f7eb45",
+    "signature": "8RIFO2T3HfNad48MY3AHHwiHQxc8ZxxDXSF2t4iV5gGlfDLlSazX4EiWyWRSQ0M+wrhWhWmJF0bqmFQ7vlUNAw==",
     "size": 442332,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.5/Ufuq_gov_content_4.5.7.5.zip",
-    "version": "4.5.7.5"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_gov_content_4.5.7.6.zip",
+    "version": "4.5.7.6"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ???? ??????? - ????? ??????? 3 ???? + ??? ????????",
+  "notes": "????? ???? ?????? (Inno Setup) ?? ???????? ?????? ?????? ?????? ??? EXE ??????",
   "package": {
-    "name": "Ufuq_gov_4.5.7.5.exe",
-    "sha256": "76e1d63a6a672c72aa2fb6481b2c5709f8164b0158c92b5500065b42617e736c",
-    "signature": "TkbAQOtHCmUzAL9n1WzWLge6writpf9fsIV8e/IOa9TdyiWrblIU2YUQsriV+EqodUlZ3Ih3E6stSekGejotDA==",
-    "size": 53940769,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.5/Ufuq_gov_4.5.7.5.exe"
+    "name": "Ufuq_gov_4.5.7.6.exe",
+    "sha256": "e1f1e80e81021ba773385a636ee771771d57d40705c34c0978191cf5bd59e01b",
+    "signature": "BYAfRhtsN3iU0JZgzZ9e/ZRCSuL9pCuw+qIiFYR81qprpJCrC5J1nyVnJdnBYblaAyfmXaz1PJvr1emBTdR2DA==",
+    "size": 53942540,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_gov_4.5.7.6.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T15:12:43.355005+00:00",
+  "published_at": "2026-10-15T15:31:31.862126+00:00",
   "schema": 1,
-  "version": "4.5.7.5"
+  "version": "4.5.7.6"
 }

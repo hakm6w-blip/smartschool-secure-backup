@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.6",
-    "name": "Ufuq_gov_content_4.5.7.6.zip",
-    "sha256": "72de7599c05593010db6784ff67c71539b8e4239a442ba6cc7f7ce04a4f7eb45",
-    "signature": "8RIFO2T3HfNad48MY3AHHwiHQxc8ZxxDXSF2t4iV5gGlfDLlSazX4EiWyWRSQ0M+wrhWhWmJF0bqmFQ7vlUNAw==",
+    "app": "4.5.7.7",
+    "name": "Ufuq_gov_content_4.5.7.7.zip",
+    "sha256": "840dfb47e7397159505e324f905bf10b90e064563c7ff8ec698b10e5ab89c490",
+    "signature": "HNnt6UAXkeootRLT4pmPK14DPoA11XwSLD8IsptKriL6xPpagUNz9SdK4hYJ78X5rOJ43DhEVcaXMa1NxkhRAg==",
     "size": 442332,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_gov_content_4.5.7.6.zip",
-    "version": "4.5.7.6"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_gov_content_4.5.7.7.zip",
+    "version": "4.5.7.7"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ???? ?????? (Inno Setup) ?? ???????? ?????? ?????? ?????? ??? EXE ??????",
+  "notes": "Remote trial kill switch + trial device console",
   "package": {
-    "name": "Ufuq_gov_4.5.7.6.exe",
-    "sha256": "e1f1e80e81021ba773385a636ee771771d57d40705c34c0978191cf5bd59e01b",
-    "signature": "BYAfRhtsN3iU0JZgzZ9e/ZRCSuL9pCuw+qIiFYR81qprpJCrC5J1nyVnJdnBYblaAyfmXaz1PJvr1emBTdR2DA==",
-    "size": 53942540,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.6/Ufuq_gov_4.5.7.6.exe"
+    "name": "Ufuq_gov_4.5.7.7.exe",
+    "sha256": "e95c335338a9b8351262454a5f72ae14a864862c1f7916b6fd9b2559ad275e07",
+    "signature": "zd1bwuwBeq2+QH6hp6wxxXqXFcZmmltGpW7k7qa/umxnzrUuDK+A439rBfiAgrLinE2PW5UU2bwo4iKNeYouDA==",
+    "size": 53947131,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_gov_4.5.7.7.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T15:31:31.862126+00:00",
+  "published_at": "2026-10-15T16:40:20.231321+00:00",
   "schema": 1,
-  "version": "4.5.7.6"
+  "version": "4.5.7.7"
 }

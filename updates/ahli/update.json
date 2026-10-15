@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.7.7",
-    "name": "Ufuq_ahli_content_4.5.7.7.zip",
-    "sha256": "d5b91f4505bbaa33ceeea7216b655e47537f60496ef73dafd7b2438c66f344bc",
-    "signature": "xpaMOCoWfP698G0PdhS3RzR128arrdEa92QZcyeb0uklHC2XoZVsM0EN4hyMAJ9MYwSPxyjdYEHHQSGsfZOkDQ==",
+    "app": "4.5.7.8",
+    "name": "Ufuq_ahli_content_4.5.7.8.zip",
+    "sha256": "156a6340c7ac3842b1cb0f42f2859131d2e7f1f6e6baaeb774cb8343e1cee9ad",
+    "signature": "BhjSkeNJn2OH0WWojpbIs+gRqZKVx6ZhMj+9U0yUZd1IkIPA2pDb5oO9yW39am0gStWJ85J5Gnw9fJV398ZeBg==",
     "size": 442336,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_ahli_content_4.5.7.7.zip",
-    "version": "4.5.7.7"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_ahli_content_4.5.7.8.zip",
+    "version": "4.5.7.8"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "Remote trial kill switch + trial device console",
+  "notes": "شاشة دخول عند أول تشغيل: كود تفعيل أو تجربة مجانية 3 أيام. زر التجربة يختفي نهائياً بعد انتهاء المدة، والبرنامج لا يفتح بدون كود.",
   "package": {
-    "name": "Ufuq_ahli_4.5.7.7.exe",
-    "sha256": "470d77ac64189d4ee369fab6fcffddd3ab81daadeb42c3cfb8f9a214ff1e8e82",
-    "signature": "dJO9qokMTHFXKLuFVxnnR2PcHvBS8JiuKioEGjYvw/tW/2qVbQzLGSgeEw75G3x3fVgKiKkIkl6/MsYkKQPKDg==",
-    "size": 53947249,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.7/Ufuq_ahli_4.5.7.7.exe"
+    "name": "Ufuq_ahli_4.5.7.8.exe",
+    "sha256": "3f215a752e9e5fffb29fd80aa5dfc77963332d65f7fe6d7e2546f64879047f5f",
+    "signature": "3+KGSXZF81p18fC9dQGog1M7wvd0rbahYzhkXWLfevRyhbH/74IsYOniiiK4M6Gb7MwvDIH2PewYVKdu/JtgAQ==",
+    "size": 53955795,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.8/Ufuq_ahli_4.5.7.8.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T16:40:09.665970+00:00",
+  "published_at": "2026-10-15T18:09:27.788151+00:00",
   "schema": 1,
-  "version": "4.5.7.7"
+  "version": "4.5.7.8"
 }

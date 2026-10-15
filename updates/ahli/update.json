@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.7.0",
-    "name": "Ufuq_ahli_content_4.5.7.0.zip",
-    "sha256": "8b51428e7cfc3bc49c99f3bc563fd92180b0570122d7770b3f3ed1a6fdbbc376",
-    "signature": "k31fPgoRi4/Ay6SsP66LUJ1aDiXK1J7t9LBVX7d2MvoyzII6ec6/qKQjU/x/NupPP1CM3QuBwTE9+oLFbeOLCw==",
-    "size": 442336,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.0/Ufuq_ahli_content_4.5.7.0.zip",
-    "version": "4.5.7.0"
+    "app": "4.5.7.4",
+    "name": "Ufuq_ahli_content_4.5.7.4.zip",
+    "sha256": "73ce6423efdfb96c8ac5f4ba92b45043c0bdcc9baf7db6db419a5f97530fee59",
+    "signature": "uSeXy+vJIWXAmvs9laVl2WK7RLNCVdaBdqBbjj7kbdmgOsvktfhPLNXoft8N77o70A+Pl88NUnFsyJY5rHJFDA==",
+    "size": 442298,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_ahli_content_4.5.7.4.zip",
+    "version": "4.5.7.4"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "",
+  "notes": "تفعيل التجربة المجانية 3 أيام تلقائياً + عرض رقم الواتساب على شاشتي التفعيل وانتهاء الترخيص",
   "package": {
-    "name": "Ufuq_ahli_4.5.7.0.exe",
-    "sha256": "b70ace1fd39748fcfaeb5341a864cfdca5336331537ef6bfcb2ef49bb24ee4ff",
-    "signature": "wE+sGPdHYhPsv2bva6u7H2ZV0wvO2KWulS8PuZnwj5QKdd4kJHgVKR/yAoDCsDjhQBgkZivXGphypsJbO1Z7Cw==",
-    "size": 53941279,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.0/Ufuq_ahli_4.5.7.0.exe"
+    "name": "Ufuq_ahli_4.5.7.4.exe",
+    "sha256": "757265d14368ea06499512bc8d10a6b65f2feb1f5df63952dc460eef66870d14",
+    "signature": "0czuTT46tx1NJ4tGxF+qE5FwzmzVAEvRppYJvaiVRwuktkU0Qx1aGEyIgWNnKEwwaBETuSF1xUCDhreY99sACA==",
+    "size": 37773198,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_ahli_4.5.7.4.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T13:47:22.798676+00:00",
+  "published_at": "2026-10-15T14:35:31.973107+00:00",
   "schema": 1,
-  "version": "4.5.7.0"
+  "version": "4.5.7.4"
 }

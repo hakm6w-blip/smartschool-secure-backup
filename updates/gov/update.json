@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.4",
-    "name": "Ufuq_gov_content_4.5.7.4.zip",
-    "sha256": "376c981b67800cc5b80956077e24c113c9fd9132c505fa591a98a3883822c7f2",
-    "signature": "BBptCo2mP6Plo/KfJhS+AuindjCrQqsRyKCgvagqdUhcZTShuMG0QA89T/IbA9tf4h64AfA0rMzoznJw3K1hCQ==",
-    "size": 442294,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_gov_content_4.5.7.4.zip",
-    "version": "4.5.7.4"
+    "app": "4.5.7.5",
+    "name": "Ufuq_gov_content_4.5.7.5.zip",
+    "sha256": "5f148c75b6a846d9590399dd3efb66aff8f2a5d88de0964336de5c06de3817af",
+    "signature": "fcFAgxqlrsXq5uzWhp92BDxR4N5eLdjhay5O1Fmb3+BPW+FSlqEygutKsVA8MR8nLvZZBXfHrTLl+anT172SBg==",
+    "size": 442332,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.5/Ufuq_gov_content_4.5.7.5.zip",
+    "version": "4.5.7.5"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تفعيل التجربة المجانية 3 أيام تلقائياً + عرض رقم الواتساب على شاشتي التفعيل وانتهاء الترخيص",
+  "notes": "????? ???? ??????? - ????? ??????? 3 ???? + ??? ????????",
   "package": {
-    "name": "Ufuq_gov_4.5.7.4.exe",
-    "sha256": "d1edfdf098046367f7e684f60cc285e5f44f937b8e0cd74e097b54178ed86c7c",
-    "signature": "3wcoYL383GreSuBP4lcoZpMtNlNBISJvA10VNl2Gn1gm0ZhrtM7Ntk59tQu3PtQXkSeZ/4wyqjXCk5X+mjZrBA==",
-    "size": 46236483,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.4/Ufuq_gov_4.5.7.4.exe"
+    "name": "Ufuq_gov_4.5.7.5.exe",
+    "sha256": "76e1d63a6a672c72aa2fb6481b2c5709f8164b0158c92b5500065b42617e736c",
+    "signature": "TkbAQOtHCmUzAL9n1WzWLge6writpf9fsIV8e/IOa9TdyiWrblIU2YUQsriV+EqodUlZ3Ih3E6stSekGejotDA==",
+    "size": 53940769,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.5/Ufuq_gov_4.5.7.5.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T14:50:16.501713+00:00",
+  "published_at": "2026-10-15T15:12:43.355005+00:00",
   "schema": 1,
-  "version": "4.5.7.4"
+  "version": "4.5.7.5"
 }

@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.8.0",
-    "name": "Ufuq_gov_content_4.5.8.0.zip",
-    "sha256": "695b91eabc81e4d852440bbf240339f44ae503dd9cca8cdf8488b8b98fbc53df",
-    "signature": "+QhglkAo9/hEqYwb9vi7UObHDVw50UnfSlw8X5hdtn4GWQks9MO2FR7irR+ePePU2oE181BpzTCZ5bNY6Bd0Dw==",
+    "app": "4.5.9.0",
+    "name": "Ufuq_gov_content_4.5.9.0.zip",
+    "sha256": "4f0a740fb3392b38308e96484385d45a5f0aef9e08dac8d6cd8ec5f1695cb6c6",
+    "signature": "X6Hhuaz7XY56aoDXZW3JAHqp7R9aiNOx5TqXD3CBuCBZAV4pVSji4mXohRJT4pzZOFtoSxaAoWVDaIHxa2z/CA==",
     "size": 443033,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_gov_content_4.5.8.0.zip",
-    "version": "4.5.8.0"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_gov_content_4.5.9.0.zip",
+    "version": "4.5.9.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاحات أمنية: إيقاف التجربة عن بُعد فور الإقلاع، ومنع تزوير تاريخ التجربة، وفرض الحدّ الأدنى للإصدار",
+  "notes": "تحسينات المزامنة: حلّ التعارضات، إعادة المحاولة التلقائية، معرّف الجهاز، وفحص الجلسة عند استئناف تطبيق المدرّس؛ حماية كل أزرار الحذف الجماعي؛ تقييد محاولات التفعيل.",
   "package": {
-    "name": "Ufuq_gov_4.5.8.0.exe",
-    "sha256": "9868761c54478f7b39a719baf18adab5328f64078ad961a6b0ff67b50457c8b5",
-    "signature": "o6wzGD05GEI6k0Rindv8yjUCgiunZZuWVXT1pVTGoHRJK99l3/G/KEgQBkwlbf7/m5w2HGiVX2U5ze+kQj31AQ==",
-    "size": 53963426,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_gov_4.5.8.0.exe"
+    "name": "Ufuq_gov_4.5.9.0.exe",
+    "sha256": "836890834b526893dd3886e9a7ac04ff0b5a60c5dfcddf900cec3122809e385a",
+    "signature": "Xq8jDDlfv2KvI/zOFfc/26HrtFX1QGDSlPO0vWAyP/1Z1E/1AJLjZJ0dIGfvrDBPVfIjKRsKmzLzgOwDvJ27AQ==",
+    "size": 53970993,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_gov_4.5.9.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-16T00:09:57.595933+00:00",
+  "published_at": "2026-10-16T13:32:51.222915+00:00",
   "schema": 1,
-  "version": "4.5.8.0"
+  "version": "4.5.9.0"
 }

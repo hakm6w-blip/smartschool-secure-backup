@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.7.9",
-    "name": "Ufuq_gov_content_4.5.7.9.zip",
-    "sha256": "e696123984f38754cc59e6381b7ec5961280997941b0806492407d632b3ca5e1",
-    "signature": "gN+XGi9qwE5BqAyvjF8CUcdilnfuSwiEdNdpjEtBbNAD1se+i6nTMqw0WYrn40j7r/0US0NDjAJ2Mo+mu6yCDQ==",
+    "app": "4.5.8.0",
+    "name": "Ufuq_gov_content_4.5.8.0.zip",
+    "sha256": "695b91eabc81e4d852440bbf240339f44ae503dd9cca8cdf8488b8b98fbc53df",
+    "signature": "+QhglkAo9/hEqYwb9vi7UObHDVw50UnfSlw8X5hdtn4GWQks9MO2FR7irR+ePePU2oE181BpzTCZ5bNY6Bd0Dw==",
     "size": 443033,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_gov_content_4.5.7.9.zip",
-    "version": "4.5.7.9"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_gov_content_4.5.8.0.zip",
+    "version": "4.5.8.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح ربط الحساب السحابي: زر واحد للإنشاء/الربط مع رسائل خطأ عربية واضحة وزر لإعادة إرسال تأكيد البريد، وإصلاح الإشعار الوهمي عند وجود درجات معلّقة.",
+  "notes": "إصلاحات أمنية: إيقاف التجربة عن بُعد فور الإقلاع، ومنع تزوير تاريخ التجربة، وفرض الحدّ الأدنى للإصدار",
   "package": {
-    "name": "Ufuq_gov_4.5.7.9.exe",
-    "sha256": "464ba768489bbc36d8d5c54d4695eaab20df9b6e762bf84e9c29b5a7adde22ba",
-    "signature": "gd8mSTFDpRkmw0l1gx7VLxxqGyPwbuXKFSnJ/czvKR4qwiBIOSwXxsRY0RUr2aLCbOKIiWNpeZNQaZB3vWQ4CQ==",
-    "size": 53962094,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_gov_4.5.7.9.exe"
+    "name": "Ufuq_gov_4.5.8.0.exe",
+    "sha256": "9868761c54478f7b39a719baf18adab5328f64078ad961a6b0ff67b50457c8b5",
+    "signature": "o6wzGD05GEI6k0Rindv8yjUCgiunZZuWVXT1pVTGoHRJK99l3/G/KEgQBkwlbf7/m5w2HGiVX2U5ze+kQj31AQ==",
+    "size": 53963426,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_gov_4.5.8.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T21:05:31.649300+00:00",
+  "published_at": "2026-10-16T00:09:57.595933+00:00",
   "schema": 1,
-  "version": "4.5.7.9"
+  "version": "4.5.8.0"
 }

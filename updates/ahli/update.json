@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.7.9",
-    "name": "Ufuq_ahli_content_4.5.7.9.zip",
-    "sha256": "5fd02764fc53fad854873df3cbac9cef7a00c01da19f39a9dd395fdbc7cc509e",
-    "signature": "Uwg+2ei46Oa7p0XdVEWDajsCxCXprkPX6ckSNPBobQu6X2Z7y+ZvQesbuDTX3OQgESA9wAWP8sLojDs+9K39CA==",
+    "app": "4.5.8.0",
+    "name": "Ufuq_ahli_content_4.5.8.0.zip",
+    "sha256": "a1d78f53a7d86e170d818016d063fb22d05d9c392300d37e7797e169ae9aaa8e",
+    "signature": "5njLvHJs4c7IfZHvgcpTWQ7OSDcDZDZZF1Y3WUp4mD39+sRjNx8YXTCStyQYdU6fL/xcpT/ruMCbfFOOp8OBDA==",
     "size": 443032,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_ahli_content_4.5.7.9.zip",
-    "version": "4.5.7.9"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_ahli_content_4.5.8.0.zip",
+    "version": "4.5.8.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "إصلاح ربط الحساب السحابي: زر واحد للإنشاء/الربط مع رسائل خطأ عربية واضحة وزر لإعادة إرسال تأكيد البريد، وإصلاح الإشعار الوهمي عند وجود درجات معلّقة.",
+  "notes": "إصلاحات أمنية: إيقاف التجربة عن بُعد فور الإقلاع، ومنع تزوير تاريخ التجربة، وفرض الحدّ الأدنى للإصدار",
   "package": {
-    "name": "Ufuq_ahli_4.5.7.9.exe",
-    "sha256": "63e6714785c6b83b7181b42d38ddb432325d587cad5ef46f142de4b904fc0f3c",
-    "signature": "1npVEoZZ3qpry6ltUmwmNHiuO5uEDliZN5S2vvjmiRIaRnMe7b14PbgFb6qweC5iHhq49KALPHEIE+I1/jAECQ==",
-    "size": 53962136,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.7.9/Ufuq_ahli_4.5.7.9.exe"
+    "name": "Ufuq_ahli_4.5.8.0.exe",
+    "sha256": "c7221dbef6e9dae7f77c43114e5976bea29662307ba04a8b87c7ea6bff677276",
+    "signature": "X8HyfzK6Nt5H9rzSxRZrovSiPVL/rqmAeHVdlsh/6K8dqtu4VNvHvolCTqdlsjjbS6hcSo5qp5vTsx0f6RZtDw==",
+    "size": 53962069,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.8.0/Ufuq_ahli_4.5.8.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-15T21:05:22.043014+00:00",
+  "published_at": "2026-10-16T00:09:38.977472+00:00",
   "schema": 1,
-  "version": "4.5.7.9"
+  "version": "4.5.8.0"
 }

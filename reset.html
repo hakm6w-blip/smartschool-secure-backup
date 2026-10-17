@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أُفق — إعادة تعيين كلمة مرور حساب المدرسة</title>
+<style>
+  :root{--bg:#0b1220;--card:#ffffff;--text:#0f172a;--text2:#475569;--line:#e2e8f0;--blue:#2563eb;--green:#16a34a;--red:#dc2626;--gold:#b8860b}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:radial-gradient(1200px 600px at 70% -10%,#1e3a8a55,transparent),#0b1220;display:flex;align-items:center;justify-content:center;padding:24px;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--text)}
+  .card{background:var(--card);width:100%;max-width:440px;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.45);padding:30px 28px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--blue);margin-bottom:4px}
+  h1{font-size:18px;margin:8px 0 4px}
+  p.sub{margin:0 0 18px;color:var(--text2);font-size:13px;line-height:1.9}
+  label{display:block;font-weight:700;font-size:13px;margin:14px 0 6px}
+  input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font-size:15px;outline:none;background:#f8fafc}
+  input:focus{border-color:var(--blue);background:#fff}
+  button{margin-top:18px;width:100%;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;padding:13px;cursor:pointer}
+  button:disabled{opacity:.6;cursor:default}
+  .msg{margin-top:16px;padding:12px 14px;border-radius:12px;font-size:13.5px;line-height:1.8;display:none}
+  .ok{background:#dcfce7;color:#166534;display:block}
+  .err{background:#fee2e2;color:#991b1b;display:block}
+  .info{background:#e0e7ff;color:#3730a3;display:block}
+  .hint{font-size:12px;color:var(--text2);line-height:1.8;margin-top:6px}
+  label span{color:var(--text2);font-weight:600;font-size:11.5px;display:block;margin-top:2px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">☁ أُفق</div>
+    <h1>إعادة تعيين كلمة مرور حساب المدرسة</h1>
+    <p class="hint">عيّن كلمة مرور جديدة لحساب المدرسة في برنامج أُفق، ثم عُد إلى البرنامج وسجّل الدخول بها. هذه <b>كلمة مرور حساب المدرسة</b> وليست كلمة مرور بريدك الإلكتروني.</p>
+
+    <div id="msg" class="info">جارٍ التحقق من رابط إعادة التعيين…</div>
+
+    <form id="frm" style="display:none">
+      <div class="form-group">
+        <label>كلمة المرور الجديدة <span>8 أحرف على الأقل</span></label>
+        <input id="p1" type="password" placeholder="أدخل كلمة المرور الجديدة" autocomplete="new-password">
+      </div>
+      <div class="form-group">
+        <label>تأكيد كلمة المرور <span>أعد كتابتها</span></label>
+        <input id="p2" type="password" placeholder="أعد كتابة كلمة المرور" autocomplete="new-password">
+      </div>
+      <button id="btn" type="submit">حفظ كلمة المرور الجديدة</button>
+    </form>
+
+    <div id="done" style="display:none">
+      <button onclick="location.href='https://hakm6w-blip.github.io/smartschool-secure-backup/'">تمّ — العودة إلى أُفق</button>
+    </div>
+  </div>
+
+<script>
+(function(){
+  var SUPABASE_URL = "https://nueuyakysgchwrkyteaa.supabase.co";
+  var SUPABASE_KEY = "sb_publishable_dZBuKDGBwOXRAvj8WuPfRA_Dtr4q4lG";
+  var msg = document.getElementById('msg');
+  var frm = document.getElementById('frm');
+  var done = document.getElementById('done');
+
+  function show(el, cls, text){ msg.className = cls; msg.style.display = 'block'; msg.textContent = text; }
+
+  function parseHash(h){
+    var o = {};
+    (h || '').replace(/^#/, '').split('&').forEach(function(kv){
+      if(!kv) return; var i = kv.indexOf('='); var k = decodeURIComponent(kv.slice(0,i)); var v = decodeURIComponent(kv.slice(i+1).replace(/\+/g,' '));
+      o[k] = v;
+    });
+    return o;
+  }
+
+  var params = parseHash(window.location.hash);
+  var accessToken = params.access_token || '';
+  var errDesc = params.error_description || params.error || '';
+
+  if (errDesc) { show(msg, 'err', 'انتهت صلاحية الرابط أو غير صالح: ' + errDesc + '\nاطلب رابطاً جديداً من البرنامج عبر «نسيت كلمة المرور؟».'); return; }
+  if (!accessToken) { show(msg, 'info', 'افتح هذه الصفحة من رابط إعادة التعيين الذي وصلك على بريد المدرسة. إن لم تصلك الرسالة، اطلب رابطاً جديداً من البرنامج عبر «نسيت كلمة المرور؟».'); return; }
+
+  show(msg, 'info', 'الرابط صالح — أدخل كلمة المرور الجديدة.');
+  frm.style.display = 'block';
+
+  frm.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var p1 = document.getElementById('p1').value || '';
+    var p2 = document.getElementById('p2').value || '';
+    if (p1.length < 8) { show(msg, 'err', 'كلمة المرور قصيرة — استخدم 8 أحرف على الأقل.'); return; }
+    if (p1 !== p2) { show(msg, 'err', 'كلمتا المرور غير متطابقتين.'); return; }
+    var btn = document.getElementById('btn'); btn.disabled = true; btn.textContent = 'جارٍ الحفظ…';
+    fetch(SUPABASE_URL + '/auth/v1/user', {
+      method: 'PUT',
+      headers: { 'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + accessToken, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: p1 })
+    }).then(function(r){ return r.json().catch(function(){return {}}).then(function(b){ return { ok: r.ok, status: r.status, body: b }; }); })
+      .then(function(res){
+        if (res.ok) {
+          frm.style.display='none'; done.style.display='block';
+          show(msg, 'ok', 'تم تعيين كلمة المرور الجديدة بنجاح. عُد الآن إلى برنامج أُفق واستخدم كلمة المرور الجديدة.');
+        } else {
+          var c = (res.body && (res.body.error_code || res.body.msg || res.body.message)) || ('HTTP ' + res.status);
+          show(msg, 'err', 'تعذّر حفظ كلمة المرور: ' + c + ' — قد يكون الرابط منتهي الصلاحية، اطلب رابطاً جديداً.');
+        }
+        btn.disabled = false; btn.textContent = 'حفظ كلمة المرور الجديدة';
+      }).catch(function(e){
+        show(msg, 'err', 'تعذّر الاتصال بالخدمة — تحقّق من الإنترنت ثم أعد المحاولة.');
+        btn.disabled = false; btn.textContent = 'حفظ كلمة المرور الجديدة';
+      });
+  });
+})();
+</script>
+</body>
+</html>

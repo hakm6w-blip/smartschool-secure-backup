@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.9.0",
-    "name": "Ufuq_ahli_content_4.5.9.0.zip",
-    "sha256": "c46d8b47d80490ab80003928931d416c9ebf369e9adde877a97bfd7373a68de4",
-    "signature": "YVIsx84SSQyrw07XnxpmDLg9KjqU1rijjEC+35M/a1J7eWHufmTHJeR3iUCnTdPS+7JkajDQNEN7rEFJkNVFBw==",
+    "app": "4.5.10.0",
+    "name": "Ufuq_ahli_content_4.5.10.0.zip",
+    "sha256": "e6dfbd5ca6563bd7680e1e0f4898ded0296c07fe418f9416c9b3e5a247704bde",
+    "signature": "UkRSoBV82EwPSRIN0iu3RKeYbIfl8LChzb/YiQf9FF+2Wzy1rg6P+iWVgxf87ut4gfJzCj5sYK4He9WatVEWCA==",
     "size": 443032,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_ahli_content_4.5.9.0.zip",
-    "version": "4.5.9.0"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.10.0/Ufuq_ahli_content_4.5.10.0.zip",
+    "version": "4.5.10.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات المزامنة: حلّ التعارضات، إعادة المحاولة التلقائية، معرّف الجهاز، وفحص الجلسة عند استئناف تطبيق المدرّس؛ حماية كل أزرار الحذف الجماعي؛ تقييد محاولات التفعيل.",
+  "notes": "????? ?????? ????? ?????????: ?????? ???????? ????? ???? ??????? ?? ??? ??????? ??? ???? ???????/????????? ?? ?????? ?????? ?? ????? ?????? ???? ??? ??????.",
   "package": {
-    "name": "Ufuq_ahli_4.5.9.0.exe",
-    "sha256": "71bd4561baf1d8a27fc2d1cfcb25be66256ecd5cfe16ad0888818f27db069249",
-    "signature": "8eKfTZDB0ksTEbHfrxweDosXjnU9k7WxOFpex+fR0pnsfhnzHcFIq8wCx2SQ3Kk53KLYWRVNPXAHQ44nUMDgAQ==",
-    "size": 53971110,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_ahli_4.5.9.0.exe"
+    "name": "Ufuq_ahli_4.5.10.0.exe",
+    "sha256": "fd7ec22c5bcc6b9404ee722d5825e82296564b9ee0920acd573bd710dac81f93",
+    "signature": "jRiDaLRVU1zTO+NxcLBMhm3XdLKHozjuWsE79ftwrvSGUTOqWvyPV/L4DdajuHYdYgPWPBbop3oCj1jRbNk5Dg==",
+    "size": 53982075,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.10.0/Ufuq_ahli_4.5.10.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-16T13:32:43.554536+00:00",
+  "published_at": "2026-10-17T15:02:50.608566+00:00",
   "schema": 1,
-  "version": "4.5.9.0"
+  "version": "4.5.10.0"
 }

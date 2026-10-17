@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.9.0",
-    "name": "Ufuq_gov_content_4.5.9.0.zip",
-    "sha256": "4f0a740fb3392b38308e96484385d45a5f0aef9e08dac8d6cd8ec5f1695cb6c6",
-    "signature": "X6Hhuaz7XY56aoDXZW3JAHqp7R9aiNOx5TqXD3CBuCBZAV4pVSji4mXohRJT4pzZOFtoSxaAoWVDaIHxa2z/CA==",
+    "app": "4.5.10.0",
+    "name": "Ufuq_gov_content_4.5.10.0.zip",
+    "sha256": "0db104e6c7eebc8f36d5ab908f1906610af189f8eb08aa910822ab5b5f1c4330",
+    "signature": "W22psHtYIV2oxJ3wORZXH9js5qIOoljLr4QTxPUJyk7+MCsFaJXy7BAcuWb/BE+WPpmH8mRIBr6mG5SZzH4zAQ==",
     "size": 443033,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_gov_content_4.5.9.0.zip",
-    "version": "4.5.9.0"
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.10.0/Ufuq_gov_content_4.5.10.0.zip",
+    "version": "4.5.10.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "تحسينات المزامنة: حلّ التعارضات، إعادة المحاولة التلقائية، معرّف الجهاز، وفحص الجلسة عند استئناف تطبيق المدرّس؛ حماية كل أزرار الحذف الجماعي؛ تقييد محاولات التفعيل.",
+  "notes": "????? ?????? ????? ?????????: ?????? ???????? ????? ???? ??????? ?? ??? ??????? ??? ???? ???????/????????? ?? ?????? ?????? ?? ????? ?????? ???? ??? ??????.",
   "package": {
-    "name": "Ufuq_gov_4.5.9.0.exe",
-    "sha256": "836890834b526893dd3886e9a7ac04ff0b5a60c5dfcddf900cec3122809e385a",
-    "signature": "Xq8jDDlfv2KvI/zOFfc/26HrtFX1QGDSlPO0vWAyP/1Z1E/1AJLjZJ0dIGfvrDBPVfIjKRsKmzLzgOwDvJ27AQ==",
-    "size": 53970993,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.9.0/Ufuq_gov_4.5.9.0.exe"
+    "name": "Ufuq_gov_4.5.10.0.exe",
+    "sha256": "87ab54322812f0d067371e62f50cd5990b724ebf41ac7dc7f0e483f2739256d7",
+    "signature": "FgQcBPBAzmt77ijIp6koMYDdMGZPw351qF6AOb8UXEwF0nYGaJr5fkb71znW43FgdT3RNrty1Kwd3xp8UYQmDg==",
+    "size": 53983982,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.10.0/Ufuq_gov_4.5.10.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-16T13:32:51.222915+00:00",
+  "published_at": "2026-10-17T15:02:57.902457+00:00",
   "schema": 1,
-  "version": "4.5.9.0"
+  "version": "4.5.10.0"
 }

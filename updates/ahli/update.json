@@ -1,26 +1,26 @@
 {
   "channel": "ahli",
   "content": {
-    "app": "4.5.11.0",
-    "name": "Ufuq_ahli_content_4.5.11.0.zip",
-    "sha256": "62e4dff4d056ada1f948de72cb7f3bd3178b4f96237f57b06a0e07ce4a73ccb4",
-    "signature": "qo8+uxvkyg/rc6zicz7o+WerSlObZzwc5jRQzpfh1gLfbuKEZLV5ijSDcL/sp3eLO60t/ys2hvnIVV3ObFVHCQ==",
-    "size": 443328,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.11.0/Ufuq_ahli_content_4.5.11.0.zip",
-    "version": "4.5.11.0"
+    "app": "4.5.12.0",
+    "name": "Ufuq_ahli_content_4.5.12.0.zip",
+    "sha256": "16ddc8490867d27ab0b8c0bedf72242a80fc74ba6deae0967d2ad470479108ec",
+    "signature": "sYUv4WJs3Wq+t5Tmrz5lNWOdm1s4owIw3nLZNnxtqcS0vrVC2TIOpow/lQb700iPFvv1nTPEAmZr28Aejmn7DA==",
+    "size": 443400,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.12.0/Ufuq_ahli_content_4.5.12.0.zip",
+    "version": "4.5.12.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ????? ??? ?????? ??????? + ????? ???? ??????? ??? ????????? ??????? ????? ???????? ???? ??????? ???? ???? ??????? ???? ??????.",
+  "notes": "أرقام واتساب قابلة للضغط في شاشات التفعيل والإيقاف والتقييم + توحيد روابط التواصل",
   "package": {
-    "name": "Ufuq_ahli_4.5.11.0.exe",
-    "sha256": "e4e387ddb05ce34cfd2d576368d295cc5eef5962c362508daf98ddcada931ff0",
-    "signature": "xxXh9hpeto6qQX1mIFDJCVbTvcmFztodou11pFARvNv7BF2AslOWoVY+ShxEKDVmRqm87vrhgCmttAhsfW+LAg==",
-    "size": 54004896,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.11.0/Ufuq_ahli_4.5.11.0.exe"
+    "name": "Ufuq_ahli_4.5.12.0.exe",
+    "sha256": "691fad9702161ffee1e72f8c413f73f0c9771d9e888391eccf1480492fe9a640",
+    "signature": "9cr0uQ5oEZ+f2S8UBJQPQSP15+jAnv3J6UpC+Nw3LW9sUdNQg7Us2vlLfH8DddZfxA0ZLzBhz5mqN9FNSci4Ag==",
+    "size": 54088158,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.12.0/Ufuq_ahli_4.5.12.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-18T00:33:42.077190+00:00",
+  "published_at": "2026-10-22T16:15:17.062982+00:00",
   "schema": 1,
-  "version": "4.5.11.0"
+  "version": "4.5.12.0"
 }

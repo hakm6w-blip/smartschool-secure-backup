@@ -1,26 +1,26 @@
 {
   "channel": "gov",
   "content": {
-    "app": "4.5.11.0",
-    "name": "Ufuq_gov_content_4.5.11.0.zip",
-    "sha256": "9dcf3fd09af959ebcfe72f0355b04c2874f5b4025fe422a1a0b72a2ba9940852",
-    "signature": "LSZeagByE4pO0ZVSD++dbt2U4WblGCkpiV52OJqX0mAk3sgloLgT6KcXZ+lKm9KvAPW3Mt+jhaBCWvADC/CmAg==",
-    "size": 443324,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.11.0/Ufuq_gov_content_4.5.11.0.zip",
-    "version": "4.5.11.0"
+    "app": "4.5.12.0",
+    "name": "Ufuq_gov_content_4.5.12.0.zip",
+    "sha256": "c5ab3b018fad66c3c00ce9de6da269d833aa158e9c2d4f1bde50ff9dda71cc88",
+    "signature": "7J5LQCrRv+XdPY/acMGJlhQE0TfR9xsiykdGUP1q41RWbMpwjLBKcbJzIzbrjJddW76ZZRM+JP3flDO6LBK8Ag==",
+    "size": 443396,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.12.0/Ufuq_gov_content_4.5.12.0.zip",
+    "version": "4.5.12.0"
   },
   "mandatory": true,
   "minimum_version": "4.0.0",
-  "notes": "????? ????? ??? ?????? ??????? + ????? ???? ??????? ??? ????????? ??????? ????? ???????? ???? ??????? ???? ???? ??????? ???? ??????.",
+  "notes": "أرقام واتساب قابلة للضغط في شاشات التفعيل والإيقاف والتقييم + توحيد روابط التواصل",
   "package": {
-    "name": "Ufuq_gov_4.5.11.0.exe",
-    "sha256": "06b047e111b39f1468b132d006ae8b8118190b7e66e592dcd2f8fe523069a4c9",
-    "signature": "nmqkSGXF/X8F1wLrDuOW1EPW3h2+gVnaFDydbUubB1G0/TEp8WK0ZhBVFZxqiaYinJ4XTYxNBiNE1o9VlYJtCQ==",
-    "size": 54003249,
-    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.11.0/Ufuq_gov_4.5.11.0.exe"
+    "name": "Ufuq_gov_4.5.12.0.exe",
+    "sha256": "e55b4fe29a10facb214780b4de4ed415ad7846060df315660c417ae1056b728e",
+    "signature": "hnKRBPgbLaXZaVj+gwuH2OQBlHY+9hvhkfCDxeVIGIV1IzPhkkqXNmxYujDnPS08c1zVeK0caW7Z5NKQ9+KOCw==",
+    "size": 54084360,
+    "url": "https://github.com/hakm6w-blip/smartschool-secure-backup/releases/download/v4.5.12.0/Ufuq_gov_4.5.12.0.exe"
   },
   "product": "ufuq-smartschool",
-  "published_at": "2026-10-18T00:33:50.801072+00:00",
+  "published_at": "2026-10-22T16:15:26.051497+00:00",
   "schema": 1,
-  "version": "4.5.11.0"
+  "version": "4.5.12.0"
 }
